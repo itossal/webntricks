@@ -1,0 +1,345 @@
+/*feature area 1***********************/
+.feature-card {
+    background: $smoke-color;
+    padding: 40px 36px;
+    &-icon {
+        margin-bottom: 74px;
+    }
+    &-title {
+        a {
+            color: $title-color;
+        }
+    }
+    &-text {
+        margin-bottom: 24px;
+    }
+    @include md {
+        padding: 30px 26px;
+        &-title {
+            font-size: 20px;
+        }
+        &-icon {
+            margin-bottom: 34px;
+        }
+    }
+}
+
+
+/*skill-feature**************/
+.skill-feature {
+    position: relative;
+    &:not(:last-child) {
+        margin-bottom: 27px;
+    }
+    &_title {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 7px;
+    } 
+    .progress {
+        background: transparent;
+        border-radius: 0;
+        overflow: visible;
+        height: 4px;
+        .progress-bar {
+            background: $title-color;
+            border-radius: 0;
+            height: 4px;
+        }
+        .progress-value {
+            font-size: 14px;
+            font-weight: 600;
+            font-family: $title-font;
+            position: relative;
+            top: -29px;
+            transform: translate(-100%, 0);
+        }
+    }
+}
+
+/*feature area 3***********************/
+.feature-static-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.feature-static {
+    position: sticky;
+    top: 150px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: auto;
+    width: 100%;
+}
+@include lg {
+    .feature-static {
+        position: initial;
+    }
+}
+/*feature area 4***********************/
+.feature-card.style-grid {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 100px;
+    .feature-card-icon {
+        flex: none;
+    }
+    .feature-card-title {
+        margin-top: -0.2em;
+    }
+    .feature-card-text {
+        font-size: 18px;
+    }
+} 
+@include ml {
+    .feature-card.style-grid {
+        gap: 50px;
+    }
+}
+@include xs {
+    .feature-card.style-grid {
+        display: block;
+    }
+}
+/*feature area 2***********************/
+.feature-card.style2 {
+    background: $gray-color;
+    .feature-card-icon {
+        filter: brightness(99) grayscale(99);
+    }
+    .feature-card-title {
+        a {
+            color: $smoke-color;
+        }
+    }
+    .feature-card-text {
+        color: $smoke-color;
+    }
+    .link-btn {
+        color: $smoke-color;
+        &:after,
+        &:before {
+            background: $smoke-color;
+        }
+        img {
+            filter: brightness(99) grayscale(99);
+        }
+    }
+}
+
+/*feature area 3***********************/
+.feature-card.style3 {
+    .title-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 100px;
+        @include md {
+            margin-bottom: 50px;
+        }
+        .feature-card-title {
+            flex: 0;
+        }
+    }
+    .feature-card-icon {
+        margin-bottom: 0;
+        img {
+            width: 52px;
+        }
+    }
+    .feature-card-title {
+        margin-bottom: 0;
+    }
+    .feature-card-text {
+        font-size: 18px;
+        margin-bottom: 28px;
+    }
+    .feature-card-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            font-size: 14px;
+            font-weight: 600;
+            font-family: $title-font;
+            color: $title-color;
+            letter-spacing: 0.01em;
+            text-transform: uppercase;
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+
+/*feature area 4***********************/
+.feature-card.style4 {
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    padding: 0;
+    border-top: 2px solid $title-color;
+    padding: 48px 0;
+    gap: 30px;
+    flex-wrap: wrap;
+    &:last-child {
+        border-bottom: 2px solid $title-color;
+    }
+    .feature-card-title {
+        flex: 0.5;
+        font-size: 36px;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        line-height: 1.277;
+        @include xxl {
+            font-size: 28px;
+        }
+        @include ml {
+            flex: 0.6;
+        }
+        @include lg {
+            font-size: 24px;
+            flex: 1;
+        }
+    }
+    .feature-card-content {
+        flex: 0 0 550px;
+    }
+    .feature-card-text {
+        font-size: 18px;
+        @include lg {
+            font-size: 16px;
+        }
+    }
+    .feature-card-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            font-size: 14px;
+            font-weight: 600;
+            font-family: $title-font;
+            color: $title-color;
+            letter-spacing: 0.01em;
+            text-transform: uppercase;
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+        }
+    }
+    .feature-card-icon {
+        flex: none;
+        img {
+            width: 52px;
+        }
+    }
+    @include md {
+        gap: 0;
+        .feature-card-content {
+            width: 100%;
+            order: 3;
+            flex: none;
+        }
+        .feature-card-icon {
+            order: 1;
+            width: 100%;
+        }
+        .feature-card-title {
+            order: 2;
+            width: 100%;
+            flex: none;
+        }
+    }
+}
+
+/*feature area 5***********************/
+.feature-card-wrap5 {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    @include md {
+        margin: 0;
+    }
+}
+.feature-card.style5 {
+    padding: 54px 48px;
+    background-color: $title-color;
+    background-size: cover;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    .feature-card-title {
+        font-size: 36px;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        line-height: 1.277;
+        margin-bottom: 0;
+        @include xxl {
+            font-size: 30px;
+        }
+        @include ml {
+            font-size: 28px;
+        }
+        @include lg {
+            font-size: 22px;
+        }
+        a {
+            color: $white-color;
+        }
+    }
+    .feature-card-text {
+        color: $white-color;
+        font-size: 18px;
+        margin-top: 20px;
+        @include lg {
+            font-size: 14px;
+        }
+    }
+    .link-btn {
+        margin-top: 120px;
+        flex: none;
+        .link-effect {
+            flex: none;
+        }
+    }
+    .marquee-wrap {
+        background: transparent;
+        padding: 0;
+        margin: 60px -48px 0;
+        @include xl {
+            .marquee__group .m-item {
+                img {
+                    width: 60px;
+                }
+            }
+        }
+    }
+    @include xl {
+        padding: 40px 30px;
+    }
+    @include md {
+        flex: auto;
+    }
+}
+
+/*feature area 6***********************/
+.feature-card6 {
+    text-align: center;
+    .box-icon {
+        margin-bottom: 28px;
+    }
+    .box-title {
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        margin-bottom: 6px;
+    }
+    .box-text {
+        margin-bottom: -0.3em;
+    }
+}

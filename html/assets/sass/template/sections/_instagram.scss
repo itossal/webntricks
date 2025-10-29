@@ -1,0 +1,37 @@
+/*instagram area 1***********************/
+.instagram-card {
+    display: block;
+    position: relative;
+    img {
+        width: 100%;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: $title-color;
+        opacity: 0;
+        transition: 0.4s;
+    }
+    .icon-btn {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        border-radius: 50%;
+        background: transparent;
+        color: $white-color;
+        z-index: 1;
+        opacity: 0;
+        font-size: 24px;
+    }
+    &:hover {
+        &:after {
+            opacity: 0.3;
+        }
+        .icon-btn {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+}

@@ -1,0 +1,91 @@
+/* Service 1 ---------------------------------- */
+.service-area-1 {
+    margin-top: 100px;
+    .service-img-1-1 {
+        width: 44%;
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    @media (max-width: 1700px) {
+        .service-img-1-1 {
+            width: 42%;
+            img {
+                height: 100%;
+            }
+        }
+    }
+    @include xxl {
+        .service-img-1-1 {
+            width: 42%;
+            img {
+                height: 100%;
+            }
+        }
+    }
+    @include md {
+        margin-top: 0;
+        .service-img-1-1 {
+            width: 100%;
+            top: -80px !important;
+            position: relative;
+        }
+    }
+}
+
+/* Service 2 ---------------------------------- */
+.service-card2 {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid $title-color;
+    padding-top: 44px;
+    padding-bottom: 44px;
+    &:last-child {
+        border-bottom: 2px solid $title-color;
+    }
+    .box-number {
+        font-size: 14px;
+        font-weight: 600;
+        font-family: $title-font;
+        letter-spacing: -0.01em;
+        flex: 0 0 70px;
+    }
+    .box-title {
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        margin-bottom: 15px;
+    }
+    .box-text {
+        font-size: 18px;
+        margin-bottom: -0.2em;
+        @include ml {
+            font-size: 16px;
+        }
+    }
+    .box-icon {
+        flex: 0 0 154px;
+        text-align: end;
+    }
+    @include xs {
+        flex-wrap: wrap;
+        .box-number {
+            order: 2;
+            flex: none;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .box-icon {
+            order: 1;
+            flex: none;
+            width: 100%;
+            text-align: start;
+            margin-bottom: 20px;
+        }
+        .box-content {
+            order: 3;
+        }
+    }
+}

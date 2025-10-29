@@ -1,0 +1,37 @@
+/*contact area 1***********************/
+.contact-area-1 {
+    margin-top: 100px;
+    .contact-map {
+        width: 42%;
+        iframe {
+            height: 100%;
+            min-height: 400px;
+        }
+    }
+    @include md {
+        margin-top: 0;
+        .contact-map {
+            width: 100%;
+            top: -80px !important;
+            position: relative;
+        }
+    }
+}
+.contact-card {
+    &:not(:last-child) {
+        margin-bottom: 35px;
+    }
+    .box-title {
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        margin-bottom: 5px;
+    }
+    .box-text {
+        font-family: $title-font;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        margin-bottom: 0;
+    }
+}

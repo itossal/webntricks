@@ -1,0 +1,45 @@
+/*offer area 1***********************/
+.offer-card {
+    padding: 48px 44px;
+    @include md {
+        padding: 32px;
+    }
+    .box-content {
+        position: relative;
+        z-index: 1;
+    }
+    .box-subtitle {
+        font-size: 18px;
+        font-weight: 400;
+        color: $white-color;
+        margin-bottom: 10px;
+        display: block;
+        @include xs {
+            font-size: 16px;
+        }
+    }
+    .box-title {
+        font-size: 36px;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        max-width: 420px;
+        line-height: 1.2777;
+        color: $white-color;
+        margin-top: 0;
+        @include lg {
+            font-size: 30px;
+        }
+        @include md {
+            font-size: 24px;
+        }
+        @include xs {
+            font-size: 22px;
+        }
+    }
+    .btn-wrap {
+        margin-top: 314px;
+        @include md {
+            margin-top: 150px;
+        }
+    }
+}
