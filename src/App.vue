@@ -27,6 +27,7 @@ import ScrollTopButton from '@/components/layout/ScrollTopButton.vue'
 import SearchPopup from '@/components/layout/SearchPopup.vue'
 import SideMenu from '@/components/layout/SideMenu.vue'
 import { destroyMarquees, initMarquees } from '@/utils/marquee'
+import { ensureLegacyScripts, refreshLegacyScripts } from '@/utils/legacyScripts'
 
 const router = useRouter()
 const route = useRoute()
@@ -78,11 +79,13 @@ const hydrateMarquees = async () => {
 }
 
 onMounted(async () => {
+  await ensureLegacyScripts()
   setTimeout(() => {
     isPreloading.value = false
   }, 600)
 
   await hydrateMarquees()
+  await refreshLegacyScripts()
 })
 
 const htmlLinkRegex = /\.html$/
@@ -153,7 +156,9 @@ watch(
   async () => {
     closeAll()
     window.scrollTo({ top: 0, behavior: 'auto' })
+    await ensureLegacyScripts()
     await hydrateMarquees()
+    await refreshLegacyScripts()
   }
 )
 
