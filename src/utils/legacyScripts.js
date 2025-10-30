@@ -32,11 +32,34 @@ const hasGsapPlugin = (name) => () => {
   return hasWindowMember(name)()
 }
 
+let pendingGsapRegistrationRetry
+
+const scheduleGsapPluginRegistrationRetry = () => {
+  if (!isBrowser) return
+  if (pendingGsapRegistrationRetry) {
+    return
+  }
+  pendingGsapRegistrationRetry = window.setTimeout(() => {
+    pendingGsapRegistrationRetry = undefined
+    ensureGsapPluginRegistration()
+  }, 50)
+}
+
+const isScrollTriggerCoreReady = () => {
+  if (!isBrowser) return false
+  const { ScrollTrigger } = window
+  if (!ScrollTrigger || !ScrollTrigger.core) {
+    return false
+  }
+  return typeof ScrollTrigger.core._getVelocityProp === 'function'
+}
+
 const ensureGsapPluginRegistration = () => {
   if (!isBrowser) return
 
   const { gsap, ScrollTrigger, ScrollSmoother } = window
   if (!gsap || typeof gsap.registerPlugin !== 'function') {
+    scheduleGsapPluginRegistrationRetry()
     return
   }
 
@@ -59,11 +82,23 @@ const ensureGsapPluginRegistration = () => {
       gsap.registerPlugin(plugin)
     } catch (error) {
       console.error(`Failed to register GSAP plugin: ${name}`, error)
+      scheduleGsapPluginRegistrationRetry()
     }
   }
 
-  registerIfAvailable(ScrollTrigger, 'ScrollTrigger')
-  registerIfAvailable(ScrollSmoother, 'ScrollSmoother')
+  if (ScrollTrigger) {
+    registerIfAvailable(ScrollTrigger, 'ScrollTrigger')
+  } else {
+    scheduleGsapPluginRegistrationRetry()
+  }
+
+  if (ScrollSmoother) {
+    if (!isScrollTriggerCoreReady()) {
+      scheduleGsapPluginRegistrationRetry()
+      return
+    }
+    registerIfAvailable(ScrollSmoother, 'ScrollSmoother')
+  }
 }
 
 const scriptManifest = [
