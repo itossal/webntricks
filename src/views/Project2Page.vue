@@ -4,7 +4,7 @@
 <!--==============================
     Breadcumb
     ============================== -->
-    <div class="breadcumb-wrapper " :data-bg-src="asset('/assets/img/bg/breadcumb-bg1-7.jpg')">
+    <div class="breadcumb-wrapper " :data-bg-src="asset('/img/bg/breadcumb-bg1-7.jpg')">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Portfolio</h1>
@@ -21,7 +21,7 @@
                 <div class="col-lg-7">
                     <a href="project-details.html" class="portfolio-wrap style3">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio3_1.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio3_1.jpg')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <ul class="portfolio-meta">
@@ -34,7 +34,7 @@
                 <div class="col-lg-5">
                     <a href="project-details.html" class="portfolio-wrap style3">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio3_2.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio3_2.jpg')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <ul class="portfolio-meta">
@@ -47,7 +47,7 @@
                 <div class="col-lg-12">
                     <a href="project-details.html" class="portfolio-wrap style3">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio3_3.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio3_3.jpg')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <ul class="portfolio-meta">
@@ -60,7 +60,7 @@
                 <div class="col-lg-5">
                     <a href="project-details.html" class="portfolio-wrap style3">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio3_4.png')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio3_4.png')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <ul class="portfolio-meta">
@@ -73,7 +73,7 @@
                 <div class="col-lg-7">
                     <a href="project-details.html" class="portfolio-wrap style3">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio3_5.png')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio3_5.png')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <ul class="portfolio-meta">
@@ -86,7 +86,7 @@
                 <div class="col-lg-12">
                     <a href="project-details.html" class="portfolio-wrap style3">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio3_6.png')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio3_6.png')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <ul class="portfolio-meta">

@@ -30,7 +30,7 @@
                     <div class="portfolio-wrap">
                         <div class="portfolio-thumb">
                             <a href="project-details.html">
-                                <img :src="asset('/assets/img/portfolio/portfolio4_1.png')" alt="portfolio">
+                                <img :src="asset('/img/portfolio/portfolio4_1.png')" alt="portfolio">
                             </a>
                         </div>
                         <div class="portfolio-details">
@@ -47,7 +47,7 @@
                     <div class="portfolio-wrap">
                         <div class="portfolio-thumb">
                             <a href="project-details.html">
-                                <img :src="asset('/assets/img/portfolio/portfolio4_2.png')" alt="portfolio">
+                                <img :src="asset('/img/portfolio/portfolio4_2.png')" alt="portfolio">
                             </a>
                         </div>
                         <div class="portfolio-details">
@@ -63,7 +63,7 @@
                     <div class="portfolio-wrap">
                         <div class="portfolio-thumb">
                             <a href="project-details.html">
-                                <img :src="asset('/assets/img/portfolio/portfolio4_3.png')" alt="portfolio">
+                                <img :src="asset('/img/portfolio/portfolio4_3.png')" alt="portfolio">
                             </a>
                         </div>
                         <div class="portfolio-details">
@@ -79,7 +79,7 @@
                     <div class="portfolio-wrap">
                         <div class="portfolio-thumb">
                             <a href="project-details.html">
-                                <img :src="asset('/assets/img/portfolio/portfolio4_4.png')" alt="portfolio">
+                                <img :src="asset('/img/portfolio/portfolio4_4.png')" alt="portfolio">
                             </a>
                         </div>
                         <div class="portfolio-details">
@@ -96,7 +96,7 @@
                     <div class="portfolio-wrap">
                         <div class="portfolio-thumb">
                             <a href="project-details.html">
-                                <img :src="asset('/assets/img/portfolio/portfolio4_5.png')" alt="portfolio">
+                                <img :src="asset('/img/portfolio/portfolio4_5.png')" alt="portfolio">
                             </a>
                         </div>
                         <div class="portfolio-details">
@@ -113,7 +113,7 @@
                     <div class="portfolio-wrap">
                         <div class="portfolio-thumb">
                             <a href="project-details.html">
-                                <img :src="asset('/assets/img/portfolio/portfolio4_6.png')" alt="portfolio">
+                                <img :src="asset('/img/portfolio/portfolio4_6.png')" alt="portfolio">
                             </a>
                         </div>
                         <div class="portfolio-details">
@@ -130,7 +130,7 @@
                     <div class="portfolio-wrap">
                         <div class="portfolio-thumb">
                             <a href="project-details.html">
-                                <img :src="asset('/assets/img/portfolio/portfolio4_7.png')" alt="portfolio">
+                                <img :src="asset('/img/portfolio/portfolio4_7.png')" alt="portfolio">
                             </a>
                         </div>
                         <div class="portfolio-details">
@@ -146,7 +146,7 @@
                     <div class="portfolio-wrap">
                         <div class="portfolio-thumb">
                             <a href="project-details.html">
-                                <img :src="asset('/assets/img/portfolio/portfolio4_8.png')" alt="portfolio">
+                                <img :src="asset('/img/portfolio/portfolio4_8.png')" alt="portfolio">
                             </a>
                         </div>
                         <div class="portfolio-details">
@@ -163,7 +163,7 @@
                     <div class="portfolio-wrap">
                         <div class="portfolio-thumb">
                             <a href="project-details.html">
-                                <img :src="asset('/assets/img/portfolio/portfolio4_9.png')" alt="portfolio">
+                                <img :src="asset('/img/portfolio/portfolio4_9.png')" alt="portfolio">
                             </a>
                         </div>
                         <div class="portfolio-details">
@@ -179,7 +179,7 @@
                     <div class="portfolio-wrap">
                         <div class="portfolio-thumb">
                             <a href="project-details.html">
-                                <img :src="asset('/assets/img/portfolio/portfolio4_10.png')" alt="portfolio">
+                                <img :src="asset('/img/portfolio/portfolio4_10.png')" alt="portfolio">
                             </a>
                         </div>
                         <div class="portfolio-details">

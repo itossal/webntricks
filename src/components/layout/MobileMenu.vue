@@ -5,7 +5,7 @@
         <i class="fas fa-times"></i>
       </button>
       <div class="mobile-logo">
-        <a href="index.html"><img :src="asset('/assets/img/logo.svg')" alt="Ovation" /></a>
+        <a href="index.html"><img :src="asset('/img/logo.svg')" alt="Ovation" /></a>
       </div>
       <div class="mobile-menu" ref="menuRoot">
         <ul>

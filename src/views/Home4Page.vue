@@ -6,7 +6,7 @@
     ==============================-->
     <div class="hero-wrapper hero-4" id="hero">
         <div class="hero-4-thumb img-custom-anim-left wow shape-mockup" data-left="0">
-            <img class="w-100" :src="asset('/assets/img/hero/hero-4-1.jpg')" alt="img">
+            <img class="w-100" :src="asset('/img/hero/hero-4-1.jpg')" alt="img">
         </div>
         <div class="bg-theme">
             <div class="container">
@@ -24,8 +24,8 @@
                                 </a>
                             </div>
                             <div class="hero-thumb-group img-custom-anim-right wow">
-                                <img class="img1" :src="asset('/assets/img/hero/hero-counter1-1.png')" alt="img">
-                                <img class="img2" :src="asset('/assets/img/hero/hero-counter1-2.png')" alt="img">
+                                <img class="img1" :src="asset('/img/hero/hero-counter1-1.png')" alt="img">
+                                <img class="img2" :src="asset('/img/hero/hero-counter1-2.png')" alt="img">
                                 <div class="hero-counter counter-item">
                                     <span class="counter-number">10</span>K
                                 </div>
@@ -61,7 +61,7 @@
                                 <div class="col-md-6">
                                     <div class="feature-card">
                                         <div class="feature-card-icon">
-                                            <img :src="asset('/assets/img/icon/feature-icon1-1.svg')" alt="icon">
+                                            <img :src="asset('/img/icon/feature-icon1-1.svg')" alt="icon">
                                         </div>
                                         <h4 class="feature-card-title">
                                             <a href="service.html">Social Advertising</a>
@@ -72,14 +72,14 @@
                                                 <span class="effect-1">VIEW DETAILS</span>
                                                 <span class="effect-1">VIEW DETAILS</span>
                                             </span>
-                                            <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                            <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="feature-card">
                                         <div class="feature-card-icon">
-                                            <img :src="asset('/assets/img/icon/feature-icon1-2.svg')" alt="icon">
+                                            <img :src="asset('/img/icon/feature-icon1-2.svg')" alt="icon">
                                         </div>
                                         <h4 class="feature-card-title">
                                             <a href="service.html">SEO Optimization</a>
@@ -90,7 +90,7 @@
                                                 <span class="effect-1">VIEW DETAILS</span>
                                                 <span class="effect-1">VIEW DETAILS</span>
                                             </span>
-                                            <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                            <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                                         </a>
                                     </div>
                                 </div>
@@ -101,7 +101,7 @@
                                 <div class="col-md-6">
                                     <div class="feature-card">
                                         <div class="feature-card-icon">
-                                            <img :src="asset('/assets/img/icon/feature-icon1-3.svg')" alt="icon">
+                                            <img :src="asset('/img/icon/feature-icon1-3.svg')" alt="icon">
                                         </div>
                                         <h4 class="feature-card-title">
                                             <a href="service.html">Content Creation</a>
@@ -112,14 +112,14 @@
                                                 <span class="effect-1">VIEW DETAILS</span>
                                                 <span class="effect-1">VIEW DETAILS</span>
                                             </span>
-                                            <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                            <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="feature-card">
                                         <div class="feature-card-icon">
-                                            <img :src="asset('/assets/img/icon/feature-icon1-4.svg')" alt="icon">
+                                            <img :src="asset('/img/icon/feature-icon1-4.svg')" alt="icon">
                                         </div>
                                         <h4 class="feature-card-title">
                                             <a href="service.html">Email Marketing</a>
@@ -130,7 +130,7 @@
                                                 <span class="effect-1">VIEW DETAILS</span>
                                                 <span class="effect-1">VIEW DETAILS</span>
                                             </span>
-                                            <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                            <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                                         </a>
                                     </div>
                                 </div>
@@ -153,48 +153,48 @@
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-1.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-1.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-1.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-1.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-2.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-2.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-2.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-2.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-3.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-3.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-3.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-3.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-4.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-4.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-4.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-4.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-7.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-7.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-7.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-7.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-5.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-5.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-5.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-5.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>
@@ -220,7 +220,7 @@
                 <div class="col-xxl-auto col-lg-7 filter-item">
                     <a href="project-details.html" class="portfolio-wrap style3">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio3_1.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio3_1.jpg')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <ul class="portfolio-meta">
@@ -233,7 +233,7 @@
                 <div class="col-xxl-auto col-lg-5 filter-item">
                     <a href="project-details.html" class="portfolio-wrap style3">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio3_2.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio3_2.jpg')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <ul class="portfolio-meta">
@@ -246,7 +246,7 @@
                 <div class="col-xxl-auto filter-item">
                     <a href="project-details.html" class="portfolio-wrap style3">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio3_3.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio3_3.jpg')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <ul class="portfolio-meta">
@@ -273,7 +273,7 @@
     ==============================-->
     <div class="why-area-1 space bg-theme">
         <div class="why-img-1-1 shape-mockup wow img-custom-anim-right" data-wow-duration="1.5s" data-wow-delay="0.2s" data-right="0" data-top="-100px" data-bottom="140px">
-            <img :src="asset('/assets/img/normal/about_4-1.jpg')" alt="img">
+            <img :src="asset('/img/normal/about_4-1.jpg')" alt="img">
         </div>
         <div class="container">
             <div class="row">
@@ -489,7 +489,7 @@
                 <div class="col-lg-4 col-md-6">
                     <a href="blog-details.html" class="blog-card style2">
                         <div class="blog-img">
-                            <img :src="asset('/assets/img/blog/blog_2_1.png')" alt="blog image">
+                            <img :src="asset('/img/blog/blog_2_1.png')" alt="blog image">
                         </div>
                         <div class="blog-content">
                             <div class="post-meta-item blog-meta">
@@ -502,7 +502,7 @@
                                     <span class="effect-1">READ MORE</span>
                                     <span class="effect-1">READ MORE</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </span>
                         </div>
                     </a>
@@ -510,7 +510,7 @@
                 <div class="col-lg-4 col-md-6">
                     <a href="blog-details.html" class="blog-card style2">
                         <div class="blog-img">
-                            <img :src="asset('/assets/img/blog/blog_2_2.png')" alt="blog image">
+                            <img :src="asset('/img/blog/blog_2_2.png')" alt="blog image">
                         </div>
                         <div class="blog-content">
                             <div class="post-meta-item blog-meta">
@@ -523,7 +523,7 @@
                                     <span class="effect-1">READ MORE</span>
                                     <span class="effect-1">READ MORE</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </span>
                         </div>
                     </a>
@@ -531,7 +531,7 @@
                 <div class="col-lg-4 col-md-6">
                     <a href="blog-details.html" class="blog-card style2">
                         <div class="blog-img">
-                            <img :src="asset('/assets/img/blog/blog_2_3.png')" alt="blog image">
+                            <img :src="asset('/img/blog/blog_2_3.png')" alt="blog image">
                         </div>
                         <div class="blog-content">
                             <div class="post-meta-item blog-meta">
@@ -544,7 +544,7 @@
                                     <span class="effect-1">READ MORE</span>
                                     <span class="effect-1">READ MORE</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </span>
                         </div>
                     </a>

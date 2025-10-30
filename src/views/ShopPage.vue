@@ -4,7 +4,7 @@
 <!--==============================
     Breadcumb
     ============================== -->
-    <div class="breadcumb-wrapper " :data-bg-src="asset('/assets/img/bg/breadcumb-bg1-9.jpg')">
+    <div class="breadcumb-wrapper " :data-bg-src="asset('/img/bg/breadcumb-bg1-9.jpg')">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Shop</h1>
@@ -42,7 +42,7 @@
                             <div class="col-sm-6">
                                 <div class="product-card">
                                     <div class="product-img">
-                                        <img :src="asset('/assets/img/product/product_1_1.jpg')" alt="Product Image">
+                                        <img :src="asset('/img/product/product_1_1.jpg')" alt="Product Image">
                                         <div class="actions">
                                             <a href="cart.html" class="btn">
                                                 <span class="link-effect">
@@ -62,7 +62,7 @@
                             <div class="col-sm-6">
                                 <div class="product-card">
                                     <div class="product-img">
-                                        <img :src="asset('/assets/img/product/product_1_2.jpg')" alt="Product Image">
+                                        <img :src="asset('/img/product/product_1_2.jpg')" alt="Product Image">
                                         <div class="actions">
                                             <a href="cart.html" class="btn">
                                                 <span class="link-effect">
@@ -81,7 +81,7 @@
                             <div class="col-sm-6">
                                 <div class="product-card">
                                     <div class="product-img">
-                                        <img :src="asset('/assets/img/product/product_1_3.jpg')" alt="Product Image">
+                                        <img :src="asset('/img/product/product_1_3.jpg')" alt="Product Image">
                                         <div class="actions">
                                             <a href="cart.html" class="btn">
                                                 <span class="link-effect">
@@ -100,7 +100,7 @@
                             <div class="col-sm-6">
                                 <div class="product-card">
                                     <div class="product-img">
-                                        <img :src="asset('/assets/img/product/product_1_4.jpg')" alt="Product Image">
+                                        <img :src="asset('/img/product/product_1_4.jpg')" alt="Product Image">
                                         <div class="actions">
                                             <a href="cart.html" class="btn">
                                                 <span class="link-effect">
@@ -119,7 +119,7 @@
                             <div class="col-sm-6">
                                 <div class="product-card">
                                     <div class="product-img">
-                                        <img :src="asset('/assets/img/product/product_1_5.jpg')" alt="Product Image">
+                                        <img :src="asset('/img/product/product_1_5.jpg')" alt="Product Image">
                                         <div class="actions">
                                             <a href="cart.html" class="btn">
                                                 <span class="link-effect">
@@ -138,7 +138,7 @@
                             <div class="col-sm-6">
                                 <div class="product-card">
                                     <div class="product-img">
-                                        <img :src="asset('/assets/img/product/product_1_6.jpg')" alt="Product Image">
+                                        <img :src="asset('/img/product/product_1_6.jpg')" alt="Product Image">
                                         <div class="actions">
                                             <a href="cart.html" class="btn">
                                                 <span class="link-effect">
@@ -158,7 +158,7 @@
                             <div class="col-sm-6">
                                 <div class="product-card">
                                     <div class="product-img">
-                                        <img :src="asset('/assets/img/product/product_1_7.jpg')" alt="Product Image">
+                                        <img :src="asset('/img/product/product_1_7.jpg')" alt="Product Image">
                                         <div class="actions">
                                             <a href="cart.html" class="btn">
                                                 <span class="link-effect">
@@ -178,7 +178,7 @@
                             <div class="col-sm-6">
                                 <div class="product-card">
                                     <div class="product-img">
-                                        <img :src="asset('/assets/img/product/product_1_8.jpg')" alt="Product Image">
+                                        <img :src="asset('/img/product/product_1_8.jpg')" alt="Product Image">
                                         <div class="actions">
                                             <a href="cart.html" class="btn">
                                                 <span class="link-effect">

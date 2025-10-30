@@ -6,7 +6,7 @@
     ==============================-->
     <div class="hero-wrapper hero-18" id="hero">
         <div class="global-carousel" id="heroSlider18" data-fade="true" data-slide-show="1" data-lg-slide-show="1" data-md-slide-show="1" data-sm-slide-show="1" data-xs-slide-show="1" data-arrows="false">
-            <div class="hero-slider" :data-bg-src="asset('/assets/img/hero/hero-18-1.jpg')">
+            <div class="hero-slider" :data-bg-src="asset('/img/hero/hero-18-1.jpg')">
                 <div class="hero-overlay" data-overlay="title" data-opacity="3"></div>
                 <div class="container container3">
                     <div class="row">
@@ -24,7 +24,7 @@
                     </div>
                 </div>
             </div>
-            <div class="hero-slider" :data-bg-src="asset('/assets/img/hero/hero-18-2.jpg')">
+            <div class="hero-slider" :data-bg-src="asset('/img/hero/hero-18-2.jpg')">
                 <div class="hero-overlay" data-overlay="title" data-opacity="3"></div>
                 <div class="container container3">
                     <div class="row">
@@ -57,7 +57,7 @@
         <div class="container container3">
             <div class="row gy-4">
                 <div class="col-md-6">
-                    <div class="offer-card" data-overlay="title" data-opacity="2" :data-bg-src="asset('/assets/img/normal/offer-card1-1.jpg')">
+                    <div class="offer-card" data-overlay="title" data-opacity="2" :data-bg-src="asset('/img/normal/offer-card1-1.jpg')">
                         <div class="box-content">
                             <span class="box-subtitle">Best summer collections</span>
                             <h4 class="box-title">Adidas Premium Clothes</h4>
@@ -73,7 +73,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="offer-card" data-overlay="title" data-opacity="2" :data-bg-src="asset('/assets/img/normal/offer-card1-2.jpg')">
+                    <div class="offer-card" data-overlay="title" data-opacity="2" :data-bg-src="asset('/img/normal/offer-card1-2.jpg')">
                         <div class="box-content">
                             <span class="box-subtitle">Running and lifestyle shoes</span>
                             <h4 class="box-title">Nike Sneakers Everyday</h4>
@@ -104,7 +104,7 @@
                 <div class="col-xl-3 col-sm-6">
                     <div class="product-card">
                         <div class="product-img">
-                            <img :src="asset('/assets/img/product/product_1_1.jpg')" alt="Product Image">
+                            <img :src="asset('/img/product/product_1_1.jpg')" alt="Product Image">
                             <div class="actions">
                                 <a href="cart.html" class="btn">
                                     <span class="link-effect">
@@ -124,7 +124,7 @@
                 <div class="col-xl-3 col-sm-6">
                     <div class="product-card">
                         <div class="product-img">
-                            <img :src="asset('/assets/img/product/product_1_2.jpg')" alt="Product Image">
+                            <img :src="asset('/img/product/product_1_2.jpg')" alt="Product Image">
                             <div class="actions">
                                 <a href="cart.html" class="btn">
                                     <span class="link-effect">
@@ -143,7 +143,7 @@
                 <div class="col-xl-3 col-sm-6">
                     <div class="product-card">
                         <div class="product-img">
-                            <img :src="asset('/assets/img/product/product_1_3.jpg')" alt="Product Image">
+                            <img :src="asset('/img/product/product_1_3.jpg')" alt="Product Image">
                             <div class="actions">
                                 <a href="cart.html" class="btn">
                                     <span class="link-effect">
@@ -162,7 +162,7 @@
                 <div class="col-xl-3 col-sm-6">
                     <div class="product-card">
                         <div class="product-img">
-                            <img :src="asset('/assets/img/product/product_1_4.jpg')" alt="Product Image">
+                            <img :src="asset('/img/product/product_1_4.jpg')" alt="Product Image">
                             <div class="actions">
                                 <a href="cart.html" class="btn">
                                     <span class="link-effect">
@@ -181,7 +181,7 @@
                 <div class="col-xl-3 col-sm-6">
                     <div class="product-card">
                         <div class="product-img">
-                            <img :src="asset('/assets/img/product/product_1_5.jpg')" alt="Product Image">
+                            <img :src="asset('/img/product/product_1_5.jpg')" alt="Product Image">
                             <div class="actions">
                                 <a href="cart.html" class="btn">
                                     <span class="link-effect">
@@ -200,7 +200,7 @@
                 <div class="col-xl-3 col-sm-6">
                     <div class="product-card">
                         <div class="product-img">
-                            <img :src="asset('/assets/img/product/product_1_6.jpg')" alt="Product Image">
+                            <img :src="asset('/img/product/product_1_6.jpg')" alt="Product Image">
                             <div class="actions">
                                 <a href="cart.html" class="btn">
                                     <span class="link-effect">
@@ -220,7 +220,7 @@
                 <div class="col-xl-3 col-sm-6">
                     <div class="product-card">
                         <div class="product-img">
-                            <img :src="asset('/assets/img/product/product_1_7.jpg')" alt="Product Image">
+                            <img :src="asset('/img/product/product_1_7.jpg')" alt="Product Image">
                             <div class="actions">
                                 <a href="cart.html" class="btn">
                                     <span class="link-effect">
@@ -240,7 +240,7 @@
                 <div class="col-xl-3 col-sm-6">
                     <div class="product-card">
                         <div class="product-img">
-                            <img :src="asset('/assets/img/product/product_1_8.jpg')" alt="Product Image">
+                            <img :src="asset('/img/product/product_1_8.jpg')" alt="Product Image">
                             <div class="actions">
                                 <a href="cart.html" class="btn">
                                     <span class="link-effect">
@@ -275,7 +275,7 @@
                         <div class="form-group mb-0">
                             <input class="form-control" type="email" placeholder="Your email here" required="">
                         </div>
-                        <button type="submit" class="btn"><img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt=""></button>
+                        <button type="submit" class="btn"><img :src="asset('/img/icon/arrow-left-top.svg')" alt=""></button>
                     </form>
                 </div>
             </div>
@@ -287,7 +287,7 @@
     ==============================-->
     <div class="cta-area-3 overflow-hidden text-center">
         <div class="cta-wrap3">
-            <div class="jarallax cta-bg-thumb" data-overlay="title" data-opacity="4" :data-bg-src="asset('/assets/img/normal/cta_4-1.jpg')"></div>
+            <div class="jarallax cta-bg-thumb" data-overlay="title" data-opacity="4" :data-bg-src="asset('/img/normal/cta_4-1.jpg')"></div>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-9">
@@ -395,7 +395,7 @@
             <div class="row global-carousel instagram-slider1" data-slide-show="5" data-lg-slide-show="4" data-md-slide-show="3" data-sm-slide-show="2" data-xs-slide-show="2" data-dots="false" data-arrows="false">
                 <div class="col-lg-12">
                     <a class="instagram-card" href="https://www.instagram.com/">
-                        <img :src="asset('/assets/img/instagram/1-1.jpg')" alt="img">
+                        <img :src="asset('/img/instagram/1-1.jpg')" alt="img">
                         <span class="icon-btn">
                             <i class="fab fa-instagram"></i>
                         </span>
@@ -403,7 +403,7 @@
                 </div>
                 <div class="col-lg-12">
                     <a class="instagram-card" href="https://www.instagram.com/">
-                        <img :src="asset('/assets/img/instagram/1-2.jpg')" alt="img">
+                        <img :src="asset('/img/instagram/1-2.jpg')" alt="img">
                         <span class="icon-btn">
                             <i class="fab fa-instagram"></i>
                         </span>
@@ -411,7 +411,7 @@
                 </div>
                 <div class="col-lg-12">
                     <a class="instagram-card" href="https://www.instagram.com/">
-                        <img :src="asset('/assets/img/instagram/1-3.jpg')" alt="img">
+                        <img :src="asset('/img/instagram/1-3.jpg')" alt="img">
                         <span class="icon-btn">
                             <i class="fab fa-instagram"></i>
                         </span>
@@ -419,7 +419,7 @@
                 </div>
                 <div class="col-lg-12">
                     <a class="instagram-card" href="https://www.instagram.com/">
-                        <img :src="asset('/assets/img/instagram/1-4.jpg')" alt="img">
+                        <img :src="asset('/img/instagram/1-4.jpg')" alt="img">
                         <span class="icon-btn">
                             <i class="fab fa-instagram"></i>
                         </span>
@@ -427,7 +427,7 @@
                 </div>
                 <div class="col-lg-12">
                     <a class="instagram-card" href="https://www.instagram.com/">
-                        <img :src="asset('/assets/img/instagram/1-5.jpg')" alt="img">
+                        <img :src="asset('/img/instagram/1-5.jpg')" alt="img">
                         <span class="icon-btn">
                             <i class="fab fa-instagram"></i>
                         </span>
@@ -435,7 +435,7 @@
                 </div>
                 <div class="col-lg-12">
                     <a class="instagram-card" href="https://www.instagram.com/">
-                        <img :src="asset('/assets/img/instagram/1-1.jpg')" alt="img">
+                        <img :src="asset('/img/instagram/1-1.jpg')" alt="img">
                         <span class="icon-btn">
                             <i class="fab fa-instagram"></i>
                         </span>
@@ -443,7 +443,7 @@
                 </div>
                 <div class="col-lg-12">
                     <a class="instagram-card" href="https://www.instagram.com/">
-                        <img :src="asset('/assets/img/instagram/1-2.jpg')" alt="img">
+                        <img :src="asset('/img/instagram/1-2.jpg')" alt="img">
                         <span class="icon-btn">
                             <i class="fab fa-instagram"></i>
                         </span>
@@ -451,7 +451,7 @@
                 </div>
                 <div class="col-lg-12">
                     <a class="instagram-card" href="https://www.instagram.com/">
-                        <img :src="asset('/assets/img/instagram/1-3.jpg')" alt="img">
+                        <img :src="asset('/img/instagram/1-3.jpg')" alt="img">
                         <span class="icon-btn">
                             <i class="fab fa-instagram"></i>
                         </span>
@@ -459,7 +459,7 @@
                 </div>
                 <div class="col-lg-12">
                     <a class="instagram-card" href="https://www.instagram.com/">
-                        <img :src="asset('/assets/img/instagram/1-4.jpg')" alt="img">
+                        <img :src="asset('/img/instagram/1-4.jpg')" alt="img">
                         <span class="icon-btn">
                             <i class="fab fa-instagram"></i>
                         </span>
@@ -467,7 +467,7 @@
                 </div>
                 <div class="col-lg-12">
                     <a class="instagram-card" href="https://www.instagram.com/">
-                        <img :src="asset('/assets/img/instagram/1-5.jpg')" alt="img">
+                        <img :src="asset('/img/instagram/1-5.jpg')" alt="img">
                         <span class="icon-btn">
                             <i class="fab fa-instagram"></i>
                         </span>

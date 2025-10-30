@@ -6,7 +6,7 @@
     ==============================-->
     <div class="hero-wrapper hero-15" id="hero">
         <div class="hero-thumb-15-2 wow img-custom-anim-right" data-wow-duration="1.5s" data-wow-delay="0.2s">
-            <img :src="asset('/assets/img/hero/hero-15-2.jpg')" alt="img">
+            <img :src="asset('/img/hero/hero-15-2.jpg')" alt="img">
         </div>
         <div class="hero-inner bg-title">
             <div class="container">
@@ -38,7 +38,7 @@
             </div>
         </div>
         <div class="hero-thumb-15-1 wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.2s">
-            <img :src="asset('/assets/img/hero/hero-15-1.jpg')" alt="img">
+            <img :src="asset('/img/hero/hero-15-1.jpg')" alt="img">
         </div>        
     </div>
     <!--======== / Hero Section ========-->
@@ -91,7 +91,7 @@
                         </ul>
                     </div>
                     <div class="feature-card-icon">
-                        <img :src="asset('/assets/img/icon/feature-icon1-1.svg')" alt="icon">
+                        <img :src="asset('/img/icon/feature-icon1-1.svg')" alt="icon">
                     </div>  
                 </div>
                 <div class="feature-card style4">
@@ -107,7 +107,7 @@
                         </ul>
                     </div>
                     <div class="feature-card-icon">
-                        <img :src="asset('/assets/img/icon/feature-icon1-2.svg')" alt="icon">
+                        <img :src="asset('/img/icon/feature-icon1-2.svg')" alt="icon">
                     </div>  
                 </div>
                 <div class="feature-card style4">
@@ -123,7 +123,7 @@
                         </ul>
                     </div>
                     <div class="feature-card-icon">
-                        <img :src="asset('/assets/img/icon/feature-icon1-3.svg')" alt="icon">
+                        <img :src="asset('/img/icon/feature-icon1-3.svg')" alt="icon">
                     </div>  
                 </div>
                 <div class="feature-card style4">
@@ -139,7 +139,7 @@
                         </ul>
                     </div>
                     <div class="feature-card-icon">
-                        <img :src="asset('/assets/img/icon/feature-icon1-4.svg')" alt="icon">
+                        <img :src="asset('/img/icon/feature-icon1-4.svg')" alt="icon">
                     </div>  
                 </div>
             </div>
@@ -160,7 +160,7 @@
                 <div class="portfolio-wrap style15">
                     <div class="portfolio-thumb wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.2s">
                         <a href="project-details.html">
-                            <img :src="asset('/assets/img/portfolio/portfolio8_3.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio8_3.jpg')" alt="portfolio">
                         </a>
                     </div>
                     <div class="portfolio-details">
@@ -178,7 +178,7 @@
                                     <span class="effect-1">VIEW PROJECT</span>
                                     <span class="effect-1">VIEW PROJECT</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -186,7 +186,7 @@
                 <div class="portfolio-wrap style15">
                     <div class="portfolio-thumb wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.2s">
                         <a href="project-details.html">
-                            <img :src="asset('/assets/img/portfolio/portfolio8_4.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio8_4.jpg')" alt="portfolio">
                         </a>
                     </div>
                     <div class="portfolio-details">
@@ -204,7 +204,7 @@
                                     <span class="effect-1">VIEW PROJECT</span>
                                     <span class="effect-1">VIEW PROJECT</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -212,7 +212,7 @@
                 <div class="portfolio-wrap style15">
                     <div class="portfolio-thumb wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.2s">
                         <a href="project-details.html">
-                            <img :src="asset('/assets/img/portfolio/portfolio8_5.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio8_5.jpg')" alt="portfolio">
                         </a>
                     </div>
                     <div class="portfolio-details">
@@ -230,7 +230,7 @@
                                     <span class="effect-1">VIEW PROJECT</span>
                                     <span class="effect-1">VIEW PROJECT</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -238,7 +238,7 @@
                 <div class="portfolio-wrap style15">
                     <div class="portfolio-thumb wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.2s">
                         <a href="project-details.html">
-                            <img :src="asset('/assets/img/portfolio/portfolio8_2.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio8_2.jpg')" alt="portfolio">
                         </a>
                     </div>
                     <div class="portfolio-details">
@@ -256,7 +256,7 @@
                                     <span class="effect-1">VIEW PROJECT</span>
                                     <span class="effect-1">VIEW PROJECT</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -281,7 +281,7 @@
                 <div class="col-lg-4">
                     <div class="testi-box style5">
                         <div class="testi-box_img">
-                            <img :src="asset('/assets/img/testimonial/testi_thumb2_1.jpg')" alt="img">
+                            <img :src="asset('/img/testimonial/testi_thumb2_1.jpg')" alt="img">
                         </div>
                         <p class="testi-box_text">“It’s a pleasure working with Bunker understood new brand positioning guidelines translated them beautifully and consistently into our on going marketing comms”</p>
                         <div class="testi-box_profile">
@@ -293,7 +293,7 @@
                 <div class="col-lg-4">
                     <div class="testi-box style5">
                         <div class="testi-box_img">
-                            <img :src="asset('/assets/img/testimonial/testi_thumb2_2.jpg')" alt="img">
+                            <img :src="asset('/img/testimonial/testi_thumb2_2.jpg')" alt="img">
                         </div>
                         <p class="testi-box_text">“It’s a pleasure working with Bunker understood new brand positioning guidelines translated them beautifully and consistently into our on going marketing comms”</p>
                         <div class="testi-box_profile">
@@ -305,7 +305,7 @@
                 <div class="col-lg-4">
                     <div class="testi-box style5">
                         <div class="testi-box_img">
-                            <img :src="asset('/assets/img/testimonial/testi_thumb2_3.jpg')" alt="img">
+                            <img :src="asset('/img/testimonial/testi_thumb2_3.jpg')" alt="img">
                         </div>
                         <p class="testi-box_text">“It’s a pleasure working with Bunker understood new brand positioning guidelines translated them beautifully and consistently into our on going marketing comms”</p>
                         <div class="testi-box_profile">
@@ -317,7 +317,7 @@
                 <div class="col-lg-4">
                     <div class="testi-box style5">
                         <div class="testi-box_img">
-                            <img :src="asset('/assets/img/testimonial/testi_thumb2_1.jpg')" alt="img">
+                            <img :src="asset('/img/testimonial/testi_thumb2_1.jpg')" alt="img">
                         </div>
                         <p class="testi-box_text">“It’s a pleasure working with Bunker understood new brand positioning guidelines translated them beautifully and consistently into our on going marketing comms”</p>
                         <div class="testi-box_profile">
@@ -329,7 +329,7 @@
                 <div class="col-lg-4">
                     <div class="testi-box style5">
                         <div class="testi-box_img">
-                            <img :src="asset('/assets/img/testimonial/testi_thumb2_2.jpg')" alt="img">
+                            <img :src="asset('/img/testimonial/testi_thumb2_2.jpg')" alt="img">
                         </div>
                         <p class="testi-box_text">“It’s a pleasure working with Bunker understood new brand positioning guidelines translated them beautifully and consistently into our on going marketing comms”</p>
                         <div class="testi-box_profile">
@@ -341,7 +341,7 @@
                 <div class="col-lg-4">
                     <div class="testi-box style5">
                         <div class="testi-box_img">
-                            <img :src="asset('/assets/img/testimonial/testi_thumb2_3.jpg')" alt="img">
+                            <img :src="asset('/img/testimonial/testi_thumb2_3.jpg')" alt="img">
                         </div>
                         <p class="testi-box_text">“It’s a pleasure working with Bunker understood new brand positioning guidelines translated them beautifully and consistently into our on going marketing comms”</p>
                         <div class="testi-box_profile">
@@ -359,7 +359,7 @@
     ==============================-->
     <div class="service-area-1 space bg-theme">
         <div class="service-img-1-1 shape-mockup wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.2s" data-left="0" data-top="-100px" data-bottom="140px">
-            <img :src="asset('/assets/img/normal/achievement_1-1.jpg')" alt="img">
+            <img :src="asset('/img/normal/achievement_1-1.jpg')" alt="img">
         </div>
         <div class="container">
             <div class="row align-items-center justify-content-end">
@@ -417,7 +417,7 @@
                     <div class="blog-card">
                         <div class="blog-img">
                             <a href="blog-details.html">
-                                <img :src="asset('/assets/img/blog/blog_1_1.png')" alt="blog image">
+                                <img :src="asset('/img/blog/blog_1_1.png')" alt="blog image">
                             </a>
                         </div>
                         <div class="blog-content">
@@ -431,7 +431,7 @@
                                     <span class="effect-1">READ MORE</span>
                                     <span class="effect-1">READ MORE</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -440,7 +440,7 @@
                     <div class="blog-card">
                         <div class="blog-img">
                             <a href="blog-details.html">
-                                <img :src="asset('/assets/img/blog/blog_1_2.png')" alt="blog image">
+                                <img :src="asset('/img/blog/blog_1_2.png')" alt="blog image">
                             </a>
                         </div>
                         <div class="blog-content">
@@ -454,7 +454,7 @@
                                     <span class="effect-1">READ MORE</span>
                                     <span class="effect-1">READ MORE</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -463,7 +463,7 @@
                     <div class="blog-card">
                         <div class="blog-img">
                             <a href="blog-details.html">
-                                <img :src="asset('/assets/img/blog/blog_1_3.png')" alt="blog image">
+                                <img :src="asset('/img/blog/blog_1_3.png')" alt="blog image">
                             </a>
                         </div>
                         <div class="blog-content">
@@ -477,7 +477,7 @@
                                     <span class="effect-1">READ MORE</span>
                                     <span class="effect-1">READ MORE</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>

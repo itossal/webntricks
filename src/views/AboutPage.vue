@@ -4,7 +4,7 @@
 <!--==============================
     Breadcumb
     ============================== -->
-    <div class="breadcumb-wrapper" :data-bg-src="asset('/assets/img/bg/breadcumb-bg1-1.jpg')">
+    <div class="breadcumb-wrapper" :data-bg-src="asset('/img/bg/breadcumb-bg1-1.jpg')">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">About</h1>
@@ -54,7 +54,7 @@
     ==============================-->
     <div class="why-area-1 space bg-theme">
         <div class="why-img-1-1 shape-mockup wow img-custom-anim-right" data-wow-duration="1.5s" data-wow-delay="0.2s" data-right="0" data-top="-100px" data-bottom="140px">
-            <img :src="asset('/assets/img/normal/why_3-1.jpg')" alt="img">
+            <img :src="asset('/img/normal/why_3-1.jpg')" alt="img">
         </div>
         <div class="container">
             <div class="row">
@@ -136,7 +136,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img :src="asset('/assets/img/team/team-1-1.png')" alt="Team Image">
+                            <img :src="asset('/img/team/team-1-1.png')" alt="Team Image">
                         </div>
                         <div class="team-card_content">
                             <h3 class="team-card_title"><a href="team-details.html">Daniyel Karlos</a></h3>
@@ -147,7 +147,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img :src="asset('/assets/img/team/team-1-2.png')" alt="Team Image">
+                            <img :src="asset('/img/team/team-1-2.png')" alt="Team Image">
                         </div>
                         <div class="team-card_content">
                             <h3 class="team-card_title"><a href="team-details.html">Daniyel Karlos</a></h3>
@@ -158,7 +158,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img :src="asset('/assets/img/team/team-1-3.png')" alt="Team Image">
+                            <img :src="asset('/img/team/team-1-3.png')" alt="Team Image">
                         </div>
                         <div class="team-card_content">
                             <h3 class="team-card_title"><a href="team-details.html">Daniyel Karlos</a></h3>
@@ -169,7 +169,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img :src="asset('/assets/img/team/team-1-4.png')" alt="Team Image">
+                            <img :src="asset('/img/team/team-1-4.png')" alt="Team Image">
                         </div>
                         <div class="team-card_content">
                             <h3 class="team-card_title"><a href="team-details.html">Daniyel Karlos</a></h3>
@@ -245,64 +245,64 @@
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-1.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-1.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-1.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-1.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-2.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-2.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-2.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-2.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-3.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-3.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-3.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-3.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-4.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-4.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-4.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-4.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-5.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-5.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-5.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-5.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-6.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-6.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-6.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-6.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-7.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-7.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-7.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-7.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-8.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-8.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-8.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-8.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>

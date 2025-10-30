@@ -24,12 +24,12 @@
             <div class="row global-carousel default" data-arrows="true" data-xl-arrows="true" data-ml-arrows="true" data-lg-arrows="true" data-md-arrows="true">
                 <div class="col-xl-12">
                     <div class="project-inner-thumb mb-80 wow img-custom-anim-top">
-                        <img class="w-100" :src="asset('/assets/img/portfolio/portfolio_inner_1.png')" alt="img">
+                        <img class="w-100" :src="asset('/img/portfolio/portfolio_inner_1.png')" alt="img">
                     </div>
                 </div>
                 <div class="col-xl-12">
                     <div class="project-inner-thumb mb-80 wow img-custom-anim-top">
-                        <img class="w-100" :src="asset('/assets/img/portfolio/portfolio_inner_2.png')" alt="img">
+                        <img class="w-100" :src="asset('/img/portfolio/portfolio_inner_2.png')" alt="img">
                     </div>
                 </div>
             </div>

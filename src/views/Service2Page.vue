@@ -4,7 +4,7 @@
 <!--==============================
     Breadcumb
     ============================== -->
-    <div class="breadcumb-wrapper " :data-bg-src="asset('/assets/img/bg/breadcumb-bg1-2.jpg')">
+    <div class="breadcumb-wrapper " :data-bg-src="asset('/img/bg/breadcumb-bg1-2.jpg')">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Service</h1>
@@ -21,7 +21,7 @@
                 <div class="col-xxl-6 col-xl-6">
                     <div class="feature-card style-grid">
                         <div class="feature-card-icon">
-                            <img :src="asset('/assets/img/icon/feature-icon1-1.svg')" alt="icon">
+                            <img :src="asset('/img/icon/feature-icon1-1.svg')" alt="icon">
                         </div>
                         <div class="feature-card-details">
                             <h4 class="feature-card-title">
@@ -33,7 +33,7 @@
                                     <span class="effect-1">VIEW DETAILS</span>
                                     <span class="effect-1">VIEW DETAILS</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -41,7 +41,7 @@
                 <div class="col-xxl-6 col-xl-6">
                     <div class="feature-card style-grid">
                         <div class="feature-card-icon">
-                            <img :src="asset('/assets/img/icon/feature-icon1-2.svg')" alt="icon">
+                            <img :src="asset('/img/icon/feature-icon1-2.svg')" alt="icon">
                         </div>
                         <div class="feature-card-details">
                             <h4 class="feature-card-title">
@@ -53,7 +53,7 @@
                                     <span class="effect-1">VIEW DETAILS</span>
                                     <span class="effect-1">VIEW DETAILS</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -61,7 +61,7 @@
                 <div class="col-xxl-6 col-xl-6">
                     <div class="feature-card style-grid">
                         <div class="feature-card-icon">
-                            <img :src="asset('/assets/img/icon/feature-icon1-4.svg')" alt="icon">
+                            <img :src="asset('/img/icon/feature-icon1-4.svg')" alt="icon">
                         </div>
                         <div class="feature-card-details">
                             <h4 class="feature-card-title">
@@ -73,7 +73,7 @@
                                     <span class="effect-1">VIEW DETAILS</span>
                                     <span class="effect-1">VIEW DETAILS</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
                 <div class="col-xxl-6 col-xl-6">
                     <div class="feature-card style-grid">
                         <div class="feature-card-icon">
-                            <img :src="asset('/assets/img/icon/feature-icon1-3.svg')" alt="icon">
+                            <img :src="asset('/img/icon/feature-icon1-3.svg')" alt="icon">
                         </div>
                         <div class="feature-card-details">
                             <h4 class="feature-card-title">
@@ -93,7 +93,7 @@
                                     <span class="effect-1">VIEW DETAILS</span>
                                     <span class="effect-1">VIEW DETAILS</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -101,7 +101,7 @@
                 <div class="col-xxl-6 col-xl-6">
                     <div class="feature-card style-grid">
                         <div class="feature-card-icon">
-                            <img :src="asset('/assets/img/icon/feature-icon1-5.svg')" alt="icon">
+                            <img :src="asset('/img/icon/feature-icon1-5.svg')" alt="icon">
                         </div>
                         <div class="feature-card-details">
                             <h4 class="feature-card-title">
@@ -113,7 +113,7 @@
                                     <span class="effect-1">VIEW DETAILS</span>
                                     <span class="effect-1">VIEW DETAILS</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -121,7 +121,7 @@
                 <div class="col-xxl-6 col-xl-6">
                     <div class="feature-card style-grid">
                         <div class="feature-card-icon">
-                            <img :src="asset('/assets/img/icon/feature-icon1-6.svg')" alt="icon">
+                            <img :src="asset('/img/icon/feature-icon1-6.svg')" alt="icon">
                         </div>
                         <div class="feature-card-details">
                             <h4 class="feature-card-title">
@@ -133,7 +133,7 @@
                                     <span class="effect-1">VIEW DETAILS</span>
                                     <span class="effect-1">VIEW DETAILS</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>

@@ -4,7 +4,7 @@
 <!--==============================
     Hero Area
     ==============================-->
-    <div class="hero-wrapper hero-8" id="hero" :data-bg-src="asset('/assets/img/hero/hero-8-1.png')">
+    <div class="hero-wrapper hero-8" id="hero" :data-bg-src="asset('/img/hero/hero-8-1.png')">
         <div class="container">
             <div class="hero-style8">
                 <div class="row">
@@ -36,7 +36,7 @@
                 <div class="col-xl-4 col-md-6">
                     <div class="feature-card style2">
                         <div class="feature-card-icon">
-                            <img :src="asset('/assets/img/icon/feature-icon1-1.svg')" alt="icon">
+                            <img :src="asset('/img/icon/feature-icon1-1.svg')" alt="icon">
                         </div>
                         <h4 class="feature-card-title">
                             <a href="project.html">Digital Branding</a>
@@ -47,14 +47,14 @@
                                 <span class="effect-1">VIEW DETAILS</span>
                                 <span class="effect-1">VIEW DETAILS</span>
                             </span>
-                            <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                            <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                         </a>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6">
                     <div class="feature-card style2">
                         <div class="feature-card-icon">
-                            <img :src="asset('/assets/img/icon/feature-icon1-2.svg')" alt="icon">
+                            <img :src="asset('/img/icon/feature-icon1-2.svg')" alt="icon">
                         </div>
                         <h4 class="feature-card-title">
                             <a href="project.html">Interaction Design</a>
@@ -65,14 +65,14 @@
                                 <span class="effect-1">VIEW DETAILS</span>
                                 <span class="effect-1">VIEW DETAILS</span>
                             </span>
-                            <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                            <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                         </a>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6">
                     <div class="feature-card style2">
                         <div class="feature-card-icon">
-                            <img :src="asset('/assets/img/icon/feature-icon1-4.svg')" alt="icon">
+                            <img :src="asset('/img/icon/feature-icon1-4.svg')" alt="icon">
                         </div>
                         <h4 class="feature-card-title">
                             <a href="project.html">Motion Design</a>
@@ -83,7 +83,7 @@
                                 <span class="effect-1">VIEW DETAILS</span>
                                 <span class="effect-1">VIEW DETAILS</span>
                             </span>
-                            <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                            <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                         </a>
                     </div>
                 </div>
@@ -107,7 +107,7 @@
                 <div class="col-12">
                     <a href="project-details.html" class="portfolio-wrap style3">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio6_1.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio6_1.jpg')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <div class="media-left">
@@ -124,7 +124,7 @@
                                         <span class="effect-1">VIEW PROJECT</span>
                                         <span class="effect-1">VIEW PROJECT</span>
                                     </span>
-                                    <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                    <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                                 </span>
                             </div>
                         </div>
@@ -133,7 +133,7 @@
                 <div class="col-12">
                     <a href="project-details.html" class="portfolio-wrap style3">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio6_2.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio6_2.jpg')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <div class="media-left">
@@ -150,7 +150,7 @@
                                         <span class="effect-1">VIEW PROJECT</span>
                                         <span class="effect-1">VIEW PROJECT</span>
                                     </span>
-                                    <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                    <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                                 </span>
                             </div>
                         </div>
@@ -159,7 +159,7 @@
                 <div class="col-12">
                     <a href="project-details.html" class="portfolio-wrap style3">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio6_3.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio6_3.jpg')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <div class="media-left">
@@ -176,7 +176,7 @@
                                         <span class="effect-1">VIEW PROJECT</span>
                                         <span class="effect-1">VIEW PROJECT</span>
                                     </span>
-                                    <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                    <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                                 </span>
                             </div>
                         </div>
@@ -185,7 +185,7 @@
                 <div class="col-12">
                     <a href="project-details.html" class="portfolio-wrap style3">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio6_4.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio6_4.jpg')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <div class="media-left">
@@ -202,7 +202,7 @@
                                         <span class="effect-1">VIEW PROJECT</span>
                                         <span class="effect-1">VIEW PROJECT</span>
                                     </span>
-                                    <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                    <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                                 </span>
                             </div>
                         </div>
@@ -236,7 +236,7 @@
                 <div class="col-lg-6">
                     <div class="testi-box style3">
                         <div class="quote-icon">
-                            <img :src="asset('/assets/img/icon/quote.svg')" alt="icon">
+                            <img :src="asset('/img/icon/quote.svg')" alt="icon">
                         </div>
                         <p class="testi-box_text">“It’s a pleasure working with Bunker understood new brand positioning guidelines translated them beautifully and consistently into our on going marketing comms”</p>
                         <div class="testi-box_profile">
@@ -248,7 +248,7 @@
                 <div class="col-lg-6">
                     <div class="testi-box style3">
                         <div class="quote-icon">
-                            <img :src="asset('/assets/img/icon/quote.svg')" alt="icon">
+                            <img :src="asset('/img/icon/quote.svg')" alt="icon">
                         </div>
                         <p class="testi-box_text">“It’s a pleasure working with Bunker understood new brand positioning guidelines translated them beautifully and consistently into our on going marketing comms”</p>
                         <div class="testi-box_profile">
@@ -260,7 +260,7 @@
                 <div class="col-lg-6">
                     <div class="testi-box style3">
                         <div class="quote-icon">
-                            <img :src="asset('/assets/img/icon/quote.svg')" alt="icon">
+                            <img :src="asset('/img/icon/quote.svg')" alt="icon">
                         </div>
                         <p class="testi-box_text">“It’s a pleasure working with Bunker understood new brand positioning guidelines translated them beautifully and consistently into our on going marketing comms”</p>
                         <div class="testi-box_profile">
@@ -272,7 +272,7 @@
                 <div class="col-lg-6">
                     <div class="testi-box style3">
                         <div class="quote-icon">
-                            <img :src="asset('/assets/img/icon/quote.svg')" alt="icon">
+                            <img :src="asset('/img/icon/quote.svg')" alt="icon">
                         </div>
                         <p class="testi-box_text">“It’s a pleasure working with Bunker understood new brand positioning guidelines translated them beautifully and consistently into our on going marketing comms”</p>
                         <div class="testi-box_profile">
@@ -296,64 +296,64 @@
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-1.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-1.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-1.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-1.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-2.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-2.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-2.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-2.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-3.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-3.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-3.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-3.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-4.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-4.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-4.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-4.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-5.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-5.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-5.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-5.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-6.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-6.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-6.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-6.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-7.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-7.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-7.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-7.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-8.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-8.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-8.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-8.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>
@@ -380,7 +380,7 @@
                     <div class="blog-card style3">
                         <div class="blog-img">
                             <a href="blog-details.html">
-                                <img :src="asset('/assets/img/blog/blog_1_1.png')" alt="blog image">
+                                <img :src="asset('/img/blog/blog_1_1.png')" alt="blog image">
                             </a>
                         </div>
                         <div class="blog-content">
@@ -394,7 +394,7 @@
                                     <span class="effect-1">READ MORE</span>
                                     <span class="effect-1">READ MORE</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -403,7 +403,7 @@
                     <div class="blog-card style3">
                         <div class="blog-img">
                             <a href="blog-details.html">
-                                <img :src="asset('/assets/img/blog/blog_1_2.png')" alt="blog image">
+                                <img :src="asset('/img/blog/blog_1_2.png')" alt="blog image">
                             </a>
                         </div>
                         <div class="blog-content">
@@ -417,7 +417,7 @@
                                     <span class="effect-1">READ MORE</span>
                                     <span class="effect-1">READ MORE</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -426,7 +426,7 @@
                     <div class="blog-card style3">
                         <div class="blog-img">
                             <a href="blog-details.html">
-                                <img :src="asset('/assets/img/blog/blog_1_3.png')" alt="blog image">
+                                <img :src="asset('/img/blog/blog_1_3.png')" alt="blog image">
                             </a>
                         </div>
                         <div class="blog-content">
@@ -440,7 +440,7 @@
                                     <span class="effect-1">READ MORE</span>
                                     <span class="effect-1">READ MORE</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>

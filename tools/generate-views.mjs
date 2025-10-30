@@ -7,6 +7,26 @@ const rootDir = path.resolve(__dirname, '..');
 const htmlDir = path.join(rootDir, 'html');
 const viewsDir = path.join(rootDir, 'src', 'views');
 
+const formatAssetPath = (assetPath = '') => {
+  let normalized = assetPath.replace(/^[\/]+/, '');
+
+  if (!normalized) {
+    return '/';
+  }
+
+  if (normalized.startsWith('assets/')) {
+    normalized = normalized.slice('assets/'.length);
+  }
+
+  if (normalized.startsWith('img/')) {
+    return `/img/${normalized.slice('img/'.length)}`;
+  }
+
+  return `/assets/${normalized}`;
+};
+
+const toAssetBinding = (attribute, rawPath) => `:${attribute}="asset('${formatAssetPath(rawPath)}')"`;
+
 function toComponentName(file) {
   const base = file.replace(/\.html$/, '');
   return base
@@ -94,12 +114,13 @@ async function main() {
     body = body.replace(/<script[\s\S]*?<\/script>/gi, '');
 
     body = body.replace(/(["'])assets\//g, (_, quote) => `${quote}/assets/`);
-    body = body.replace(/data-mask-src="\/assets\/(.*?)"/g, (_match, assetPath) => `:data-mask-src="asset('/assets/${assetPath}')"`);
-    body = body.replace(/data-mask-src='\/assets\/(.*?)'/g, (_match, assetPath) => `:data-mask-src="asset('/assets/${assetPath}')"`);
-    body = body.replace(/data-bg-src="\/assets\/(.*?)"/g, (_match, assetPath) => `:data-bg-src="asset('/assets/${assetPath}')"`);
-    body = body.replace(/data-bg-src='\/assets\/(.*?)'/g, (_match, assetPath) => `:data-bg-src="asset('/assets/${assetPath}')"`);
-    body = body.replace(/src="\/assets\/(.*?)"/g, (_match, assetPath) => `:src="asset('/assets/${assetPath}')"`);
-    body = body.replace(/src='\/assets\/(.*?)'/g, (_match, assetPath) => `:src="asset('/assets/${assetPath}')"`);
+    body = body.replace(/(["'])\/assets\/img\//g, (_, quote) => `${quote}/img/`);
+    body = body.replace(/data-mask-src="\/assets\/(.*?)"/g, (_match, assetPath) => toAssetBinding('data-mask-src', assetPath));
+    body = body.replace(/data-mask-src='\/assets\/(.*?)'/g, (_match, assetPath) => toAssetBinding('data-mask-src', assetPath));
+    body = body.replace(/data-bg-src="\/assets\/(.*?)"/g, (_match, assetPath) => toAssetBinding('data-bg-src', assetPath));
+    body = body.replace(/data-bg-src='\/assets\/(.*?)'/g, (_match, assetPath) => toAssetBinding('data-bg-src', assetPath));
+    body = body.replace(/src="\/assets\/(.*?)"/g, (_match, assetPath) => toAssetBinding('src', assetPath));
+    body = body.replace(/src='\/assets\/(.*?)'/g, (_match, assetPath) => toAssetBinding('src', assetPath));
 
     body = body.trim();
 

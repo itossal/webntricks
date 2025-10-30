@@ -6,7 +6,7 @@
           <div class="row align-items-center justify-content-between">
             <div class="col-auto">
               <div class="header-logo">
-                <RouterLink to="/"><img :src="asset('/assets/img/logo.svg')" alt="logo" /></RouterLink>
+                <RouterLink to="/"><img :src="asset('/img/logo.svg')" alt="logo" /></RouterLink>
               </div>
             </div>
             <div class="col-auto m-lg-auto">
@@ -101,7 +101,7 @@
                         </div>
                         <div class="col-lg-3">
                           <div class="menu-banner-wrap">
-                            <img :src="asset('/assets/img/normal/menu-banner.jpg')" alt="img" />
+                            <img :src="asset('/img/normal/menu-banner.jpg')" alt="img" />
                             <div class="menu-banner-content-wrap">
                               <h4 class="text-white">Start Your Creative Website Journey Today</h4>
                               <a

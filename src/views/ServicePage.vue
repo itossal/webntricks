@@ -4,7 +4,7 @@
 <!--==============================
     Breadcumb
     ============================== -->
-    <div class="breadcumb-wrapper " :data-bg-src="asset('/assets/img/bg/breadcumb-bg1-2.jpg')">
+    <div class="breadcumb-wrapper " :data-bg-src="asset('/img/bg/breadcumb-bg1-2.jpg')">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Service</h1>
@@ -21,7 +21,7 @@
                 <div class="col-xl-4 col-md-6">
                     <div class="feature-card">
                         <div class="feature-card-icon">
-                            <img :src="asset('/assets/img/icon/feature-icon1-1.svg')" alt="icon">
+                            <img :src="asset('/img/icon/feature-icon1-1.svg')" alt="icon">
                         </div>
                         <h4 class="feature-card-title">
                             <a href="service.html">Branding Design</a>
@@ -32,14 +32,14 @@
                                 <span class="effect-1">VIEW DETAILS</span>
                                 <span class="effect-1">VIEW DETAILS</span>
                             </span>
-                            <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                            <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                         </a>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6">
                     <div class="feature-card">
                         <div class="feature-card-icon">
-                            <img :src="asset('/assets/img/icon/feature-icon1-2.svg')" alt="icon">
+                            <img :src="asset('/img/icon/feature-icon1-2.svg')" alt="icon">
                         </div>
                         <h4 class="feature-card-title">
                             <a href="service.html">Web Development</a>
@@ -50,14 +50,14 @@
                                 <span class="effect-1">VIEW DETAILS</span>
                                 <span class="effect-1">VIEW DETAILS</span>
                             </span>
-                            <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                            <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                         </a>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6">
                     <div class="feature-card">
                         <div class="feature-card-icon">
-                            <img :src="asset('/assets/img/icon/feature-icon1-4.svg')" alt="icon">
+                            <img :src="asset('/img/icon/feature-icon1-4.svg')" alt="icon">
                         </div>
                         <h4 class="feature-card-title">
                             <a href="service.html">Digital Marketing</a>
@@ -68,14 +68,14 @@
                                 <span class="effect-1">VIEW DETAILS</span>
                                 <span class="effect-1">VIEW DETAILS</span>
                             </span>
-                            <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                            <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                         </a>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6">
                     <div class="feature-card">
                         <div class="feature-card-icon">
-                            <img :src="asset('/assets/img/icon/feature-icon1-3.svg')" alt="icon">
+                            <img :src="asset('/img/icon/feature-icon1-3.svg')" alt="icon">
                         </div>
                         <h4 class="feature-card-title">
                             <a href="service.html">Illustration Modelling</a>
@@ -86,14 +86,14 @@
                                 <span class="effect-1">VIEW DETAILS</span>
                                 <span class="effect-1">VIEW DETAILS</span>
                             </span>
-                            <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                            <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                         </a>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6">
                     <div class="feature-card">
                         <div class="feature-card-icon">
-                            <img :src="asset('/assets/img/icon/feature-icon1-5.svg')" alt="icon">
+                            <img :src="asset('/img/icon/feature-icon1-5.svg')" alt="icon">
                         </div>
                         <h4 class="feature-card-title">
                             <a href="service.html">Content Marketing</a>
@@ -104,14 +104,14 @@
                                 <span class="effect-1">VIEW DETAILS</span>
                                 <span class="effect-1">VIEW DETAILS</span>
                             </span>
-                            <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                            <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                         </a>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6">
                     <div class="feature-card">
                         <div class="feature-card-icon">
-                            <img :src="asset('/assets/img/icon/feature-icon1-6.svg')" alt="icon">
+                            <img :src="asset('/img/icon/feature-icon1-6.svg')" alt="icon">
                         </div>
                         <h4 class="feature-card-title">
                             <a href="service.html">Social Advertising</a>
@@ -122,7 +122,7 @@
                                 <span class="effect-1">VIEW DETAILS</span>
                                 <span class="effect-1">VIEW DETAILS</span>
                             </span>
-                            <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                            <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                         </a>
                     </div>
                 </div>
@@ -138,7 +138,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="video-wrap">
-                        <div class="jarallax" :data-bg-src="asset('/assets/img/normal/video_2-1.jpg')">
+                        <div class="jarallax" :data-bg-src="asset('/img/normal/video_2-1.jpg')">
                         </div>
                         <a href="https://www.youtube.com/watch?v=vvNwlRLjLkU" class="play-btn popup-video background-image">
                         </a>

@@ -4,7 +4,7 @@
 <!--==============================
     Breadcumb
     ============================== -->
-    <div class="breadcumb-wrapper " :data-bg-src="asset('/assets/img/bg/breadcumb-bg1-8.jpg')">
+    <div class="breadcumb-wrapper " :data-bg-src="asset('/img/bg/breadcumb-bg1-8.jpg')">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Blog</h1>
@@ -23,7 +23,7 @@
                                 <div class="col-md-12">
                                     <div class="blog-post-item">
                                         <div class="blog-post-thumb">
-                                            <a href="blog-details.html" ><img :src="asset('/assets/img/blog/blog_post1_1.png')" alt="img"></a>
+                                            <a href="blog-details.html" ><img :src="asset('/img/blog/blog_post1_1.png')" alt="img"></a>
                                         </div>
                                         <div class="blog-post-content">
                                             <div class="blog-post-meta">
@@ -40,7 +40,7 @@
                                                     <span class="effect-1">READ MORE</span>
                                                     <span class="effect-1">READ MORE</span>
                                                 </span>
-                                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                                             </a>
                                         </div>
                                     </div>
@@ -48,7 +48,7 @@
                                 <div class="col-md-12">
                                     <div class="blog-post-item">
                                         <div class="blog-post-thumb">
-                                            <a href="blog-details.html" ><img :src="asset('/assets/img/blog/blog_post1_2.png')" alt="img"></a>
+                                            <a href="blog-details.html" ><img :src="asset('/img/blog/blog_post1_2.png')" alt="img"></a>
                                         </div>
                                         <div class="blog-post-content">
                                             <div class="blog-post-meta">
@@ -65,7 +65,7 @@
                                                     <span class="effect-1">READ MORE</span>
                                                     <span class="effect-1">READ MORE</span>
                                                 </span>
-                                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                                             </a>
                                         </div>
                                     </div>
@@ -73,7 +73,7 @@
                                 <div class="col-md-12">
                                     <div class="blog-post-item">
                                         <div class="blog-post-thumb">
-                                            <a href="blog-details.html" ><img :src="asset('/assets/img/blog/blog_post1_3.png')" alt="img"></a>
+                                            <a href="blog-details.html" ><img :src="asset('/img/blog/blog_post1_3.png')" alt="img"></a>
                                         </div>
                                         <div class="blog-post-content">
                                             <div class="blog-post-meta">
@@ -90,7 +90,7 @@
                                                     <span class="effect-1">READ MORE</span>
                                                     <span class="effect-1">READ MORE</span>
                                                 </span>
-                                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                                             </a>
                                         </div>
                                     </div>
@@ -98,7 +98,7 @@
                                 <div class="col-md-12">
                                     <div class="blog-post-item">
                                         <div class="blog-post-thumb">
-                                            <a href="blog-details.html" ><img :src="asset('/assets/img/blog/blog_post1_4.png')" alt="img"></a>
+                                            <a href="blog-details.html" ><img :src="asset('/img/blog/blog_post1_4.png')" alt="img"></a>
                                         </div>
                                         <div class="blog-post-content">
                                             <div class="blog-post-meta">
@@ -115,7 +115,7 @@
                                                     <span class="effect-1">READ MORE</span>
                                                     <span class="effect-1">READ MORE</span>
                                                 </span>
-                                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                                             </a>
                                         </div>
                                     </div>
@@ -179,7 +179,7 @@
                                 <div class="sidebar__post-list">
                                     <div class="sidebar__post-item">
                                         <div class="sidebar__post-thumb">
-                                            <a href="blog-details.html"><img :src="asset('/assets/img/blog/sb_post01.jpg')" alt="img"></a>
+                                            <a href="blog-details.html"><img :src="asset('/img/blog/sb_post01.jpg')" alt="img"></a>
                                         </div>
                                         <div class="sidebar__post-content">
                                             <h5 class="title"><a href="blog-details.html">6 Big Commerce Design Tips For Big</a></h5>
@@ -188,7 +188,7 @@
                                     </div>
                                     <div class="sidebar__post-item">
                                         <div class="sidebar__post-thumb">
-                                            <a href="blog-details.html"><img :src="asset('/assets/img/blog/sb_post02.jpg')" alt="img"></a>
+                                            <a href="blog-details.html"><img :src="asset('/img/blog/sb_post02.jpg')" alt="img"></a>
                                         </div>
                                         <div class="sidebar__post-content">
                                             <h5 class="title"><a href="blog-details.html">Five Winning Voice Search Marketing</a></h5>
@@ -197,7 +197,7 @@
                                     </div>
                                     <div class="sidebar__post-item">
                                         <div class="sidebar__post-thumb">
-                                            <a href="blog-details.html"><img :src="asset('/assets/img/blog/sb_post03.jpg')" alt="img"></a>
+                                            <a href="blog-details.html"><img :src="asset('/img/blog/sb_post03.jpg')" alt="img"></a>
                                         </div>
                                         <div class="sidebar__post-content">
                                             <h5 class="title"><a href="blog-details.html">Four Steps to Conduct a Success</a></h5>

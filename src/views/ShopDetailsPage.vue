@@ -24,44 +24,44 @@
                     <div class="product-big-img">
                         <div class="global-carousel product-thumb-slider" data-slide-show="1" data-asnavfor=".product-small-img" data-loop="true">
                             <div class="slide">
-                                <div class="img"><img :src="asset('/assets/img/product/product_details_1_1.jpg')" alt="Product Image"></div>
+                                <div class="img"><img :src="asset('/img/product/product_details_1_1.jpg')" alt="Product Image"></div>
                             </div>
                             <div class="slide">
-                                <div class="img"><img :src="asset('/assets/img/product/product_details_1_2.jpg')" alt="Product Image"></div>
+                                <div class="img"><img :src="asset('/img/product/product_details_1_2.jpg')" alt="Product Image"></div>
                             </div>
                             <div class="slide">
-                                <div class="img"><img :src="asset('/assets/img/product/product_details_1_3.jpg')" alt="Product Image"></div>
+                                <div class="img"><img :src="asset('/img/product/product_details_1_3.jpg')" alt="Product Image"></div>
                             </div>
                             <div class="slide">
-                                <div class="img"><img :src="asset('/assets/img/product/product_details_1_1.jpg')" alt="Product Image"></div>
+                                <div class="img"><img :src="asset('/img/product/product_details_1_1.jpg')" alt="Product Image"></div>
                             </div>
                             <div class="slide">
-                                <div class="img"><img :src="asset('/assets/img/product/product_details_1_2.jpg')" alt="Product Image"></div>
+                                <div class="img"><img :src="asset('/img/product/product_details_1_2.jpg')" alt="Product Image"></div>
                             </div>
                             <div class="slide">
-                                <div class="img"><img :src="asset('/assets/img/product/product_details_1_3.jpg')" alt="Product Image"></div>
+                                <div class="img"><img :src="asset('/img/product/product_details_1_3.jpg')" alt="Product Image"></div>
                             </div>
                         </div>
                         <div class="tag">SALE</div>
                     </div>
                     <div class="row global-carousel product-small-img" data-slide-show="3" data-md-slide-show="3" data-sm-slide-show="3" data-xs-slide-show="2" data-asnavfor=".product-thumb-slider" data-loop="true">
                         <div class="col-lg-4 slide-thumb">
-                            <div class="img"><img :src="asset('/assets/img/product/product_details_1_1.jpg')" alt="Product Image"></div>
+                            <div class="img"><img :src="asset('/img/product/product_details_1_1.jpg')" alt="Product Image"></div>
                         </div>
                         <div class="col-lg-4 slide-thumb">
-                            <div class="img"><img :src="asset('/assets/img/product/product_details_1_2.jpg')" alt="Product Image"></div>
+                            <div class="img"><img :src="asset('/img/product/product_details_1_2.jpg')" alt="Product Image"></div>
                         </div>
                         <div class="col-lg-4 slide-thumb">
-                            <div class="img"><img :src="asset('/assets/img/product/product_details_1_3.jpg')" alt="Product Image"></div>
+                            <div class="img"><img :src="asset('/img/product/product_details_1_3.jpg')" alt="Product Image"></div>
                         </div>
                         <div class="col-lg-4 slide-thumb">
-                            <div class="img"><img :src="asset('/assets/img/product/product_details_1_1.jpg')" alt="Product Image"></div>
+                            <div class="img"><img :src="asset('/img/product/product_details_1_1.jpg')" alt="Product Image"></div>
                         </div>
                         <div class="col-lg-4 slide-thumb">
-                            <div class="img"><img :src="asset('/assets/img/product/product_details_1_2.jpg')" alt="Product Image"></div>
+                            <div class="img"><img :src="asset('/img/product/product_details_1_2.jpg')" alt="Product Image"></div>
                         </div>
                         <div class="col-lg-4 slide-thumb">
-                            <div class="img"><img :src="asset('/assets/img/product/product_details_1_3.jpg')" alt="Product Image"></div>
+                            <div class="img"><img :src="asset('/img/product/product_details_1_3.jpg')" alt="Product Image"></div>
                         </div>
                     </div>
                 </div>
@@ -146,7 +146,7 @@
                                     <li>
                                         <div class="comments-box">
                                             <div class="comments-avatar">
-                                                <img :src="asset('/assets/img/blog/comment01.png')" alt="img">
+                                                <img :src="asset('/img/blog/comment01.png')" alt="img">
                                             </div>
                                             <div class="comments-text">
                                                 <div class="avatar-name">
@@ -159,7 +159,7 @@
                                                         <span class="effect-1">REPLY</span>
                                                         <span class="effect-1">REPLY</span>
                                                     </span>
-                                                    <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                                    <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                                                 </a>
                                             </div>
                                         </div>
@@ -207,7 +207,7 @@
                     <div class="col-sm-6">
                         <div class="product-card">
                             <div class="product-img">
-                                <img :src="asset('/assets/img/product/product_1_3.jpg')" alt="Product Image">
+                                <img :src="asset('/img/product/product_1_3.jpg')" alt="Product Image">
                                 <div class="actions">
                                     <a href="cart.html" class="btn">
                                         <span class="link-effect">
@@ -226,7 +226,7 @@
                     <div class="col-sm-6">
                         <div class="product-card">
                             <div class="product-img">
-                                <img :src="asset('/assets/img/product/product_1_6.jpg')" alt="Product Image">
+                                <img :src="asset('/img/product/product_1_6.jpg')" alt="Product Image">
                                 <div class="actions">
                                     <a href="cart.html" class="btn">
                                         <span class="link-effect">
@@ -246,7 +246,7 @@
                     <div class="col-sm-6">
                         <div class="product-card">
                             <div class="product-img">
-                                <img :src="asset('/assets/img/product/product_1_8.jpg')" alt="Product Image">
+                                <img :src="asset('/img/product/product_1_8.jpg')" alt="Product Image">
                                 <div class="actions">
                                     <a href="cart.html" class="btn">
                                         <span class="link-effect">
@@ -265,7 +265,7 @@
                     <div class="col-sm-6">
                         <div class="product-card">
                             <div class="product-img">
-                                <img :src="asset('/assets/img/product/product_1_1.jpg')" alt="Product Image">
+                                <img :src="asset('/img/product/product_1_1.jpg')" alt="Product Image">
                                 <div class="actions">
                                     <a href="cart.html" class="btn">
                                         <span class="link-effect">
@@ -285,7 +285,7 @@
                     <div class="col-sm-6">
                         <div class="product-card">
                             <div class="product-img">
-                                <img :src="asset('/assets/img/product/product_1_2.jpg')" alt="Product Image">
+                                <img :src="asset('/img/product/product_1_2.jpg')" alt="Product Image">
                                 <div class="actions">
                                     <a href="cart.html" class="btn">
                                         <span class="link-effect">
@@ -305,7 +305,7 @@
                     <div class="col-sm-6">
                         <div class="product-card">
                             <div class="product-img">
-                                <img :src="asset('/assets/img/product/product_1_4.jpg')" alt="Product Image">
+                                <img :src="asset('/img/product/product_1_4.jpg')" alt="Product Image">
                                 <div class="actions">
                                     <a href="cart.html" class="btn">
                                         <span class="link-effect">
@@ -324,7 +324,7 @@
                     <div class="col-sm-6">
                         <div class="product-card">
                             <div class="product-img">
-                                <img :src="asset('/assets/img/product/product_1_5.jpg')" alt="Product Image">
+                                <img :src="asset('/img/product/product_1_5.jpg')" alt="Product Image">
                                 <div class="actions">
                                     <a href="cart.html" class="btn">
                                         <span class="link-effect">
@@ -344,7 +344,7 @@
                     <div class="col-sm-6">
                         <div class="product-card">
                             <div class="product-img">
-                                <img :src="asset('/assets/img/product/product_1_7.jpg')" alt="Product Image">
+                                <img :src="asset('/img/product/product_1_7.jpg')" alt="Product Image">
                                 <div class="actions">
                                     <a href="cart.html" class="btn">
                                         <span class="link-effect">

@@ -4,7 +4,7 @@
 <!--==============================
     Breadcumb
     ============================== -->
-    <div class="breadcumb-wrapper " :data-bg-src="asset('/assets/img/bg/breadcumb-bg1-6.jpg')">
+    <div class="breadcumb-wrapper " :data-bg-src="asset('/img/bg/breadcumb-bg1-6.jpg')">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Contact</h1>
@@ -21,7 +21,7 @@
                 <div class="col-xl-4 col-md-6">
                     <div class="feature-card">
                         <div class="feature-card-icon">
-                            <img :src="asset('/assets/img/icon/location-pin-alt.svg')" alt="icon">
+                            <img :src="asset('/img/icon/location-pin-alt.svg')" alt="icon">
                         </div>
                         <div class="feature-card-details">
                             <h4 class="feature-card-title">
@@ -35,7 +35,7 @@
                                     <span class="effect-1">Get direction</span>
                                     <span class="effect-1">Get direction</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -43,7 +43,7 @@
                 <div class="col-xl-4 col-md-6">
                     <div class="feature-card">
                         <div class="feature-card-icon">
-                            <img :src="asset('/assets/img/icon/speech-bubble.svg')" alt="icon">
+                            <img :src="asset('/img/icon/speech-bubble.svg')" alt="icon">
                         </div>
                         <div class="feature-card-details">
                             <h4 class="feature-card-title">
@@ -56,7 +56,7 @@
                                     <span class="effect-1">Send message</span>
                                     <span class="effect-1">Send message</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -64,7 +64,7 @@
                 <div class="col-xl-4 col-md-6">
                     <div class="feature-card">
                         <div class="feature-card-icon">
-                            <img :src="asset('/assets/img/icon/phone.svg')" alt="icon">
+                            <img :src="asset('/img/icon/phone.svg')" alt="icon">
                         </div>
                         <div class="feature-card-details">
                             <h4 class="feature-card-title">
@@ -78,7 +78,7 @@
                                     <span class="effect-1">Call anytime</span>
                                     <span class="effect-1">Call anytime</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
