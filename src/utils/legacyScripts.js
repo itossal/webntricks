@@ -32,13 +32,185 @@ const hasGsapPlugin = (name) => () => {
   return hasWindowMember(name)()
 }
 
+let pendingGsapRegistrationRetry
+let scrollSmootherRegistrationDisabled = false
+let scrollSmootherCompatibilityWarningShown = false
+
+const SCROLL_SMOOTHER_MIN_VERSION = { major: 3, minor: 11, patch: 0 }
+
+const parseVersion = (value) => {
+  if (typeof value !== 'string') {
+    return undefined
+  }
+  const parts = value.split('.').map((part) => {
+    const parsed = Number.parseInt(part, 10)
+    return Number.isNaN(parsed) ? 0 : parsed
+  })
+  while (parts.length < 3) {
+    parts.push(0)
+  }
+  return { major: parts[0], minor: parts[1], patch: parts[2] }
+}
+
+const isVersionAtLeast = (candidate, minimum) => {
+  if (!candidate || !minimum) return false
+  if (candidate.major !== minimum.major) {
+    return candidate.major > minimum.major
+  }
+  if (candidate.minor !== minimum.minor) {
+    return candidate.minor > minimum.minor
+  }
+  return candidate.patch >= minimum.patch
+}
+
+const getScrollTriggerVersion = () => {
+  if (!isBrowser) return undefined
+  const { ScrollTrigger } = window
+  if (!ScrollTrigger || typeof ScrollTrigger.version !== 'string') {
+    return undefined
+  }
+  return parseVersion(ScrollTrigger.version)
+}
+
+const getScrollSmootherCompatibilityState = () => {
+  const version = getScrollTriggerVersion()
+  if (!version) return 'unknown'
+  return isVersionAtLeast(version, SCROLL_SMOOTHER_MIN_VERSION) ? 'supported' : 'unsupported'
+}
+
+const warnIncompatibleScrollSmoother = () => {
+  if (!isBrowser || scrollSmootherCompatibilityWarningShown) return
+  const { ScrollTrigger } = window
+  const detectedVersion = ScrollTrigger?.version ?? 'unknown'
+  console.warn(
+    `ScrollSmoother requires ScrollTrigger ${SCROLL_SMOOTHER_MIN_VERSION.major}.${SCROLL_SMOOTHER_MIN_VERSION.minor}.` +
+      `${SCROLL_SMOOTHER_MIN_VERSION.patch} or newer. Detected version: ${detectedVersion}. ScrollSmoother will be skipped.`
+  )
+  scrollSmootherCompatibilityWarningShown = true
+}
+
+const scheduleGsapPluginRegistrationRetry = () => {
+  if (!isBrowser) return
+  if (pendingGsapRegistrationRetry) {
+    return
+  }
+  pendingGsapRegistrationRetry = window.setTimeout(() => {
+    pendingGsapRegistrationRetry = undefined
+    ensureGsapPluginRegistration()
+  }, 50)
+}
+
+const getScrollTriggerCoreState = () => {
+  if (!isBrowser) return 'pending'
+  const { ScrollTrigger } = window
+  if (!ScrollTrigger || !ScrollTrigger.core) {
+    const compatibility = getScrollSmootherCompatibilityState()
+    if (compatibility === 'unsupported') {
+      scrollSmootherRegistrationDisabled = true
+      warnIncompatibleScrollSmoother()
+      return 'incompatible'
+    }
+    return 'pending'
+  }
+  const coreReady =
+    typeof ScrollTrigger.core._getVelocityProp === 'function' &&
+    typeof ScrollTrigger.core._inputObserver === 'function'
+  if (!coreReady) {
+    const compatibility = getScrollSmootherCompatibilityState()
+    if (compatibility === 'unsupported') {
+      scrollSmootherRegistrationDisabled = true
+      warnIncompatibleScrollSmoother()
+      return 'incompatible'
+    }
+    return 'pending'
+  }
+  return 'ready'
+}
+
+const ensureGsapPluginRegistration = () => {
+  if (!isBrowser) return
+
+  const { gsap, ScrollTrigger, ScrollSmoother } = window
+  if (!gsap || typeof gsap.registerPlugin !== 'function') {
+    scheduleGsapPluginRegistrationRetry()
+    return
+  }
+
+  const hasPlugin = (name) => {
+    if (typeof gsap.getPlugin !== 'function') {
+      return false
+    }
+    try {
+      return !!gsap.getPlugin(name)
+    } catch (error) {
+      return false
+    }
+  }
+
+  const registerIfAvailable = (plugin, name) => {
+    if (!plugin || hasPlugin(name)) {
+      return
+    }
+    try {
+      gsap.registerPlugin(plugin)
+    } catch (error) {
+      console.error(`Failed to register GSAP plugin: ${name}`, error)
+      scheduleGsapPluginRegistrationRetry()
+    }
+  }
+
+  if (ScrollTrigger) {
+    registerIfAvailable(ScrollTrigger, 'ScrollTrigger')
+  } else {
+    scheduleGsapPluginRegistrationRetry()
+  }
+
+  if (ScrollSmoother) {
+    if (scrollSmootherRegistrationDisabled) {
+      return
+    }
+    const coreState = getScrollTriggerCoreState()
+    if (coreState === 'pending') {
+      scheduleGsapPluginRegistrationRetry()
+      return
+    }
+    if (coreState === 'incompatible') {
+      scrollSmootherRegistrationDisabled = true
+      return
+    }
+    registerIfAvailable(ScrollSmoother, 'ScrollSmoother')
+  }
+}
+
 const scriptManifest = [
   { name: 'jquery', path: '../assets/js/vendor/jquery-3.6.0.min.js', test: () => !!(isBrowser && window.jQuery) },
   { name: 'jquery-ui', path: '../assets/js/jquery-ui.min.js', test: () => !!(isBrowser && window.jQuery && window.jQuery.ui) },
   { name: 'bootstrap', path: '../assets/js/bootstrap.min.js', test: hasWindowMember('bootstrap') },
   { name: 'gsap', path: '../assets/js/gsap.min.js', test: hasWindowMember('gsap') },
-  { name: 'ScrollTrigger', path: '../assets/js/ScrollTrigger.min.js', test: hasGsapPlugin('ScrollTrigger') },
-  { name: 'ScrollSmoother', path: '../assets/js/ScrollSmoother.min.js', test: hasGsapPlugin('ScrollSmoother') },
+  {
+    name: 'ScrollTrigger',
+    path: '../assets/js/ScrollTrigger.min.js',
+    test: hasGsapPlugin('ScrollTrigger'),
+    onLoad: ensureGsapPluginRegistration,
+  },
+  {
+    name: 'ScrollSmoother',
+    path: '../assets/js/ScrollSmoother.min.js',
+    test: hasGsapPlugin('ScrollSmoother'),
+    shouldLoad: () => {
+      if (scrollSmootherRegistrationDisabled) {
+        return false
+      }
+      const compatibility = getScrollSmootherCompatibilityState()
+      if (compatibility === 'unsupported') {
+        scrollSmootherRegistrationDisabled = true
+        warnIncompatibleScrollSmoother()
+        return false
+      }
+      return true
+    },
+    onLoad: ensureGsapPluginRegistration,
+  },
   { name: 'SplitText', path: '../assets/js/SplitText.min.js', test: hasGsapPlugin('SplitText') },
   { name: 'TweenMax', path: '../assets/js/twinmax.js', test: hasWindowMember('TweenMax') },
   { name: 'waypoints', path: '../assets/js/waypoints.js', test: hasWindowMember('Waypoint') },
@@ -57,11 +229,29 @@ const scriptManifest = [
 
 const status = new Map()
 
+const runDescriptorOnLoad = (descriptor) => {
+  if (typeof descriptor.onLoad === 'function') {
+    try {
+      descriptor.onLoad()
+    } catch (error) {
+      console.error(`Legacy script onLoad handler failed for ${descriptor.name}`, error)
+    }
+  }
+}
+
 const loadScriptTag = (descriptor) => {
   if (!isBrowser) return Promise.resolve()
 
+  if (typeof descriptor.shouldLoad === 'function' && !descriptor.shouldLoad()) {
+    status.set(descriptor.name, 'skipped')
+    const skippedPromise = Promise.resolve()
+    status.set(`${descriptor.name}:promise`, skippedPromise)
+    return skippedPromise
+  }
+
   if (descriptor.test?.()) {
     status.set(descriptor.name, 'loaded')
+    runDescriptorOnLoad(descriptor)
     return Promise.resolve()
   }
 
@@ -81,6 +271,7 @@ const loadScriptTag = (descriptor) => {
   const promise = new Promise((resolve, reject) => {
     script.addEventListener('load', () => {
       status.set(descriptor.name, 'loaded')
+      runDescriptorOnLoad(descriptor)
       if (descriptor.name === 'main') {
         window.webntricksLegacyMain = true
       }
