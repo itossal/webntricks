@@ -32,13 +32,92 @@ const hasGsapPlugin = (name) => () => {
   return hasWindowMember(name)()
 }
 
+let pendingGsapRegistrationRetry
+
+const scheduleGsapPluginRegistrationRetry = () => {
+  if (!isBrowser) return
+  if (pendingGsapRegistrationRetry) {
+    return
+  }
+  pendingGsapRegistrationRetry = window.setTimeout(() => {
+    pendingGsapRegistrationRetry = undefined
+    ensureGsapPluginRegistration()
+  }, 50)
+}
+
+const isScrollTriggerCoreReady = () => {
+  if (!isBrowser) return false
+  const { ScrollTrigger } = window
+  if (!ScrollTrigger || !ScrollTrigger.core) {
+    return false
+  }
+  return typeof ScrollTrigger.core._getVelocityProp === 'function'
+}
+
+const ensureGsapPluginRegistration = () => {
+  if (!isBrowser) return
+
+  const { gsap, ScrollTrigger, ScrollSmoother } = window
+  if (!gsap || typeof gsap.registerPlugin !== 'function') {
+    scheduleGsapPluginRegistrationRetry()
+    return
+  }
+
+  const hasPlugin = (name) => {
+    if (typeof gsap.getPlugin !== 'function') {
+      return false
+    }
+    try {
+      return !!gsap.getPlugin(name)
+    } catch (error) {
+      return false
+    }
+  }
+
+  const registerIfAvailable = (plugin, name) => {
+    if (!plugin || hasPlugin(name)) {
+      return
+    }
+    try {
+      gsap.registerPlugin(plugin)
+    } catch (error) {
+      console.error(`Failed to register GSAP plugin: ${name}`, error)
+      scheduleGsapPluginRegistrationRetry()
+    }
+  }
+
+  if (ScrollTrigger) {
+    registerIfAvailable(ScrollTrigger, 'ScrollTrigger')
+  } else {
+    scheduleGsapPluginRegistrationRetry()
+  }
+
+  if (ScrollSmoother) {
+    if (!isScrollTriggerCoreReady()) {
+      scheduleGsapPluginRegistrationRetry()
+      return
+    }
+    registerIfAvailable(ScrollSmoother, 'ScrollSmoother')
+  }
+}
+
 const scriptManifest = [
   { name: 'jquery', path: '../assets/js/vendor/jquery-3.6.0.min.js', test: () => !!(isBrowser && window.jQuery) },
   { name: 'jquery-ui', path: '../assets/js/jquery-ui.min.js', test: () => !!(isBrowser && window.jQuery && window.jQuery.ui) },
   { name: 'bootstrap', path: '../assets/js/bootstrap.min.js', test: hasWindowMember('bootstrap') },
   { name: 'gsap', path: '../assets/js/gsap.min.js', test: hasWindowMember('gsap') },
-  { name: 'ScrollTrigger', path: '../assets/js/ScrollTrigger.min.js', test: hasGsapPlugin('ScrollTrigger') },
-  { name: 'ScrollSmoother', path: '../assets/js/ScrollSmoother.min.js', test: hasGsapPlugin('ScrollSmoother') },
+  {
+    name: 'ScrollTrigger',
+    path: '../assets/js/ScrollTrigger.min.js',
+    test: hasGsapPlugin('ScrollTrigger'),
+    onLoad: ensureGsapPluginRegistration,
+  },
+  {
+    name: 'ScrollSmoother',
+    path: '../assets/js/ScrollSmoother.min.js',
+    test: hasGsapPlugin('ScrollSmoother'),
+    onLoad: ensureGsapPluginRegistration,
+  },
   { name: 'SplitText', path: '../assets/js/SplitText.min.js', test: hasGsapPlugin('SplitText') },
   { name: 'TweenMax', path: '../assets/js/twinmax.js', test: hasWindowMember('TweenMax') },
   { name: 'waypoints', path: '../assets/js/waypoints.js', test: hasWindowMember('Waypoint') },
@@ -57,11 +136,22 @@ const scriptManifest = [
 
 const status = new Map()
 
+const runDescriptorOnLoad = (descriptor) => {
+  if (typeof descriptor.onLoad === 'function') {
+    try {
+      descriptor.onLoad()
+    } catch (error) {
+      console.error(`Legacy script onLoad handler failed for ${descriptor.name}`, error)
+    }
+  }
+}
+
 const loadScriptTag = (descriptor) => {
   if (!isBrowser) return Promise.resolve()
 
   if (descriptor.test?.()) {
     status.set(descriptor.name, 'loaded')
+    runDescriptorOnLoad(descriptor)
     return Promise.resolve()
   }
 
@@ -81,6 +171,7 @@ const loadScriptTag = (descriptor) => {
   const promise = new Promise((resolve, reject) => {
     script.addEventListener('load', () => {
       status.set(descriptor.name, 'loaded')
+      runDescriptorOnLoad(descriptor)
       if (descriptor.name === 'main') {
         window.webntricksLegacyMain = true
       }
