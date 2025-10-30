@@ -109,7 +109,7 @@ async function main() {
       .replace(/([a-z])([A-Z])/g, '$1 $2')
       .replace(/([a-zA-Z])(\d+)/g, '$1 $2');
 
-    const vueContent = `<!-- Auto-generated from ${file} -->\n<template>\n  <div class=\"page-content\">\n${body}\n  </div>\n</template>\n\n<script setup>\nimport { onMounted } from 'vue'\nimport { usePageMetadata } from '@/composables/usePageMetadata'\n\nconst asset = (path) => path\n\nusePageMetadata(${JSON.stringify(friendlyName)})\n\nonMounted(() => {\n  window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' })\n})\n</script>\n`;
+    const vueContent = `<!-- Auto-generated from ${file} -->\n<template>\n  <div class=\"page-content\">\n${body}\n  </div>\n</template>\n\n<script setup>\nimport { onMounted } from 'vue'\nimport { usePageMetadata } from '@/composables/usePageMetadata'\nimport { assetUrl } from '@/utils/assets'\n\nconst asset = assetUrl\n\nusePageMetadata(${JSON.stringify(friendlyName)})\n\nonMounted(() => {\n  window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' })\n})\n</script>\n`;
 
     const outPath = path.join(viewsDir, `${componentName}.vue`);
     await fs.writeFile(outPath, vueContent, 'utf8');
