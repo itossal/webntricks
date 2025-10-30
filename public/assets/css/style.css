@@ -15012,3 +15012,24 @@ blockquote p {
     padding-top: 65px;
   }
 }
+
+.title_blue{
+  color:#2A4BFF !important;
+}
+
+.feature-area-1.space{
+  background-color:#2A4BFF !important;
+  margin-top: 50PX;
+    margin-bottom: 50px;
+}
+.process-card .process-card-number:after {
+  border: none !important;
+}
+
+.bg-title {
+    background-color: #2A4BFF !important;
+}
+
+.footer-layout5{
+   background-color: #2A4BFF !important;
+}

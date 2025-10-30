@@ -8,25 +8,25 @@
         <div class="container">
             <div class="hero-style13">
                 <div class="hero-thumb13-1 wow img-custom-anim-right fade_right" data-wow-duration="1.5s" data-wow-delay="0.1s">
-                    <img :data-mask-src="asset('/img/hero/hero-mask13-1.png')" :src="asset('/img/hero/hero-13-1.png')" alt="img">
+                    <img :data-mask-src="asset('/img/hero/hero-mask13-1.avif')" :src="asset('/img/hero/hero-13-1.avif')" style="max-width:380px;max-heigh:380px" alt="img">
                 </div>
                 <div class="hero-thumb13-2 wow img-custom-anim-left fade_left" data-wow-duration="1.5s" data-wow-delay="0.1s">
-                    <img class="spin-slow" :data-mask-src="asset('/img/hero/hero-mask13-2.png')" :src="asset('/img/hero/hero-13-2.png')" alt="img">
+                    <img class="spin-slow" :data-mask-src="asset('/img/hero/hero-mask13-2.avif')" :src="asset('/img/hero/hero-13-2.avif')" style="max-width:180px;max-heigh:180px" alt="img">
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-xl-9 col-lg-10">
-                        <h1 class="hero-title text-sm-end wow img-custom-anim-right" data-wow-duration="1.5s" data-wow-delay="0.1s"><img :src="asset('/img/normal/client_group_thumb_1-1.jpg')" alt="img"> We Craft</h1>
-                        <h1 class="hero-title wow img-custom-anim-left" data-wow-duration="1.7s" data-wow-delay="0.1s">Brands That</h1>
-                        <h1 class="hero-title wow img-custom-anim-left" data-wow-duration="1.9s" data-wow-delay="0.1s">Inspire Sharing</h1>
-                        <h1 class="hero-title text-sm-center wow img-custom-anim-left" data-wow-duration="1.9s" data-wow-delay="0.1s">& Growth</h1>
+                        <h1 class="hero-title text-sm-center  wow img-custom-anim-right" data-wow-duration="1.5s" data-wow-delay="0.1s"><img :src="asset('/img/normal/client_group_thumb_1-1.jpg')" alt="img">Fçonner</h1>
+                        <h1 class="hero-title wow img-custom-anim-left" data-wow-duration="1.7s" data-wow-delay="0.1s">l'envie, nourrir</h1>
+                        <h1 class="hero-title wow img-custom-anim-left" data-wow-duration="1.9s" data-wow-delay="0.1s">La croissance</h1>
+                        <h1 class="hero-title text-sm-center wow img-custom-anim-left title_blue" data-wow-duration="1.9s" data-wow-delay="0.1s">Acton le declic</h1>
                     </div>
                     <div class="col-lg-6">
-                        <p class="hero-text text-sm-center wow img-custom-anim-right" data-wow-duration="1.5s" data-wow-delay="0.1s">We are digital agency that helps businesses develop immersive and engaging user experiences that drive top level growth</p>
+                        <p class="hero-text text-sm-center wow img-custom-anim-right" data-wow-duration="1.5s" data-wow-delay="0.1s">Des solutions web innovantes et personnalisées pour propulser votre entreprise en ligne et générer des resultat concrétes.</p>
                         <div class="btn-group fade_right justify-content-sm-center">
                             <a href="project.html" class="btn wow img-custom-anim-left" >
                                 <span class="link-effect">
-                                    <span class="effect-1">VIEW OUR WORKS</span>
-                                    <span class="effect-1">VIEW OUR WORKS</span>
+                                    <span class="effect-1">Découvrez nos services</span>
+                                    <span class="effect-1">Découvrez nos services</span>
                                 </span>
                             </a>
                         </div>
@@ -57,16 +57,23 @@
     ==============================-->
     <div class="about-area-13 overflow-hidden space">
         <div class="container">
+            <div class="row">
+            <div class="col-xl-4">
+            <h1 class="hero-title wow img-custom-anim-left" data-wow-duration="1.9s" data-wow-delay="0.1s">13+</h1>
+          <p class="sec-text mt-25">Rejoigner plus de 13 ans d'expertise au service de la réussite digitale</p>
+            </div>
+             <div class="col-xl-8">
             <div class="row justify-content-end">
                 <div class="col-xxl-8">
                     <div class="title-area mb-0">
-                        <h2 class="sec-title style2"><span class="scroll-text-ani">We created Family Style to do what we love most products in creative ways strategies, identities and systems to bring cool ideas to moving forward.</span></h2>
-                        <p class="sec-text mt-25">If you ask our clients what it’s like working with 36, they’ll talk about how much we care about their success. For us, real relationships fuel real success. We love building brands</p>
+                        <h2 class="sec-title style2"><span class="scroll-text-ani">Boostez votre activité avec l’expertise digitale de Webntricks, forte de plus de 26 ans d’innovation au service des entrepreneurs !</span></h2>
+                        <p class="sec-text mt-25">Nous transformons vos idées en stratégies concrètes : sites web sur-mesure, identités fortes et solutions créatives pour positionner votre marque là où vos clients vous attendent.
+Faites le choix d’une équipe engagée, à l’écoute de vos ambitions : contactez-nous et passons ensemble à la vitesse supérieure pour votre succès digital.</p>
                         <div class="btn-wrap mt-35">
                             <a href="about.html" class="link-btn">
                                 <span class="link-effect">
-                                    <span class="effect-1">ABOUT US</span>
-                                    <span class="effect-1">ABOUT US</span>
+                                    <span class="effect-1">À PROPOS DE NOUS</span>
+                                    <span class="effect-1">À PROPOS DE NOUS</span>
                                 </span>
                                 <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
@@ -74,6 +81,8 @@
                     </div>
                 </div>
             </div>
+            </div>
+             </div>
         </div>
     </div>
 
@@ -142,23 +151,18 @@
     <!--==============================
     Project Area
     ==============================-->
-    <div class="project-area-13 bg-title space">
+    <div class="project-area-13 bg-title ">
         <div class="container-fluid p-0">
             <div class="project-static-wrap13">
                 <div class="sticky-wrap" id="sticky_item">
-                    <div id="tab-1" class="project-img" :data-bg-src="asset('/img/portfolio/portfolio8_3.jpg')">
+                    <div id="tab-1" class="project-img" :data-bg-src="asset('/img/portfolio/portfolio16_4.jpg')">
                     </div>
-                    <div id="tab-2" class="project-img" :data-bg-src="asset('/img/portfolio/portfolio8_4.jpg')">
-                    </div>
-                    <div id="tab-3" class="project-img" :data-bg-src="asset('/img/portfolio/portfolio8_5.jpg')">
-                    </div>
-                    <div id="tab-4" class="project-img" :data-bg-src="asset('/img/portfolio/portfolio8_6.jpg')">
-                    </div>
+               
                 </div>
                 <div class="project-content-wrap bg-title">
                     <div class="project-content active" data-tab="tab-1">
                         <div class="hidden-img">
-                            <img :src="asset('/img/portfolio/portfolio8_3.jpg')" alt="img">
+                            <img :src="asset('/img/portfolio/portfolio16_4.jpg')" alt="img">
                         </div>
                         <div class="portfolio-wrap style13">
                             <div class="portfolio-details">
@@ -268,7 +272,53 @@
     <!--==============================
     Feature Area
     ==============================-->
-    <div class="feature-area-3 space">
+    <div class="feature-area-1 space">
+        <div class="container">
+            <div class="title-area text-center">
+                <h2 class="sec-title text-smoke">Three Step Process</h2>
+            </div>
+            <div class="row gx-0 gy-40">
+                <div class="col-lg-4">
+                    <div class="process-card">
+                        <div class="process-card-number">
+                            Step 1
+                        </div>
+                        <h4 class="process-card-title">
+                            Strategic Approach
+                        </h4>
+                        <p class="process-card-text">We are a creative agency brands building insightful strategy, creating unique designs helping</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="process-card">
+                        <div class="process-card-number">
+                            Step 2
+                        </div>
+                        <h4 class="process-card-title">
+                            Collaboration is Key
+                        </h4>
+                        <p class="process-card-text">We are a creative agency brands building insightful strategy, creating unique designs helping</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="process-card">
+                        <div class="process-card-number">
+                            Step 3
+                        </div>
+                        <h4 class="process-card-title">
+                            End to End Delivery
+                        </h4>
+                        <p class="process-card-text">We are a creative agency brands building insightful strategy, creating unique designs helping</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--==============================
+    Feature Area
+    ==============================-->
+    <div class="feature-area-1 space-bottom">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-6 col-lg-8">
@@ -277,59 +327,59 @@
                     </div>
                 </div>
             </div>
-            <div class="row gy-4 justify-content-center">
+            <div class="row gy-4 align-items-center justify-content-center">
                 <div class="col-xl-4 col-md-6">
-                    <div class="feature-card style3">
-                        <div class="title-wrap">
-                            <h4 class="feature-card-title">
-                                <a href="service.html">Branding Design</a>
-                            </h4>
-                            <div class="feature-card-icon">
-                                <img :src="asset('/img/icon/feature-icon1-1.svg')" alt="icon">
-                            </div>
+                    <div class="feature-card">
+                        <div class="feature-card-icon">
+                            <img :src="asset('/img/icon/feature-icon1-1.svg')" alt="icon">
                         </div>
-                        <p class="feature-card-text">We care success relationships fuel real success We love building brands and helping</p>
-                        <ul class="feature-card-list">
-                            <li>Interaction Design</li>
-                            <li>Product Design</li>
-                            <li>3D Modeling/Animation</li>
-                        </ul>
+                        <h4 class="feature-card-title">
+                            <a href="service.html">Branding Design</a>
+                        </h4>
+                        <p class="feature-card-text">We care success relationships fuel success we love building</p>
+                        <a href="service-details.html" class="link-btn">
+                            <span class="link-effect">
+                                <span class="effect-1">VIEW DETAILS</span>
+                                <span class="effect-1">VIEW DETAILS</span>
+                            </span>
+                            <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
+                        </a>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6">
-                    <div class="feature-card style3">
-                        <div class="title-wrap">
-                            <h4 class="feature-card-title">
-                                <a href="service.html">Motion Graphics</a>
-                            </h4>
-                            <div class="feature-card-icon">
-                                <img :src="asset('/img/icon/feature-icon1-2.svg')" alt="icon">
-                            </div>
+                    <div class="feature-card">
+                        <div class="feature-card-icon">
+                            <img :src="asset('/img/icon/feature-icon1-2.svg')" alt="icon">
                         </div>
-                        <p class="feature-card-text">We care success relationships fuel real success We love building brands and helping</p>
-                        <ul class="feature-card-list">
-                            <li>Interaction Design</li>
-                            <li>Product Design</li>
-                            <li>3D Modeling/Animation</li>
-                        </ul>
+                        <h4 class="feature-card-title">
+                            <a href="service.html">Web Development</a>
+                        </h4>
+                        <p class="feature-card-text">We care success relationships fuel success we love building</p>
+                        <a href="service-details.html" class="link-btn">
+                            <span class="link-effect">
+                                <span class="effect-1">VIEW DETAILS</span>
+                                <span class="effect-1">VIEW DETAILS</span>
+                            </span>
+                            <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
+                        </a>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6">
-                    <div class="feature-card style3">
-                        <div class="title-wrap">
-                            <h4 class="feature-card-title">
-                                <a href="service.html">Digital Solution</a>
-                            </h4>
-                            <div class="feature-card-icon">
-                                <img :src="asset('/img/icon/feature-icon1-3.svg')" alt="icon">
-                            </div>
+                    <div class="feature-card">
+                        <div class="feature-card-icon">
+                            <img :src="asset('/img/icon/feature-icon1-3.svg')" alt="icon">
                         </div>
-                        <p class="feature-card-text">We care success relationships fuel real success We love building brands and helping</p>
-                        <ul class="feature-card-list">
-                            <li>Interaction Design</li>
-                            <li>Product Design</li>
-                            <li>3D Modeling/Animation</li>
-                        </ul>
+                        <h4 class="feature-card-title">
+                            <a href="service.html">Digital Marketing</a>
+                        </h4>
+                        <p class="feature-card-text">We care success relationships fuel success we love building</p>
+                        <a href="service-details.html" class="link-btn">
+                            <span class="link-effect">
+                                <span class="effect-1">VIEW DETAILS</span>
+                                <span class="effect-1">VIEW DETAILS</span>
+                            </span>
+                            <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -337,50 +387,67 @@
     </div>
 
     <!--==============================
-    Testimonial Area
+    Faq Area
     ==============================-->
-    <div class="testimonial-area-2 space bg-theme overflow-hidden">
-        <div class="container-fluid p-0">
-            <div class="row global-carousel testi-slider4" data-slide-show="1" data-dots="false" data-center-mode="true" data-xl-center-mode="true" data-ml-center-mode="true" data-center-padding="470px" data-xl-center-padding="380px" data-ml-center-padding="300px">
-                <div class="col-lg-4">
-                    <div class="testi-box style4">
-                        <div class="quote-icon">
-                            <img :src="asset('/img/icon/quote.svg')" alt="icon">
+    <div class="faq-area-2 space-bottom overflow-hidden">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <div class="accordion-area accordion" id="faqAccordion">
+
+                        <div class="accordion-card style2 active">
+                            <div class="accordion-header" id="collapse-item-1">
+                                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">Will you be updating the program?</button>
+                            </div>
+                            <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="collapse-item-1" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="faq-text">We design high quality websites that make users come back for more. A good website tells a story that will make users fully immerse themselves operating</p>
+                                </div>
+                            </div>
                         </div>
-                        <p class="testi-box_text">“It’s a pleasure working with Bunker our new brand positioning guidelines and translated them beautifully and consistently into our on-going marketing comms”</p>
-                        <div class="testi-box_profile">
-                            <h4 class="testi-box_name">Daniyel Karlos</h4>
-                            <span class="testi-box_desig">Senior Director of Marketing</span>
+
+
+                        <div class="accordion-card style2">
+                            <div class="accordion-header" id="collapse-item-2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">What happens to my data if I cancel?</button>
+                            </div>
+                            <div id="collapse-2" class="accordion-collapse collapse " aria-labelledby="collapse-item-2" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="faq-text">We design high quality websites that make users come back for more. A good website tells a story that will make users fully immerse themselves operating</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="testi-box style4">
-                        <div class="quote-icon">
-                            <img :src="asset('/img/icon/quote.svg')" alt="icon">
+
+
+                        <div class="accordion-card style2">
+                            <div class="accordion-header" id="collapse-item-3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">How I can optimize voice search?</button>
+                            </div>
+                            <div id="collapse-3" class="accordion-collapse collapse " aria-labelledby="collapse-item-3" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="faq-text">We design high quality websites that make users come back for more. A good website tells a story that will make users fully immerse themselves operating</p>
+                                </div>
+                            </div>
                         </div>
-                        <p class="testi-box_text">“It’s a pleasure working with Bunker our new brand positioning guidelines and translated them beautifully and consistently into our on-going marketing comms”</p>
-                        <div class="testi-box_profile">
-                            <h4 class="testi-box_name">Daniyel Karlos</h4>
-                            <span class="testi-box_desig">Senior Director of Marketing</span>
+
+                        <div class="accordion-card style2">
+                            <div class="accordion-header" id="collapse-item-4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">If I have questions, where can I find answers?</button>
+                            </div>
+                            <div id="collapse-4" class="accordion-collapse collapse " aria-labelledby="collapse-item-4" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="faq-text">We design high quality websites that make users come back for more. A good website tells a story that will make users fully immerse themselves operating</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="testi-box style4">
-                        <div class="quote-icon">
-                            <img :src="asset('/img/icon/quote.svg')" alt="icon">
-                        </div>
-                        <p class="testi-box_text">“It’s a pleasure working with Bunker our new brand positioning guidelines and translated them beautifully and consistently into our on-going marketing comms”</p>
-                        <div class="testi-box_profile">
-                            <h4 class="testi-box_name">Daniyel Karlos</h4>
-                            <span class="testi-box_desig">Senior Director of Marketing</span>
-                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
 
     <!--==============================
     Blog Area
@@ -446,11 +513,72 @@
             </div>
         </div>
     </section>
+    <!--==============================
+    Contact area
+    ================================-->
+    <div class="contact-area-2 space">
+        <div class="container">
+            <div class="row gy-40 justify-content-between">
+                <div class="col-lg-5">
+                    <div class="title-area">
+                        <h2 class="sec-title">Feel Free to Ask Anything</h2>
+                    </div>
+                    <div class="contact-card">
+                        <h4 class="box-title">Office:</h4>
+                        <p class="box-text">27 Division St, New York, NY 10002, USA</p>
+                    </div>
+                    <div class="contact-card">
+                        <h4 class="box-title">Contact:</h4>
+                        <p class="box-text">+1 800 123 654 987</p>
+                        <p class="box-text">frisk.agency@mail.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-form-wrap">
+                        
+                        <form action="mail.php" method="POST" class="contact-form ajax-contact">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control style-border" name="name" id="name" placeholder="Full name*">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control style-border" name="email" id="email" placeholder="Email address*">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control style-border" name="website" id="website" placeholder="Website link">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <textarea name="message" placeholder="How Can We Help You*" id="contactForm" class="form-control style-border"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-btn col-12">
+                                <button type="submit" class="btn mt-20">
+                                    <span class="link-effect">
+                                        <span class="effect-1">SEND MESSAGE</span>
+                                        <span class="effect-1">SEND MESSAGE</span>
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!--==============================
     CTA Area
     ==============================-->
-    <div class="cta-area-1 overflow-hidden bg-title space-top text-xl-start text-center">
+    <div class="cta-area-1 overflow-hidden subfooter bg-title space-top text-xl-start text-center">
         <div class="container">
             <div class="row justify-content-xl-between justify-content-center align-items-center">
                 <div class="col-xl-8 col-lg-10">
