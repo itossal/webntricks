@@ -18,8 +18,8 @@ const measureWidth = (element, cache) => {
   return width
 }
 
-const ensureClones = (marquee, container, widthCache) => {
-  const baseChildren = Array.from(marquee.children)
+const ensureClones = (marquee, container, widthCache, baseChildren, prepareChild) => {
+  const prepare = typeof prepareChild === 'function' ? prepareChild : () => {}
   if (!baseChildren.length) {
     return []
   }
@@ -48,6 +48,7 @@ const ensureClones = (marquee, container, widthCache) => {
       const clone = child.cloneNode(true)
       clone.dataset.marqueeClone = 'true'
       marquee.appendChild(clone)
+      prepare(clone)
       clones.push(clone)
       widthCache.set(clone, measureWidth(child, widthCache))
       totalWidth = currentWidth()
@@ -64,7 +65,31 @@ const createMarqueeInstance = (marquee) => {
   }
 
   const widthCache = new WeakMap()
-  const clones = ensureClones(marquee, container, widthCache)
+  const baseChildren = Array.from(marquee.children)
+
+  const marqueeStyleSnapshot = {
+    display: marquee.style.display || '',
+    flexWrap: marquee.style.flexWrap || '',
+    whiteSpace: marquee.style.whiteSpace || '',
+    willChange: marquee.style.willChange || '',
+  }
+
+  marquee.style.display = 'inline-flex'
+  marquee.style.flexWrap = 'nowrap'
+  marquee.style.whiteSpace = 'nowrap'
+  marquee.style.willChange = 'transform'
+
+  const childFlexSnapshot = new Map()
+  const prepareChild = (child) => {
+    if (!childFlexSnapshot.has(child)) {
+      childFlexSnapshot.set(child, child.style.flex || '')
+    }
+    child.style.flex = '0 0 auto'
+  }
+
+  baseChildren.forEach(prepareChild)
+
+  const clones = ensureClones(marquee, container, widthCache, baseChildren, prepareChild)
 
   let offset = 0
   let rafId
@@ -130,6 +155,15 @@ const createMarqueeInstance = (marquee) => {
       container.removeEventListener('mouseenter', onMouseEnter)
       container.removeEventListener('mouseleave', onMouseLeave)
       marquee.style.transform = ''
+      marquee.style.display = marqueeStyleSnapshot.display
+      marquee.style.flexWrap = marqueeStyleSnapshot.flexWrap
+      marquee.style.whiteSpace = marqueeStyleSnapshot.whiteSpace
+      marquee.style.willChange = marqueeStyleSnapshot.willChange
+      baseChildren.forEach((child) => {
+        if (child.parentElement === marquee) {
+          child.style.flex = childFlexSnapshot.get(child) || ''
+        }
+      })
       clones.forEach((clone) => {
         if (clone.parentElement === marquee) {
           clone.remove()
