@@ -33,6 +33,61 @@ const hasGsapPlugin = (name) => () => {
 }
 
 let pendingGsapRegistrationRetry
+let scrollSmootherRegistrationDisabled = false
+let scrollSmootherCompatibilityWarningShown = false
+
+const SCROLL_SMOOTHER_MIN_VERSION = { major: 3, minor: 11, patch: 0 }
+
+const parseVersion = (value) => {
+  if (typeof value !== 'string') {
+    return undefined
+  }
+  const parts = value.split('.').map((part) => {
+    const parsed = Number.parseInt(part, 10)
+    return Number.isNaN(parsed) ? 0 : parsed
+  })
+  while (parts.length < 3) {
+    parts.push(0)
+  }
+  return { major: parts[0], minor: parts[1], patch: parts[2] }
+}
+
+const isVersionAtLeast = (candidate, minimum) => {
+  if (!candidate || !minimum) return false
+  if (candidate.major !== minimum.major) {
+    return candidate.major > minimum.major
+  }
+  if (candidate.minor !== minimum.minor) {
+    return candidate.minor > minimum.minor
+  }
+  return candidate.patch >= minimum.patch
+}
+
+const getScrollTriggerVersion = () => {
+  if (!isBrowser) return undefined
+  const { ScrollTrigger } = window
+  if (!ScrollTrigger || typeof ScrollTrigger.version !== 'string') {
+    return undefined
+  }
+  return parseVersion(ScrollTrigger.version)
+}
+
+const getScrollSmootherCompatibilityState = () => {
+  const version = getScrollTriggerVersion()
+  if (!version) return 'unknown'
+  return isVersionAtLeast(version, SCROLL_SMOOTHER_MIN_VERSION) ? 'supported' : 'unsupported'
+}
+
+const warnIncompatibleScrollSmoother = () => {
+  if (!isBrowser || scrollSmootherCompatibilityWarningShown) return
+  const { ScrollTrigger } = window
+  const detectedVersion = ScrollTrigger?.version ?? 'unknown'
+  console.warn(
+    `ScrollSmoother requires ScrollTrigger ${SCROLL_SMOOTHER_MIN_VERSION.major}.${SCROLL_SMOOTHER_MIN_VERSION.minor}.` +
+      `${SCROLL_SMOOTHER_MIN_VERSION.patch} or newer. Detected version: ${detectedVersion}. ScrollSmoother will be skipped.`
+  )
+  scrollSmootherCompatibilityWarningShown = true
+}
 
 const scheduleGsapPluginRegistrationRetry = () => {
   if (!isBrowser) return
@@ -45,13 +100,31 @@ const scheduleGsapPluginRegistrationRetry = () => {
   }, 50)
 }
 
-const isScrollTriggerCoreReady = () => {
-  if (!isBrowser) return false
+const getScrollTriggerCoreState = () => {
+  if (!isBrowser) return 'pending'
   const { ScrollTrigger } = window
   if (!ScrollTrigger || !ScrollTrigger.core) {
-    return false
+    const compatibility = getScrollSmootherCompatibilityState()
+    if (compatibility === 'unsupported') {
+      scrollSmootherRegistrationDisabled = true
+      warnIncompatibleScrollSmoother()
+      return 'incompatible'
+    }
+    return 'pending'
   }
-  return typeof ScrollTrigger.core._getVelocityProp === 'function'
+  const coreReady =
+    typeof ScrollTrigger.core._getVelocityProp === 'function' &&
+    typeof ScrollTrigger.core._inputObserver === 'function'
+  if (!coreReady) {
+    const compatibility = getScrollSmootherCompatibilityState()
+    if (compatibility === 'unsupported') {
+      scrollSmootherRegistrationDisabled = true
+      warnIncompatibleScrollSmoother()
+      return 'incompatible'
+    }
+    return 'pending'
+  }
+  return 'ready'
 }
 
 const ensureGsapPluginRegistration = () => {
@@ -93,8 +166,16 @@ const ensureGsapPluginRegistration = () => {
   }
 
   if (ScrollSmoother) {
-    if (!isScrollTriggerCoreReady()) {
+    if (scrollSmootherRegistrationDisabled) {
+      return
+    }
+    const coreState = getScrollTriggerCoreState()
+    if (coreState === 'pending') {
       scheduleGsapPluginRegistrationRetry()
+      return
+    }
+    if (coreState === 'incompatible') {
+      scrollSmootherRegistrationDisabled = true
       return
     }
     registerIfAvailable(ScrollSmoother, 'ScrollSmoother')
@@ -116,6 +197,18 @@ const scriptManifest = [
     name: 'ScrollSmoother',
     path: '../assets/js/ScrollSmoother.min.js',
     test: hasGsapPlugin('ScrollSmoother'),
+    shouldLoad: () => {
+      if (scrollSmootherRegistrationDisabled) {
+        return false
+      }
+      const compatibility = getScrollSmootherCompatibilityState()
+      if (compatibility === 'unsupported') {
+        scrollSmootherRegistrationDisabled = true
+        warnIncompatibleScrollSmoother()
+        return false
+      }
+      return true
+    },
     onLoad: ensureGsapPluginRegistration,
   },
   { name: 'SplitText', path: '../assets/js/SplitText.min.js', test: hasGsapPlugin('SplitText') },
@@ -148,6 +241,13 @@ const runDescriptorOnLoad = (descriptor) => {
 
 const loadScriptTag = (descriptor) => {
   if (!isBrowser) return Promise.resolve()
+
+  if (typeof descriptor.shouldLoad === 'function' && !descriptor.shouldLoad()) {
+    status.set(descriptor.name, 'skipped')
+    const skippedPromise = Promise.resolve()
+    status.set(`${descriptor.name}:promise`, skippedPromise)
+    return skippedPromise
+  }
 
   if (descriptor.test?.()) {
     status.set(descriptor.name, 'loaded')
