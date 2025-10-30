@@ -117,8 +117,9 @@
 <script setup>
 import { onMounted } from 'vue'
 import { usePageMetadata } from '@/composables/usePageMetadata'
+import { assetUrl } from '@/utils/assets'
 
-const asset = (path) => path
+const asset = assetUrl
 
 usePageMetadata("Home 10")
 
