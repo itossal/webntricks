@@ -6,7 +6,7 @@
     ==============================-->
     <div class="hero-wrapper hero-17" id="hero">
         <div class="custom-container">
-            <div class="hero-inner" :data-bg-src="asset('/assets/img/hero/hero-17-1.jpg')">
+            <div class="hero-inner" :data-bg-src="asset('/img/hero/hero-17-1.jpg')">
                 <div class="container container3">
                     <div class="row">
                         <div class="col-xl-7">
@@ -26,9 +26,9 @@
                             </div>
                         </div>
                         <div class="col-xl-5 align-self-end">
-                            <div class="hero-video-card" :data-bg-src="asset('/assets/img/hero/hero-17-video-card-bg.jpg')">
+                            <div class="hero-video-card" :data-bg-src="asset('/img/hero/hero-17-video-card-bg.jpg')">
                                 <div class="box-img">
-                                    <img :src="asset('/assets/img/hero/hero-17-2.jpg')" alt="img">
+                                    <img :src="asset('/img/hero/hero-17-2.jpg')" alt="img">
                                 </div>
                                 <div class="box-content">
                                     <h4 class="box-title">Your Global Ai Service Partner Since 2021</h4>
@@ -58,7 +58,7 @@
     <div class="feature-area-5 overflow-hidden mt-4">
         <div class="custom-container">
             <div class="feature-card-wrap5">
-                <div class="feature-card style5" :data-bg-src="asset('/assets/img/feature/feature-card-bg5-1.jpg')">
+                <div class="feature-card style5" :data-bg-src="asset('/img/feature/feature-card-bg5-1.jpg')">
                     <h4 class="feature-card-title">
                         <a href="service.html">Empower Your Business With Integrated OpenAI Solutions</a>
                     </h4>
@@ -67,10 +67,10 @@
                             <span class="effect-1">EXPLORE MORE</span>
                             <span class="effect-1">EXPLORE MORE</span>
                         </span>
-                        <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                        <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                     </a> 
                 </div>
-                <div class="feature-card style5" :data-bg-src="asset('/assets/img/feature/feature-card-bg5-2.jpg')">
+                <div class="feature-card style5" :data-bg-src="asset('/img/feature/feature-card-bg5-2.jpg')">
                     <h4 class="feature-card-title">
                         <a href="service.html">AI Integration and Deployment</a>
                     </h4>
@@ -78,20 +78,20 @@
                     
                     <div class="slider__marquee clearfix marquee-wrap">
                         <div class="marquee_mode marquee__group">
-                            <h6 class="item m-item"><a href="#"><img :src="asset('/assets/img/icon/zoom-icon.svg')" alt="icon"></a></h6>
-                            <h6 class="item m-item"><a href="#"><img :src="asset('/assets/img/icon/slack.svg')" alt="icon"></a></h6>
-                            <h6 class="item m-item"><a href="#"><img :src="asset('/assets/img/icon/messenger.svg')" alt="icon"></a></h6>
-                            <h6 class="item m-item"><a href="#"><img :src="asset('/assets/img/icon/discord.svg')" alt="icon"></a></h6>
-                            <h6 class="item m-item"><a href="#"><img :src="asset('/assets/img/icon/skype.svg')" alt="icon"></a></h6>
-                            <h6 class="item m-item"><a href="#"><img :src="asset('/assets/img/icon/zoom-icon.svg')" alt="icon"></a></h6>
-                            <h6 class="item m-item"><a href="#"><img :src="asset('/assets/img/icon/slack.svg')" alt="icon"></a></h6>
-                            <h6 class="item m-item"><a href="#"><img :src="asset('/assets/img/icon/messenger.svg')" alt="icon"></a></h6>
-                            <h6 class="item m-item"><a href="#"><img :src="asset('/assets/img/icon/discord.svg')" alt="icon"></a></h6>
-                            <h6 class="item m-item"><a href="#"><img :src="asset('/assets/img/icon/skype.svg')" alt="icon"></a></h6>
+                            <h6 class="item m-item"><a href="#"><img :src="asset('/img/icon/zoom-icon.svg')" alt="icon"></a></h6>
+                            <h6 class="item m-item"><a href="#"><img :src="asset('/img/icon/slack.svg')" alt="icon"></a></h6>
+                            <h6 class="item m-item"><a href="#"><img :src="asset('/img/icon/messenger.svg')" alt="icon"></a></h6>
+                            <h6 class="item m-item"><a href="#"><img :src="asset('/img/icon/discord.svg')" alt="icon"></a></h6>
+                            <h6 class="item m-item"><a href="#"><img :src="asset('/img/icon/skype.svg')" alt="icon"></a></h6>
+                            <h6 class="item m-item"><a href="#"><img :src="asset('/img/icon/zoom-icon.svg')" alt="icon"></a></h6>
+                            <h6 class="item m-item"><a href="#"><img :src="asset('/img/icon/slack.svg')" alt="icon"></a></h6>
+                            <h6 class="item m-item"><a href="#"><img :src="asset('/img/icon/messenger.svg')" alt="icon"></a></h6>
+                            <h6 class="item m-item"><a href="#"><img :src="asset('/img/icon/discord.svg')" alt="icon"></a></h6>
+                            <h6 class="item m-item"><a href="#"><img :src="asset('/img/icon/skype.svg')" alt="icon"></a></h6>
                         </div>
                     </div>
                 </div>
-                <div class="feature-card style5" :data-bg-src="asset('/assets/img/feature/feature-card-bg5-3.jpg')">
+                <div class="feature-card style5" :data-bg-src="asset('/img/feature/feature-card-bg5-3.jpg')">
                     <h4 class="feature-card-title">
                         <a href="service.html">Transform Your Operations Through Smart API Integration</a>
                     </h4>
@@ -100,7 +100,7 @@
                             <span class="effect-1">EXPLORE MORE</span>
                             <span class="effect-1">EXPLORE MORE</span>
                         </span>
-                        <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                        <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                     </a> 
                 </div>
             </div>
@@ -131,7 +131,7 @@
                                 <p class="box-text">We design high quality websites that make back for more. A good website tells a story that make users immerse themselves operating</p>
                             </div>
                             <div class="box-icon">
-                                <img :src="asset('/assets/img/service/service-icon17-1.png')" alt="img">
+                                <img :src="asset('/img/service/service-icon17-1.png')" alt="img">
                             </div>
                         </div>
                         <div class="service-card2">
@@ -141,7 +141,7 @@
                                 <p class="box-text">We design high quality websites that make back for more. A good website tells a story that make users immerse themselves operating</p>
                             </div>
                             <div class="box-icon">
-                                <img :src="asset('/assets/img/service/service-icon17-2.png')" alt="img">
+                                <img :src="asset('/img/service/service-icon17-2.png')" alt="img">
                             </div>
                         </div>
                         <div class="service-card2">
@@ -151,7 +151,7 @@
                                 <p class="box-text">We design high quality websites that make back for more. A good website tells a story that make users immerse themselves operating</p>
                             </div>
                             <div class="box-icon">
-                                <img :src="asset('/assets/img/service/service-icon17-3.png')" alt="img">
+                                <img :src="asset('/img/service/service-icon17-3.png')" alt="img">
                             </div>
                         </div>
                         <div class="service-card2">
@@ -161,7 +161,7 @@
                                 <p class="box-text">We design high quality websites that make back for more. A good website tells a story that make users immerse themselves operating</p>
                             </div>
                             <div class="box-icon">
-                                <img :src="asset('/assets/img/service/service-icon17-4.png')" alt="img">
+                                <img :src="asset('/img/service/service-icon17-4.png')" alt="img">
                             </div>
                         </div>
                     </div>
@@ -189,7 +189,7 @@
             <div class="row align-items-center">
                 <div class="col-xl-6">
                     <div class="about-thumb17">
-                        <img :src="asset('/assets/img/normal/about_17-1.png')" alt="img">
+                        <img :src="asset('/img/normal/about_17-1.png')" alt="img">
                     </div>
                 </div>
                 <div class="col-xl-6">
@@ -229,7 +229,7 @@
                 <div class="col-xxl-3 col-xl-4 col-md-6">
                     <a href="project-details.html" class="portfolio-wrap style16">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio17_1.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio17_1.jpg')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <span class="portfolio-meta">
@@ -242,7 +242,7 @@
                 <div class="col-xxl-3 col-xl-4 col-md-6">
                     <a href="project-details.html" class="portfolio-wrap style16">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio17_2.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio17_2.jpg')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <span class="portfolio-meta">
@@ -255,7 +255,7 @@
                 <div class="col-xxl-3 col-xl-4 col-md-6">
                     <a href="project-details.html" class="portfolio-wrap style16">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio17_3.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio17_3.jpg')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <span class="portfolio-meta">
@@ -268,7 +268,7 @@
                 <div class="col-xxl-3 col-xl-4 col-md-6">
                     <a href="project-details.html" class="portfolio-wrap style16">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio17_4.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio17_4.jpg')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <span class="portfolio-meta">
@@ -287,7 +287,7 @@
     ==============================-->
     <div class="testimonial-area-6 overflow-hidden">
         <div class="custom-container">
-            <div class="testimonial-wrap6" :data-bg-src="asset('/assets/img/bg/testimonial-6-bg.jpg')">
+            <div class="testimonial-wrap6" :data-bg-src="asset('/img/bg/testimonial-6-bg.jpg')">
                 <div class="container container3">
                     <div class="row global-carousel testi-slider6" data-slide-show="1" data-arrows="true">
                         <div class="col-lg-12">
@@ -339,64 +339,64 @@
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-1.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-1.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-1.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-1.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-2.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-2.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-2.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-2.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-3.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-3.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-3.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-3.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-4.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-4.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-4.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-4.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-5.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-5.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-5.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-5.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-6.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-6.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-6.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-6.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-7.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-7.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-7.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-7.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <span class="link-effect">
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-8.svg')" alt="img"></span>
-                                    <span class="effect-1"><img :src="asset('/assets/img/client/client-1-8.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-8.svg')" alt="img"></span>
+                                    <span class="effect-1"><img :src="asset('/img/client/client-1-8.svg')" alt="img"></span>
                                 </span>
                             </a>
                         </li>
@@ -436,7 +436,7 @@
                                         <span class="effect-1">READ MORE</span>
                                         <span class="effect-1">READ MORE</span>
                                     </span>
-                                    <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                    <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                                 </span>
                             </span>
                         </button>
@@ -444,7 +444,7 @@
                     <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="collapse-item-1" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
                             <a href="blog-details.html" class="blog-img">
-                                <img :src="asset('/assets/img/blog/blog_accordion1_1.jpg')" alt="img">
+                                <img :src="asset('/img/blog/blog_accordion1_1.jpg')" alt="img">
                             </a>
                         </div>
                     </div>
@@ -466,7 +466,7 @@
                                         <span class="effect-1">READ MORE</span>
                                         <span class="effect-1">READ MORE</span>
                                     </span>
-                                    <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                    <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                                 </span>
                             </span>
                         </button>
@@ -474,7 +474,7 @@
                     <div id="collapse-2" class="accordion-collapse collapse " aria-labelledby="collapse-item-2" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
                             <a href="blog-details.html" class="blog-img">
-                                <img :src="asset('/assets/img/blog/blog_accordion1_1.jpg')" alt="img">
+                                <img :src="asset('/img/blog/blog_accordion1_1.jpg')" alt="img">
                             </a>
                         </div>
                     </div>
@@ -496,7 +496,7 @@
                                         <span class="effect-1">READ MORE</span>
                                         <span class="effect-1">READ MORE</span>
                                     </span>
-                                    <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                    <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                                 </span>
                             </span>
                         </button>
@@ -504,7 +504,7 @@
                     <div id="collapse-3" class="accordion-collapse collapse " aria-labelledby="collapse-item-3" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
                             <a href="blog-details.html" class="blog-img">
-                                <img :src="asset('/assets/img/blog/blog_accordion1_1.jpg')" alt="img">
+                                <img :src="asset('/img/blog/blog_accordion1_1.jpg')" alt="img">
                             </a>
                         </div>
                     </div>
@@ -526,7 +526,7 @@
                                         <span class="effect-1">READ MORE</span>
                                         <span class="effect-1">READ MORE</span>
                                     </span>
-                                    <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                    <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                                 </span>
                             </span>
                         </button>
@@ -534,7 +534,7 @@
                     <div id="collapse-4" class="accordion-collapse collapse " aria-labelledby="collapse-item-4" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
                             <a href="blog-details.html" class="blog-img">
-                                <img :src="asset('/assets/img/blog/blog_accordion1_1.jpg')" alt="img">
+                                <img :src="asset('/img/blog/blog_accordion1_1.jpg')" alt="img">
                             </a>
                         </div>
                     </div>
@@ -561,8 +561,9 @@
 <script setup>
 import { onMounted } from 'vue'
 import { usePageMetadata } from '@/composables/usePageMetadata'
+import { assetUrl } from '@/utils/assets'
 
-const asset = (path) => path
+const asset = assetUrl
 
 usePageMetadata("Home 17")
 

@@ -6,7 +6,7 @@
     ==============================-->
     <div class="hero-wrapper hero-5" id="hero">
         <div class="global-carousel" id="heroSlider5" data-fade="true" data-slide-show="1" data-lg-slide-show="1" data-md-slide-show="1" data-sm-slide-show="1" data-xs-slide-show="1" data-arrows="false">
-            <div class="hero-slider" :data-bg-src="asset('/assets/img/hero/hero-5-1.webp')">
+            <div class="hero-slider" :data-bg-src="asset('/img/hero/hero-5-1.webp')">
                 <div class="hero-overlay" data-overlay="title" data-opacity="5"></div>
                 <div class="container">
                     <div class="row">
@@ -15,7 +15,7 @@
                                 <h1 class="hero-title" data-ani="slideindown" data-ani-delay="0.1s">Modern Agency</h1>
                                 <p class="hero-text" data-ani="slideindown" data-ani-delay="0.2s">We are digital agency that helps immersive and engaging user experiences that</p>
                                 <div class="hero-year-tag" data-ani="slideindown" data-ani-delay="0.3s">
-                                    <img :src="asset('/assets/img/icon/worldwide.svg')" alt="img">
+                                    <img :src="asset('/img/icon/worldwide.svg')" alt="img">
                                     <h6>Agency of this year worldwide</h6>
                                 </div>
                             </div>
@@ -33,7 +33,7 @@
                     </div>
                 </div>
             </div>
-            <div class="hero-slider" :data-bg-src="asset('/assets/img/hero/hero-5-2.webp')">
+            <div class="hero-slider" :data-bg-src="asset('/img/hero/hero-5-2.webp')">
                 <div class="hero-overlay" data-overlay="title" data-opacity="5"></div>
                 <div class="container">
                     <div class="row">
@@ -42,7 +42,7 @@
                                 <h1 class="hero-title" data-ani="slideindown" data-ani-delay="0.1s">Modern Agency</h1>
                                 <p class="hero-text" data-ani="slideindown" data-ani-delay="0.2s">We are digital agency that helps immersive and engaging user experiences that</p>
                                 <div class="hero-year-tag" data-ani="slideindown" data-ani-delay="0.3s">
-                                    <img :src="asset('/assets/img/icon/worldwide.svg')" alt="img">
+                                    <img :src="asset('/img/icon/worldwide.svg')" alt="img">
                                     <h6>Agency of this year worldwide</h6>
                                 </div>
                             </div>
@@ -115,7 +115,7 @@
     ==============================-->
     <div class="about-area-1 space bg-gray">
         <div class="about-img-1-1 shape-mockup img-custom-anim-left wow" data-left="0" data-top="-100px" data-bottom="140px" data-wow-duration="1.5s" data-wow-delay="0.1s">
-            <img :src="asset('/assets/img/normal/about_1-1.jpg')" alt="img">
+            <img :src="asset('/img/normal/about_1-1.jpg')" alt="img">
         </div>
         <div class="container">
             <div class="row align-items-center justify-content-end">
@@ -134,7 +134,7 @@
                                             <span class="effect-1">ABOUT US</span>
                                             <span class="effect-1">ABOUT US</span>
                                         </span>
-                                        <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                        <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                                     </a>
                                 </div>
                             </div>
@@ -162,7 +162,7 @@
                     <div class="portfolio-wrap style4">
                         <div class="portfolio-thumb wow img-custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.2s">
                             <a href="project-details.html">
-                                <img :src="asset('/assets/img/portfolio/portfolio4_1.png')" alt="portfolio">
+                                <img :src="asset('/img/portfolio/portfolio4_1.png')" alt="portfolio">
                             </a>
                         </div>
                         <div class="portfolio-details">
@@ -179,7 +179,7 @@
                     <div class="portfolio-wrap style4">
                         <div class="portfolio-thumb wow img-custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.2s">
                             <a href="project-details.html">
-                                <img :src="asset('/assets/img/portfolio/portfolio4_2.png')" alt="portfolio">
+                                <img :src="asset('/img/portfolio/portfolio4_2.png')" alt="portfolio">
                             </a>
                         </div>
                         <div class="portfolio-details">
@@ -195,7 +195,7 @@
                     <div class="portfolio-wrap style4">
                         <div class="portfolio-thumb wow img-custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.2s">
                             <a href="project-details.html">
-                                <img :src="asset('/assets/img/portfolio/portfolio4_3.png')" alt="portfolio">
+                                <img :src="asset('/img/portfolio/portfolio4_3.png')" alt="portfolio">
                             </a>
                         </div>
                         <div class="portfolio-details">
@@ -211,7 +211,7 @@
                     <div class="portfolio-wrap style4">
                         <div class="portfolio-thumb wow img-custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.2s">
                             <a href="project-details.html">
-                                <img :src="asset('/assets/img/portfolio/portfolio4_4.png')" alt="portfolio">
+                                <img :src="asset('/img/portfolio/portfolio4_4.png')" alt="portfolio">
                             </a>
                         </div>
                         <div class="portfolio-details">
@@ -245,7 +245,7 @@
                 <div class="col-lg-4">
                     <div class="testi-box style2">
                         <div class="quote-icon">
-                            <img :src="asset('/assets/img/icon/quote.svg')" alt="icon">
+                            <img :src="asset('/img/icon/quote.svg')" alt="icon">
                         </div>
                         <p class="testi-box_text">“It’s a pleasure working with Bunker our new brand positioning guidelines and translated them beautifully and consistently into our on-going marketing comms”</p>
                         <div class="testi-box_profile">
@@ -257,7 +257,7 @@
                 <div class="col-lg-4">
                     <div class="testi-box style2">
                         <div class="quote-icon">
-                            <img :src="asset('/assets/img/icon/quote.svg')" alt="icon">
+                            <img :src="asset('/img/icon/quote.svg')" alt="icon">
                         </div>
                         <p class="testi-box_text">“It’s a pleasure working with Bunker our new brand positioning guidelines and translated them beautifully and consistently into our on-going marketing comms”</p>
                         <div class="testi-box_profile">
@@ -269,7 +269,7 @@
                 <div class="col-lg-4">
                     <div class="testi-box style2">
                         <div class="quote-icon">
-                            <img :src="asset('/assets/img/icon/quote.svg')" alt="icon">
+                            <img :src="asset('/img/icon/quote.svg')" alt="icon">
                         </div>
                         <p class="testi-box_text">“It’s a pleasure working with Bunker our new brand positioning guidelines and translated them beautifully and consistently into our on-going marketing comms”</p>
                         <div class="testi-box_profile">
@@ -290,7 +290,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="video-wrap">
-                        <div class="jarallax" :data-bg-src="asset('/assets/img/normal/video_2-1.jpg')">
+                        <div class="jarallax" :data-bg-src="asset('/img/normal/video_2-1.jpg')">
                         </div>
                         <a href="https://www.youtube.com/watch?v=vvNwlRLjLkU" class="play-btn circle-btn btn gsap-magnetic popup-video background-image">PLAY VIDEO
                         </a>
@@ -317,7 +317,7 @@
                     <div class="blog-card style3">
                         <div class="blog-img">
                             <a href="blog-details.html">
-                                <img :src="asset('/assets/img/blog/blog_1_1.png')" alt="blog image">
+                                <img :src="asset('/img/blog/blog_1_1.png')" alt="blog image">
                             </a>
                         </div>
                         <div class="blog-content">
@@ -331,7 +331,7 @@
                                     <span class="effect-1">READ MORE</span>
                                     <span class="effect-1">READ MORE</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -340,7 +340,7 @@
                     <div class="blog-card style3">
                         <div class="blog-img">
                             <a href="blog-details.html">
-                                <img :src="asset('/assets/img/blog/blog_1_2.png')" alt="blog image">
+                                <img :src="asset('/img/blog/blog_1_2.png')" alt="blog image">
                             </a>
                         </div>
                         <div class="blog-content">
@@ -354,7 +354,7 @@
                                     <span class="effect-1">READ MORE</span>
                                     <span class="effect-1">READ MORE</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -363,7 +363,7 @@
                     <div class="blog-card style3">
                         <div class="blog-img">
                             <a href="blog-details.html">
-                                <img :src="asset('/assets/img/blog/blog_1_3.png')" alt="blog image">
+                                <img :src="asset('/img/blog/blog_1_3.png')" alt="blog image">
                             </a>
                         </div>
                         <div class="blog-content">
@@ -377,7 +377,7 @@
                                     <span class="effect-1">READ MORE</span>
                                     <span class="effect-1">READ MORE</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -395,8 +395,9 @@
 <script setup>
 import { onMounted } from 'vue'
 import { usePageMetadata } from '@/composables/usePageMetadata'
+import { assetUrl } from '@/utils/assets'
 
-const asset = (path) => path
+const asset = assetUrl
 
 usePageMetadata("Home 5")
 

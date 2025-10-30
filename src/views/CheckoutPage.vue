@@ -4,7 +4,7 @@
 <!--==============================
     Breadcumb
     ============================== -->
-    <div class="breadcumb-wrapper " :data-bg-src="asset('/assets/img/bg/breadcumb-bg1-9.jpg')">
+    <div class="breadcumb-wrapper " :data-bg-src="asset('/img/bg/breadcumb-bg1-9.jpg')">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Checkout</h1>
@@ -197,8 +197,9 @@
 <script setup>
 import { onMounted } from 'vue'
 import { usePageMetadata } from '@/composables/usePageMetadata'
+import { assetUrl } from '@/utils/assets'
 
-const asset = (path) => path
+const asset = assetUrl
 
 usePageMetadata("Checkout")
 

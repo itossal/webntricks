@@ -4,7 +4,7 @@
 <!--==============================
     Breadcumb
     ============================== -->
-    <div class="breadcumb-wrapper " :data-bg-src="asset('/assets/img/bg/breadcumb-bg1-7.jpg')">
+    <div class="breadcumb-wrapper " :data-bg-src="asset('/img/bg/breadcumb-bg1-7.jpg')">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Portfolio</h1>
@@ -20,7 +20,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <ul class="award-wrap-area">
-                        <li class="single-award-list style2 tg-img-reveal-item" data-fx="1" data-img="/assets/img/award/award-1-1.png">
+                        <li class="single-award-list style2 tg-img-reveal-item" data-fx="1" data-img="/img/award/award-1-1.png">
                             <span class="award-year">2017</span>
                             <div class="award-details">
                                 <h4><a href="project.html">Decentralized Platform</a></h4>
@@ -32,7 +32,7 @@
                             </div>
                             <span class="award-tag">Webflow</span>
                         </li>
-                        <li class="single-award-list style2 tg-img-reveal-item" data-fx="1" data-img="/assets/img/award/award-1-2.png">
+                        <li class="single-award-list style2 tg-img-reveal-item" data-fx="1" data-img="/img/award/award-1-2.png">
                             <span class="award-year">2019</span>
                             <div class="award-details">
                                 <h4><a href="project.html">App for Business</a></h4>
@@ -43,7 +43,7 @@
                             </div>
                             <span class="award-tag">Themeforest</span>
                         </li>
-                        <li class="single-award-list style2 tg-img-reveal-item" data-fx="1" data-img="/assets/img/award/award-1-3.png">
+                        <li class="single-award-list style2 tg-img-reveal-item" data-fx="1" data-img="/img/award/award-1-3.png">
                             <span class="award-year">2019</span>
                             <div class="award-details">
                                 <h4><a href="project.html">Website Development</a></h4>
@@ -54,7 +54,7 @@
                             </div>
                             <span class="award-tag">Framer</span>
                         </li>
-                        <li class="single-award-list style2 tg-img-reveal-item" data-fx="1" data-img="/assets/img/award/award-1-4.png">
+                        <li class="single-award-list style2 tg-img-reveal-item" data-fx="1" data-img="/img/award/award-1-4.png">
                             <span class="award-year">2022</span>
                             <div class="award-details">
                                 <h4><a href="project.html">Nova Scotia Winery</a></h4>
@@ -66,7 +66,7 @@
                             </div>
                             <span class="award-tag">Template monster</span>
                         </li>
-                        <li class="single-award-list style2 tg-img-reveal-item" data-fx="1" data-img="/assets/img/award/award-1-5.png">
+                        <li class="single-award-list style2 tg-img-reveal-item" data-fx="1" data-img="/img/award/award-1-5.png">
                             <span class="award-year">2023</span>
                             <div class="award-details">
                                 <h4><a href="project.html">Educational Platform</a></h4>
@@ -114,8 +114,9 @@
 <script setup>
 import { onMounted } from 'vue'
 import { usePageMetadata } from '@/composables/usePageMetadata'
+import { assetUrl } from '@/utils/assets'
 
-const asset = (path) => path
+const asset = assetUrl
 
 usePageMetadata("Project 6")
 

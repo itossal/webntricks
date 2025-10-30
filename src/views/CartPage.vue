@@ -4,7 +4,7 @@
 <!--==============================
     Breadcumb
     ============================== -->
-    <div class="breadcumb-wrapper " :data-bg-src="asset('/assets/img/bg/breadcumb-bg1-9.jpg')">
+    <div class="breadcumb-wrapper " :data-bg-src="asset('/img/bg/breadcumb-bg1-9.jpg')">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">My Cart</h1>
@@ -31,7 +31,7 @@
                                 <a href="#" class="remove"><i class="fas fa-times"></i></a>
                             </td>
                             <td data-title="Product">
-                                <a class="cart-productimage" href="shop-details.html"><img width="100" height="108" :src="asset('/assets/img/product/product_thumb_1_1.jpg')" alt="Image"></a>
+                                <a class="cart-productimage" href="shop-details.html"><img width="100" height="108" :src="asset('/img/product/product_thumb_1_1.jpg')" alt="Image"></a>
                             </td>
                             <td data-title="Name">
                                 <a class="cart-productname" href="shop-details.html">Ripple Crewneck</a>
@@ -57,7 +57,7 @@
                                 <a href="#" class="remove"><i class="fas fa-times"></i></a>
                             </td>
                             <td data-title="Product">
-                                <a class="cart-productimage" href="shop-details.html"><img width="100" height="108" :src="asset('/assets/img/product/product_thumb_1_2.jpg')" alt="Image"></a>
+                                <a class="cart-productimage" href="shop-details.html"><img width="100" height="108" :src="asset('/img/product/product_thumb_1_2.jpg')" alt="Image"></a>
                             </td>
                             <td data-title="Name">
                                 <a class="cart-productname" href="shop-details.html">Herman Miller</a>
@@ -161,8 +161,9 @@
 <script setup>
 import { onMounted } from 'vue'
 import { usePageMetadata } from '@/composables/usePageMetadata'
+import { assetUrl } from '@/utils/assets'
 
-const asset = (path) => path
+const asset = assetUrl
 
 usePageMetadata("Cart")
 

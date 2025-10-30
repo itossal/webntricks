@@ -12,7 +12,7 @@
                         <div class="portfolio-wrap style6">
                             <div class="portfolio-thumb">
                                 <a href="project-details.html">
-                                    <img :src="asset('/assets/img/portfolio/portfolio7_1.jpg')" alt="portfolio">
+                                    <img :src="asset('/img/portfolio/portfolio7_1.jpg')" alt="portfolio">
                                 </a>
                             </div>
                             <div class="portfolio-details">
@@ -27,7 +27,7 @@
                         <div class="portfolio-wrap style6">
                             <div class="portfolio-thumb">
                                 <a href="project-details.html">
-                                    <img :src="asset('/assets/img/portfolio/portfolio7_2.jpg')" alt="portfolio">
+                                    <img :src="asset('/img/portfolio/portfolio7_2.jpg')" alt="portfolio">
                                 </a>
                             </div>
                             <div class="portfolio-details">
@@ -42,7 +42,7 @@
                         <div class="portfolio-wrap style6">
                             <div class="portfolio-thumb">
                                 <a href="project-details.html">
-                                    <img :src="asset('/assets/img/portfolio/portfolio7_3.jpg')" alt="portfolio">
+                                    <img :src="asset('/img/portfolio/portfolio7_3.jpg')" alt="portfolio">
                                 </a>
                             </div>
                             <div class="portfolio-details">
@@ -57,7 +57,7 @@
                         <div class="portfolio-wrap style6">
                             <div class="portfolio-thumb">
                                 <a href="project-details.html">
-                                    <img :src="asset('/assets/img/portfolio/portfolio7_1.jpg')" alt="portfolio">
+                                    <img :src="asset('/img/portfolio/portfolio7_1.jpg')" alt="portfolio">
                                 </a>
                             </div>
                             <div class="portfolio-details">
@@ -72,7 +72,7 @@
                         <div class="portfolio-wrap style6">
                             <div class="portfolio-thumb">
                                 <a href="project-details.html">
-                                    <img :src="asset('/assets/img/portfolio/portfolio7_2.jpg')" alt="portfolio">
+                                    <img :src="asset('/img/portfolio/portfolio7_2.jpg')" alt="portfolio">
                                 </a>
                             </div>
                             <div class="portfolio-details">
@@ -87,7 +87,7 @@
                         <div class="portfolio-wrap style6">
                             <div class="portfolio-thumb">
                                 <a href="project-details.html">
-                                    <img :src="asset('/assets/img/portfolio/portfolio7_3.jpg')" alt="portfolio">
+                                    <img :src="asset('/img/portfolio/portfolio7_3.jpg')" alt="portfolio">
                                 </a>
                             </div>
                             <div class="portfolio-details">
@@ -138,8 +138,9 @@
 <script setup>
 import { onMounted } from 'vue'
 import { usePageMetadata } from '@/composables/usePageMetadata'
+import { assetUrl } from '@/utils/assets'
 
-const asset = (path) => path
+const asset = assetUrl
 
 usePageMetadata("Home 11")
 

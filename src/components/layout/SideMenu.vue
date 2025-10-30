@@ -2,12 +2,12 @@
   <div class="sidemenu-wrapper" :class="{ open: props.open }" v-show="props.open" @click.self="$emit('close')">
     <div class="sidemenu-content">
       <button class="closeButton sideMenuCls" type="button" @click="$emit('close')">
-        <img :src="asset('/assets/img/icon/close.svg')" alt="Close menu" />
+        <img :src="asset('/img/icon/close.svg')" alt="Close menu" />
       </button>
       <div class="widget footer-widget">
         <div class="widget-about">
           <div class="footer-logo">
-            <a href="index.html"><img :src="asset('/assets/img/logo-white.svg')" alt="Ovation" /></a>
+            <a href="index.html"><img :src="asset('/img/logo-white.svg')" alt="Ovation" /></a>
           </div>
           <p class="about-text">
             We are digital agency that helps businesses develop immersive and engaging

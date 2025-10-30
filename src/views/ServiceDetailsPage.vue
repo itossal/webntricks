@@ -24,7 +24,7 @@
             <div class="row align-items-center justify-content-center">
                 <div class="col-xl-12">
                     <div class="service-inner-thumb mb-80 wow img-custom-anim-top">
-                        <img class="w-100" :src="asset('/assets/img/service/service-details1-1.png')" alt="img">
+                        <img class="w-100" :src="asset('/img/service/service-details1-1.png')" alt="img">
                     </div>
                 </div>
                 <div class="col-xl-8">
@@ -39,7 +39,7 @@
                 <div class="col-lg-12">
                     <div class="video-area-1 mt-80 mb-80">
                         <div class="video-wrap">
-                            <div class="jarallax" :data-bg-src="asset('/assets/img/normal/video_2-2.png')">
+                            <div class="jarallax" :data-bg-src="asset('/img/normal/video_2-2.png')">
                             </div>
                             <a href="https://www.youtube.com/watch?v=vvNwlRLjLkU" class="play-btn popup-video background-image">
                             </a>
@@ -55,7 +55,7 @@
                         <div class="col-md-6">
                             <div class="feature-card">
                                 <div class="feature-card-icon">
-                                    <img :src="asset('/assets/img/icon/feature-icon1-3.svg')" alt="icon">
+                                    <img :src="asset('/img/icon/feature-icon1-3.svg')" alt="icon">
                                 </div>
                                 <h4 class="feature-card-title">
                                     <a href="service.html">Custom Solution</a>
@@ -66,7 +66,7 @@
                         <div class="col-md-6">
                             <div class="feature-card">
                                 <div class="feature-card-icon">
-                                    <img :src="asset('/assets/img/icon/feature-icon1-6.svg')" alt="icon">
+                                    <img :src="asset('/img/icon/feature-icon1-6.svg')" alt="icon">
                                 </div>
                                 <h4 class="feature-card-title">
                                     <a href="service.html">In-time Result</a>
@@ -104,8 +104,9 @@
 <script setup>
 import { onMounted } from 'vue'
 import { usePageMetadata } from '@/composables/usePageMetadata'
+import { assetUrl } from '@/utils/assets'
 
-const asset = (path) => path
+const asset = assetUrl
 
 usePageMetadata("Service Details")
 

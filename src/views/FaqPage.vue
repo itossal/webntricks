@@ -4,7 +4,7 @@
 <!--==============================
     Breadcumb
     ============================== -->
-    <div class="breadcumb-wrapper " :data-bg-src="asset('/assets/img/bg/breadcumb-bg1-5.jpg')">
+    <div class="breadcumb-wrapper " :data-bg-src="asset('/img/bg/breadcumb-bg1-5.jpg')">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">FAQs</h1>
@@ -82,7 +82,7 @@
                 <div class="col-xxl-6 col-xl-6">
                     <div class="feature-card style-grid">
                         <div class="feature-card-icon">
-                            <img :src="asset('/assets/img/icon/phone.svg')" alt="icon">
+                            <img :src="asset('/img/icon/phone.svg')" alt="icon">
                         </div>
                         <div class="feature-card-details">
                             <h4 class="feature-card-title">
@@ -94,7 +94,7 @@
                                     <span class="effect-1">+1 800 123 654 987</span>
                                     <span class="effect-1">+1 800 123 654 987</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -102,7 +102,7 @@
                 <div class="col-xxl-6 col-xl-6">
                     <div class="feature-card style-grid">
                         <div class="feature-card-icon">
-                            <img :src="asset('/assets/img/icon/speech-bubble.svg')" alt="icon">
+                            <img :src="asset('/img/icon/speech-bubble.svg')" alt="icon">
                         </div>
                         <div class="feature-card-details">
                             <h4 class="feature-card-title">
@@ -114,7 +114,7 @@
                                     <span class="effect-1">frisk.agency@mail.com</span>
                                     <span class="effect-1">frisk.agency@mail.com</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -146,8 +146,9 @@
 <script setup>
 import { onMounted } from 'vue'
 import { usePageMetadata } from '@/composables/usePageMetadata'
+import { assetUrl } from '@/utils/assets'
 
-const asset = (path) => path
+const asset = assetUrl
 
 usePageMetadata("Faq")
 

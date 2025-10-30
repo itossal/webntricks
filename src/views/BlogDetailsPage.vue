@@ -24,7 +24,7 @@
                     <div class="col-70">
                         <div class="blog__details-wrap">
                             <div class="blog__details-thumb">
-                                <img :src="asset('/assets/img/blog/blog_details01.jpg')" alt="img">
+                                <img :src="asset('/img/blog/blog_details01.jpg')" alt="img">
                             </div>
                             <div class="blog__details-content">
                                 <div class="blog-post-meta">
@@ -42,7 +42,7 @@
                                 <p>BaseCreate is pleased to announce that it has been commissioned by Leighton Asia reposition its brand. We will help Leighton Asia evolve its brand strategy, and will be responsible updating Leighton Asia’s brand identity, website, and other collaterals.</p>
                                 <p>For almost 50 years Leighton Asia, one of the region’s largest and most respected construction companies, has been progressively building for a better future by leveraging international expertise with local intelligence. In that time Leighton has delivered some of Asia’s prestigious buildings and transformational infrastructure projects.</p>
                                 <blockquote>
-                                    <img class="blockquote-icon" :src="asset('/assets/img/icon/quote.svg')" alt="img">
+                                    <img class="blockquote-icon" :src="asset('/img/icon/quote.svg')" alt="img">
                                     <p>“It’s a pleasure working with Bunker. They understood our brand positioning guidelines and translated them beautifully consistently into our on-going marketing comms”</p>
                                 </blockquote>
                                 <p>Leighton Asia’s brand refreshment will help position the company to meet the challenges of  future, as it seeks to lead the industry in technological innovation and sustainable building practices to deliver long-lasting value for its clients.</p>
@@ -50,12 +50,12 @@
                                     <div class="row align-items-center">
                                         <div class="col-sm-6">
                                             <div class="blog__details-inner-thumb">
-                                                <img :src="asset('/assets/img/blog/blog_details02.jpg')" alt="img">
+                                                <img :src="asset('/img/blog/blog_details02.jpg')" alt="img">
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="blog__details-inner-thumb">
-                                                <img :src="asset('/assets/img/blog/blog_details03.jpg')" alt="img">
+                                                <img :src="asset('/img/blog/blog_details03.jpg')" alt="img">
                                             </div>
                                         </div>
                                     </div>
@@ -117,7 +117,7 @@
                             </div>
                             <div class="blog__avatar-wrap">
                                 <div class="blog__avatar-img">
-                                    <a href="#"><img :src="asset('/assets/img/blog/blog_avatar01.png')" alt="img"></a>
+                                    <a href="#"><img :src="asset('/img/blog/blog_avatar01.png')" alt="img"></a>
                                 </div>
                                 <div class="blog__avatar-info">
                                     <h4 class="name"><a href="#">Ashton Porter</a></h4>
@@ -131,7 +131,7 @@
                                         <li>
                                             <div class="comments-box">
                                                 <div class="comments-avatar">
-                                                    <img :src="asset('/assets/img/blog/comment01.png')" alt="img">
+                                                    <img :src="asset('/img/blog/comment01.png')" alt="img">
                                                 </div>
                                                 <div class="comments-text">
                                                     <div class="avatar-name">
@@ -144,7 +144,7 @@
                                                             <span class="effect-1">REPLY</span>
                                                             <span class="effect-1">REPLY</span>
                                                         </span>
-                                                        <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                                        <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                                                     </a>
                                                 </div>
                                             </div>
@@ -152,7 +152,7 @@
                                                 <li>
                                                     <div class="comments-box">
                                                         <div class="comments-avatar">
-                                                            <img :src="asset('/assets/img/blog/comment02.png')" alt="img">
+                                                            <img :src="asset('/img/blog/comment02.png')" alt="img">
                                                         </div>
                                                         <div class="comments-text">
                                                             <div class="avatar-name">
@@ -165,7 +165,7 @@
                                                                     <span class="effect-1">REPLY</span>
                                                                     <span class="effect-1">REPLY</span>
                                                                 </span>
-                                                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                                                             </a>
                                                         </div>
                                                     </div>
@@ -252,7 +252,7 @@
                                 <div class="sidebar__post-list">
                                     <div class="sidebar__post-item">
                                         <div class="sidebar__post-thumb">
-                                            <a href="blog-details.html"><img :src="asset('/assets/img/blog/sb_post01.jpg')" alt="img"></a>
+                                            <a href="blog-details.html"><img :src="asset('/img/blog/sb_post01.jpg')" alt="img"></a>
                                         </div>
                                         <div class="sidebar__post-content">
                                             <h5 class="title"><a href="blog-details.html">6 Big Commerce Design Tips For Big</a></h5>
@@ -261,7 +261,7 @@
                                     </div>
                                     <div class="sidebar__post-item">
                                         <div class="sidebar__post-thumb">
-                                            <a href="blog-details.html"><img :src="asset('/assets/img/blog/sb_post02.jpg')" alt="img"></a>
+                                            <a href="blog-details.html"><img :src="asset('/img/blog/sb_post02.jpg')" alt="img"></a>
                                         </div>
                                         <div class="sidebar__post-content">
                                             <h5 class="title"><a href="blog-details.html">Five Winning Voice Search Marketing</a></h5>
@@ -270,7 +270,7 @@
                                     </div>
                                     <div class="sidebar__post-item">
                                         <div class="sidebar__post-thumb">
-                                            <a href="blog-details.html"><img :src="asset('/assets/img/blog/sb_post03.jpg')" alt="img"></a>
+                                            <a href="blog-details.html"><img :src="asset('/img/blog/sb_post03.jpg')" alt="img"></a>
                                         </div>
                                         <div class="sidebar__post-content">
                                             <h5 class="title"><a href="blog-details.html">Four Steps to Conduct a Success</a></h5>
@@ -326,8 +326,9 @@
 <script setup>
 import { onMounted } from 'vue'
 import { usePageMetadata } from '@/composables/usePageMetadata'
+import { assetUrl } from '@/utils/assets'
 
-const asset = (path) => path
+const asset = assetUrl
 
 usePageMetadata("Blog Details")
 

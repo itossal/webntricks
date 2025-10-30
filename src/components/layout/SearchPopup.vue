@@ -6,12 +6,12 @@
     @click.self="$emit('close')"
   >
     <button class="searchClose" type="button" @click="$emit('close')">
-      <img :src="asset('/assets/img/icon/close.svg')" alt="Close search" />
+      <img :src="asset('/img/icon/close.svg')" alt="Close search" />
     </button>
     <form action="#">
       <input type="text" placeholder="Search Here.." />
       <button type="submit">
-        <img :src="asset('/assets/img/icon/search-white.svg')" alt="Submit search" />
+        <img :src="asset('/img/icon/search-white.svg')" alt="Submit search" />
       </button>
     </form>
   </div>

@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="hero-14-thumb">
-            <img :src="asset('/assets/img/hero/hero-14-1.png')" alt="img">
+            <img :src="asset('/img/hero/hero-14-1.png')" alt="img">
         </div>
     </div>
     <!--======== / Hero Section ========-->
@@ -113,7 +113,7 @@
     ==============================-->
     <div class="about-area-14 space bg-smoke">
         <div class="about-img-1-1 shape-mockup img-custom-anim-left wow" data-left="0" data-top="-100px" data-bottom="140px" data-wow-duration="1.5s" data-wow-delay="0.1s">
-            <img :src="asset('/assets/img/normal/about_14-1.jpg')" alt="img">
+            <img :src="asset('/img/normal/about_14-1.jpg')" alt="img">
         </div>
         <div class="container">
             <div class="row align-items-center justify-content-end">
@@ -129,7 +129,7 @@
                                             <span class="effect-1">ABOUT US</span>
                                             <span class="effect-1">ABOUT US</span>
                                         </span>
-                                        <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                        <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                                     </a>
                                 </div>
                             </div>
@@ -200,7 +200,7 @@
                 <div class="col-lg-4">
                     <a href="project-details.html" class="portfolio-wrap style2">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio14_1.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio14_1.jpg')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <h3 class="portfolio-title">Decentralized Platform</h3>
@@ -215,7 +215,7 @@
                 <div class="col-lg-4">
                     <a href="project-details.html" class="portfolio-wrap style2">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio14_2.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio14_2.jpg')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <h3 class="portfolio-title">Decentralized Platform</h3>
@@ -230,7 +230,7 @@
                 <div class="col-lg-4">
                     <a href="project-details.html" class="portfolio-wrap style2">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio14_3.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio14_3.jpg')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <h3 class="portfolio-title">Decentralized Platform</h3>
@@ -245,7 +245,7 @@
                 <div class="col-lg-4">
                     <a href="project-details.html" class="portfolio-wrap style2">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio14_4.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio14_4.jpg')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <h3 class="portfolio-title">Decentralized Platform</h3>
@@ -260,7 +260,7 @@
                 <div class="col-lg-4">
                     <a href="project-details.html" class="portfolio-wrap style2">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio14_1.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio14_1.jpg')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <h3 class="portfolio-title">Decentralized Platform</h3>
@@ -275,7 +275,7 @@
                 <div class="col-lg-4">
                     <a href="project-details.html" class="portfolio-wrap style2">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio14_2.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio14_2.jpg')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <h3 class="portfolio-title">Decentralized Platform</h3>
@@ -290,7 +290,7 @@
                 <div class="col-lg-4">
                     <a href="project-details.html" class="portfolio-wrap style2">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio14_3.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio14_3.jpg')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <h3 class="portfolio-title">Decentralized Platform</h3>
@@ -305,7 +305,7 @@
                 <div class="col-lg-4">
                     <a href="project-details.html" class="portfolio-wrap style2">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio14_4.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio14_4.jpg')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <h3 class="portfolio-title">Decentralized Platform</h3>
@@ -417,7 +417,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="video-wrap">
-                        <div class="jarallax" :data-bg-src="asset('/assets/img/normal/video_14-1.jpg')">
+                        <div class="jarallax" :data-bg-src="asset('/img/normal/video_14-1.jpg')">
                         </div>
                         <a href="https://www.youtube.com/watch?v=vvNwlRLjLkU" class="play-btn circle-btn btn gsap-magnetic popup-video background-image">PLAY VIDEO
                         </a>
@@ -436,7 +436,7 @@
                 <div class="col-xl-2 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img :src="asset('/assets/img/team/team-1-1.png')" alt="Team Image">
+                            <img :src="asset('/img/team/team-1-1.png')" alt="Team Image">
                         </div>
                         <div class="team-card_content">
                             <h3 class="team-card_title"><a href="team-details.html">Daniyel Karlos</a></h3>
@@ -447,7 +447,7 @@
                 <div class="col-xxl-2 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img :src="asset('/assets/img/team/team-1-2.png')" alt="Team Image">
+                            <img :src="asset('/img/team/team-1-2.png')" alt="Team Image">
                         </div>
                         <div class="team-card_content">
                             <h3 class="team-card_title"><a href="team-details.html">Daniyel Karlos</a></h3>
@@ -458,7 +458,7 @@
                 <div class="col-xxl-2 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img :src="asset('/assets/img/team/team-1-3.png')" alt="Team Image">
+                            <img :src="asset('/img/team/team-1-3.png')" alt="Team Image">
                         </div>
                         <div class="team-card_content">
                             <h3 class="team-card_title"><a href="team-details.html">Daniyel Karlos</a></h3>
@@ -469,7 +469,7 @@
                 <div class="col-xxl-2 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img :src="asset('/assets/img/team/team-1-4.png')" alt="Team Image">
+                            <img :src="asset('/img/team/team-1-4.png')" alt="Team Image">
                         </div>
                         <div class="team-card_content">
                             <h3 class="team-card_title"><a href="team-details.html">Daniyel Karlos</a></h3>
@@ -480,7 +480,7 @@
                 <div class="col-xxl-2 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img :src="asset('/assets/img/team/team-1-5.png')" alt="Team Image">
+                            <img :src="asset('/img/team/team-1-5.png')" alt="Team Image">
                         </div>
                         <div class="team-card_content">
                             <h3 class="team-card_title"><a href="team-details.html">Daniyel Karlos</a></h3>
@@ -491,7 +491,7 @@
                 <div class="col-xxl-2 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img :src="asset('/assets/img/team/team-1-6.png')" alt="Team Image">
+                            <img :src="asset('/img/team/team-1-6.png')" alt="Team Image">
                         </div>
                         <div class="team-card_content">
                             <h3 class="team-card_title"><a href="team-details.html">Daniyel Karlos</a></h3>
@@ -502,7 +502,7 @@
                 <div class="col-xxl-2 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img :src="asset('/assets/img/team/team-1-1.png')" alt="Team Image">
+                            <img :src="asset('/img/team/team-1-1.png')" alt="Team Image">
                         </div>
                         <div class="team-card_content">
                             <h3 class="team-card_title"><a href="team-details.html">Daniyel Karlos</a></h3>
@@ -513,7 +513,7 @@
                 <div class="col-xxl-2 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img :src="asset('/assets/img/team/team-1-2.png')" alt="Team Image">
+                            <img :src="asset('/img/team/team-1-2.png')" alt="Team Image">
                         </div>
                         <div class="team-card_content">
                             <h3 class="team-card_title"><a href="team-details.html">Daniyel Karlos</a></h3>
@@ -524,7 +524,7 @@
                 <div class="col-xxl-2 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img :src="asset('/assets/img/team/team-1-3.png')" alt="Team Image">
+                            <img :src="asset('/img/team/team-1-3.png')" alt="Team Image">
                         </div>
                         <div class="team-card_content">
                             <h3 class="team-card_title"><a href="team-details.html">Daniyel Karlos</a></h3>
@@ -535,7 +535,7 @@
                 <div class="col-xxl-2 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img :src="asset('/assets/img/team/team-1-4.png')" alt="Team Image">
+                            <img :src="asset('/img/team/team-1-4.png')" alt="Team Image">
                         </div>
                         <div class="team-card_content">
                             <h3 class="team-card_title"><a href="team-details.html">Daniyel Karlos</a></h3>
@@ -546,7 +546,7 @@
                 <div class="col-xxl-2 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img :src="asset('/assets/img/team/team-1-5.png')" alt="Team Image">
+                            <img :src="asset('/img/team/team-1-5.png')" alt="Team Image">
                         </div>
                         <div class="team-card_content">
                             <h3 class="team-card_title"><a href="team-details.html">Daniyel Karlos</a></h3>
@@ -557,7 +557,7 @@
                 <div class="col-xxl-2 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img :src="asset('/assets/img/team/team-1-6.png')" alt="Team Image">
+                            <img :src="asset('/img/team/team-1-6.png')" alt="Team Image">
                         </div>
                         <div class="team-card_content">
                             <h3 class="team-card_title"><a href="team-details.html">Daniyel Karlos</a></h3>
@@ -586,7 +586,7 @@
                     <div class="blog-grid">
                         <div class="blog-img">
                             <a href="blog-details.html">
-                                <img :src="asset('/assets/img/blog/blog_3_1.png')" alt="blog image">
+                                <img :src="asset('/img/blog/blog_3_1.png')" alt="blog image">
                             </a>
                         </div>
                         <div class="blog-content">
@@ -600,7 +600,7 @@
                                     <span class="effect-1">READ MORE</span>
                                     <span class="effect-1">READ MORE</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -609,7 +609,7 @@
                     <div class="blog-grid">
                         <div class="blog-img">
                             <a href="blog-details.html">
-                                <img :src="asset('/assets/img/blog/blog_3_2.png')" alt="blog image">
+                                <img :src="asset('/img/blog/blog_3_2.png')" alt="blog image">
                             </a>
                         </div>
                         <div class="blog-content">
@@ -623,7 +623,7 @@
                                     <span class="effect-1">READ MORE</span>
                                     <span class="effect-1">READ MORE</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -655,8 +655,9 @@
 <script setup>
 import { onMounted } from 'vue'
 import { usePageMetadata } from '@/composables/usePageMetadata'
+import { assetUrl } from '@/utils/assets'
 
-const asset = (path) => path
+const asset = assetUrl
 
 usePageMetadata("Home 14")
 

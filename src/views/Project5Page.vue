@@ -4,7 +4,7 @@
 <!--==============================
     Breadcumb
     ============================== -->
-    <div class="breadcumb-wrapper " :data-bg-src="asset('/assets/img/bg/breadcumb-bg1-7.jpg')">
+    <div class="breadcumb-wrapper " :data-bg-src="asset('/img/bg/breadcumb-bg1-7.jpg')">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Portfolio</h1>
@@ -21,7 +21,7 @@
                 <div class="col-lg-4">
                     <a href="project-details.html" class="portfolio-wrap style2">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio2_1.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio2_1.jpg')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <ul class="portfolio-meta">
@@ -34,7 +34,7 @@
                 <div class="col-lg-4">
                     <a href="project-details.html" class="portfolio-wrap style2">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio2_2.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio2_2.jpg')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <ul class="portfolio-meta">
@@ -47,7 +47,7 @@
                 <div class="col-lg-4">
                     <a href="project-details.html" class="portfolio-wrap style2">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio2_3.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio2_3.jpg')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <ul class="portfolio-meta">
@@ -60,7 +60,7 @@
                 <div class="col-lg-4">
                     <a href="project-details.html" class="portfolio-wrap style2">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio2_1.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio2_1.jpg')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <ul class="portfolio-meta">
@@ -73,7 +73,7 @@
                 <div class="col-lg-4">
                     <a href="project-details.html" class="portfolio-wrap style2">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio2_2.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio2_2.jpg')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <ul class="portfolio-meta">
@@ -86,7 +86,7 @@
                 <div class="col-lg-4">
                     <a href="project-details.html" class="portfolio-wrap style2">
                         <div class="portfolio-thumb">
-                            <img :src="asset('/assets/img/portfolio/portfolio2_3.jpg')" alt="portfolio">
+                            <img :src="asset('/img/portfolio/portfolio2_3.jpg')" alt="portfolio">
                         </div>
                         <div class="portfolio-details">
                             <ul class="portfolio-meta">
@@ -123,8 +123,9 @@
 <script setup>
 import { onMounted } from 'vue'
 import { usePageMetadata } from '@/composables/usePageMetadata'
+import { assetUrl } from '@/utils/assets'
 
-const asset = (path) => path
+const asset = assetUrl
 
 usePageMetadata("Project 5")
 

@@ -4,7 +4,7 @@
 <!--==============================
     Breadcumb
     ============================== -->
-    <div class="breadcumb-wrapper " :data-bg-src="asset('/assets/img/bg/breadcumb-bg1-7.jpg')">
+    <div class="breadcumb-wrapper " :data-bg-src="asset('/img/bg/breadcumb-bg1-7.jpg')">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Portfolio</h1>
@@ -22,7 +22,7 @@
                     <div class="portfolio-wrap mt-lg-140">
                         <div class="portfolio-thumb ">
                             <a href="project-details.html">
-                                <img :src="asset('/assets/img/portfolio/portfolio1_1.jpg')" alt="portfolio">
+                                <img :src="asset('/img/portfolio/portfolio1_1.jpg')" alt="portfolio">
                             </a>
                         </div>
                         <div class="portfolio-details">
@@ -37,7 +37,7 @@
                                     <span class="effect-1">VIEW PROJECT</span>
                                     <span class="effect-1">VIEW PROJECT</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -46,7 +46,7 @@
                     <div class="portfolio-wrap mt-140 mt-lg-0">
                         <div class="portfolio-thumb ">
                             <a href="project-details.html">
-                                <img :src="asset('/assets/img/portfolio/portfolio1_2.jpg')" alt="portfolio">
+                                <img :src="asset('/img/portfolio/portfolio1_2.jpg')" alt="portfolio">
                             </a>
                         </div>
                         <div class="portfolio-details">
@@ -61,7 +61,7 @@
                                     <span class="effect-1">VIEW PROJECT</span>
                                     <span class="effect-1">VIEW PROJECT</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -70,7 +70,7 @@
                     <div class="portfolio-wrap mt-140">
                         <div class="portfolio-thumb ">
                             <a href="project-details.html">
-                                <img :src="asset('/assets/img/portfolio/portfolio1_3.jpg')" alt="portfolio">
+                                <img :src="asset('/img/portfolio/portfolio1_3.jpg')" alt="portfolio">
                             </a>
                         </div>
                         <div class="portfolio-details">
@@ -85,7 +85,7 @@
                                     <span class="effect-1">VIEW PROJECT</span>
                                     <span class="effect-1">VIEW PROJECT</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -94,7 +94,7 @@
                     <div class="portfolio-wrap mt-140">
                         <div class="portfolio-thumb ">
                             <a href="project-details.html">
-                                <img :src="asset('/assets/img/portfolio/portfolio1_4.jpg')" alt="portfolio">
+                                <img :src="asset('/img/portfolio/portfolio1_4.jpg')" alt="portfolio">
                             </a>
                         </div>
                         <div class="portfolio-details">
@@ -109,7 +109,7 @@
                                     <span class="effect-1">VIEW PROJECT</span>
                                     <span class="effect-1">VIEW PROJECT</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -118,7 +118,7 @@
                     <div class="portfolio-wrap mt-140">
                         <div class="portfolio-thumb ">
                             <a href="project-details.html">
-                                <img :src="asset('/assets/img/portfolio/portfolio1_5.png')" alt="portfolio">
+                                <img :src="asset('/img/portfolio/portfolio1_5.png')" alt="portfolio">
                             </a>
                         </div>
                         <div class="portfolio-details">
@@ -133,7 +133,7 @@
                                     <span class="effect-1">VIEW PROJECT</span>
                                     <span class="effect-1">VIEW PROJECT</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -142,7 +142,7 @@
                     <div class="portfolio-wrap mt-140">
                         <div class="portfolio-thumb">
                             <a href="project-details.html">
-                                <img :src="asset('/assets/img/portfolio/portfolio1_6.png')" alt="portfolio">
+                                <img :src="asset('/img/portfolio/portfolio1_6.png')" alt="portfolio">
                             </a>
                         </div>
                         <div class="portfolio-details">
@@ -157,7 +157,7 @@
                                     <span class="effect-1">VIEW PROJECT</span>
                                     <span class="effect-1">VIEW PROJECT</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -197,8 +197,9 @@
 <script setup>
 import { onMounted } from 'vue'
 import { usePageMetadata } from '@/composables/usePageMetadata'
+import { assetUrl } from '@/utils/assets'
 
-const asset = (path) => path
+const asset = assetUrl
 
 usePageMetadata("Project")
 

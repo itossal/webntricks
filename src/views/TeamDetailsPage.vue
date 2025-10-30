@@ -24,7 +24,7 @@
             <div class="row align-items-center justify-content-between">
                 <div class="col-xl-5 col-lg-6">
                     <div class="team-inner-thumb mb-lg-0 mb-40">
-                        <img class="w-100" :src="asset('/assets/img/team/team-details1-1.png')" alt="img">
+                        <img class="w-100" :src="asset('/img/team/team-details1-1.png')" alt="img">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -127,8 +127,9 @@
 <script setup>
 import { onMounted } from 'vue'
 import { usePageMetadata } from '@/composables/usePageMetadata'
+import { assetUrl } from '@/utils/assets'
 
-const asset = (path) => path
+const asset = assetUrl
 
 usePageMetadata("Team Details")
 

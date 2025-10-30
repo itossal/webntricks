@@ -11,7 +11,7 @@
                     <div class="col-lg-12">
                         <h1 class="hero-title wow img-custom-anim-left">Design Studio</h1>
                         <div class="hero-3-thumb wow img-custom-anim-top">
-                            <img class="w-100" :src="asset('/assets/img/hero/hero-3-1.jpg')" alt="img">
+                            <img class="w-100" :src="asset('/img/hero/hero-3-1.jpg')" alt="img">
                         </div>
                         <h1 class="hero-title text-end wow img-custom-anim-right">with Experience</h1>
                     </div>
@@ -66,7 +66,7 @@
     ==============================-->
     <div class="why-area-1 space bg-theme">
         <div class="why-img-1-1 shape-mockup wow img-custom-anim-right" data-wow-duration="1.5s" data-wow-delay="0.2s" data-right="0" data-top="-100px" data-bottom="140px">
-            <img :src="asset('/assets/img/normal/why_3-1.jpg')" alt="img">
+            <img :src="asset('/img/normal/why_3-1.jpg')" alt="img">
         </div>
         <div class="container">
             <div class="row">
@@ -92,7 +92,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <ul class="award-wrap-area">
-                        <li class="single-award-list style2 tg-img-reveal-item" data-fx="1" data-img="/assets/img/award/award-1-1.png">
+                        <li class="single-award-list style2 tg-img-reveal-item" data-fx="1" data-img="/img/award/award-1-1.png">
                             <span class="award-year">2017</span>
                             <div class="award-details">
                                 <h4><a href="project.html">Decentralized Platform</a></h4>
@@ -104,7 +104,7 @@
                             </div>
                             <span class="award-tag">Webflow</span>
                         </li>
-                        <li class="single-award-list style2 tg-img-reveal-item" data-fx="1" data-img="/assets/img/award/award-1-2.png">
+                        <li class="single-award-list style2 tg-img-reveal-item" data-fx="1" data-img="/img/award/award-1-2.png">
                             <span class="award-year">2019</span>
                             <div class="award-details">
                                 <h4><a href="project.html">App for Business</a></h4>
@@ -115,7 +115,7 @@
                             </div>
                             <span class="award-tag">Themeforest</span>
                         </li>
-                        <li class="single-award-list style2 tg-img-reveal-item" data-fx="1" data-img="/assets/img/award/award-1-3.png">
+                        <li class="single-award-list style2 tg-img-reveal-item" data-fx="1" data-img="/img/award/award-1-3.png">
                             <span class="award-year">2019</span>
                             <div class="award-details">
                                 <h4><a href="project.html">Website Development</a></h4>
@@ -126,7 +126,7 @@
                             </div>
                             <span class="award-tag">Framer</span>
                         </li>
-                        <li class="single-award-list style2 tg-img-reveal-item" data-fx="1" data-img="/assets/img/award/award-1-4.png">
+                        <li class="single-award-list style2 tg-img-reveal-item" data-fx="1" data-img="/img/award/award-1-4.png">
                             <span class="award-year">2022</span>
                             <div class="award-details">
                                 <h4><a href="project.html">Nova Scotia Winery</a></h4>
@@ -138,7 +138,7 @@
                             </div>
                             <span class="award-tag">Template monster</span>
                         </li>
-                        <li class="single-award-list style2 tg-img-reveal-item" data-fx="1" data-img="/assets/img/award/award-1-5.png">
+                        <li class="single-award-list style2 tg-img-reveal-item" data-fx="1" data-img="/img/award/award-1-5.png">
                             <span class="award-year">2023</span>
                             <div class="award-details">
                                 <h4><a href="project.html">Educational Platform</a></h4>
@@ -179,7 +179,7 @@
                 <div class="col-xl-4 col-md-6">
                     <div class="feature-card">
                         <div class="feature-card-icon">
-                            <img :src="asset('/assets/img/icon/feature-icon1-1.svg')" alt="icon">
+                            <img :src="asset('/img/icon/feature-icon1-1.svg')" alt="icon">
                         </div>
                         <h4 class="feature-card-title">
                             <a href="service.html">Branding Design</a>
@@ -190,14 +190,14 @@
                                 <span class="effect-1">VIEW DETAILS</span>
                                 <span class="effect-1">VIEW DETAILS</span>
                             </span>
-                            <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                            <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                         </a>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6">
                     <div class="feature-card">
                         <div class="feature-card-icon">
-                            <img :src="asset('/assets/img/icon/feature-icon1-2.svg')" alt="icon">
+                            <img :src="asset('/img/icon/feature-icon1-2.svg')" alt="icon">
                         </div>
                         <h4 class="feature-card-title">
                             <a href="service.html">Web Development</a>
@@ -208,14 +208,14 @@
                                 <span class="effect-1">VIEW DETAILS</span>
                                 <span class="effect-1">VIEW DETAILS</span>
                             </span>
-                            <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                            <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                         </a>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6">
                     <div class="feature-card">
                         <div class="feature-card-icon">
-                            <img :src="asset('/assets/img/icon/feature-icon1-3.svg')" alt="icon">
+                            <img :src="asset('/img/icon/feature-icon1-3.svg')" alt="icon">
                         </div>
                         <h4 class="feature-card-title">
                             <a href="service.html">Digital Marketing</a>
@@ -226,7 +226,7 @@
                                 <span class="effect-1">VIEW DETAILS</span>
                                 <span class="effect-1">VIEW DETAILS</span>
                             </span>
-                            <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                            <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                         </a>
                     </div>
                 </div>
@@ -308,7 +308,7 @@
                             <div class="blog-grid">
                                 <div class="blog-img">
                                     <a href="blog-details.html">
-                                        <img :src="asset('/assets/img/blog/blog_3_1.png')" alt="blog image">
+                                        <img :src="asset('/img/blog/blog_3_1.png')" alt="blog image">
                                     </a>
                                 </div>
                                 <div class="blog-content">
@@ -322,7 +322,7 @@
                                             <span class="effect-1">READ MORE</span>
                                             <span class="effect-1">READ MORE</span>
                                         </span>
-                                        <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                        <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                                     </a>
                                 </div>
                             </div>
@@ -331,7 +331,7 @@
                             <div class="blog-grid">
                                 <div class="blog-img">
                                     <a href="blog-details.html">
-                                        <img :src="asset('/assets/img/blog/blog_3_2.png')" alt="blog image">
+                                        <img :src="asset('/img/blog/blog_3_2.png')" alt="blog image">
                                     </a>
                                 </div>
                                 <div class="blog-content">
@@ -345,7 +345,7 @@
                                             <span class="effect-1">READ MORE</span>
                                             <span class="effect-1">READ MORE</span>
                                         </span>
-                                        <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                        <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                                     </a>
                                 </div>
                             </div>
@@ -354,7 +354,7 @@
                             <div class="blog-grid">
                                 <div class="blog-img">
                                     <a href="blog-details.html">
-                                        <img :src="asset('/assets/img/blog/blog_3_3.png')" alt="blog image">
+                                        <img :src="asset('/img/blog/blog_3_3.png')" alt="blog image">
                                     </a>
                                 </div>
                                 <div class="blog-content">
@@ -368,7 +368,7 @@
                                             <span class="effect-1">READ MORE</span>
                                             <span class="effect-1">READ MORE</span>
                                         </span>
-                                        <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                        <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                                     </a>
                                 </div>
                             </div>
@@ -412,8 +412,9 @@
 <script setup>
 import { onMounted } from 'vue'
 import { usePageMetadata } from '@/composables/usePageMetadata'
+import { assetUrl } from '@/utils/assets'
 
-const asset = (path) => path
+const asset = assetUrl
 
 usePageMetadata("Home 3")
 

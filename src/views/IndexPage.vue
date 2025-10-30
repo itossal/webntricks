@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <div class="hero-year-tag wow img-custom-anim-left">
-                    <img :src="asset('/assets/img/icon/worldwide.svg')" alt="img">
+                    <img :src="asset('/img/icon/worldwide.svg')" alt="img">
                     <h6>Agency of this year worldwide</h6>
                 </div>
             </div>
@@ -39,7 +39,7 @@
     ==============================-->
     <div class="about-area-1 space bg-theme">
         <div class="about-img-1-1 shape-mockup img-custom-anim-left wow" data-left="0" data-top="-100px" data-bottom="140px" data-wow-duration="1.5s" data-wow-delay="0.1s">
-            <img :src="asset('/assets/img/normal/about_1-1.jpg')" alt="img">
+            <img :src="asset('/img/normal/about_1-1.jpg')" alt="img">
         </div>
         <div class="container">
             <div class="row align-items-center justify-content-end">
@@ -56,7 +56,7 @@
                                             <span class="effect-1">ABOUT US</span>
                                             <span class="effect-1">ABOUT US</span>
                                         </span>
-                                        <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                        <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                                     </a>
                                 </div>
                             </div>
@@ -136,14 +136,14 @@
     <!--==============================
         Portfolio Area
     ==============================-->
-    <div class="portfolio-area-1 space-bottom overflow-hidden" :data-bg-src="asset('/assets/img/bg/portfolio-1-bg.png')">
+    <div class="portfolio-area-1 space-bottom overflow-hidden" :data-bg-src="asset('/img/bg/portfolio-1-bg.png')">
         <div class="container">
             <div class="row justify-content-between masonary-active">
                 <div class="col-lg-6 filter-item">
                     <div class="portfolio-wrap mt-lg-140">
                         <div class="portfolio-thumb wow img-custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.2s">
                             <a href="project-details.html">
-                                <img :src="asset('/assets/img/portfolio/portfolio1_1.jpg')" alt="portfolio">
+                                <img :src="asset('/img/portfolio/portfolio1_1.jpg')" alt="portfolio">
                             </a>
                         </div>
                         <div class="portfolio-details">
@@ -158,7 +158,7 @@
                                     <span class="effect-1">VIEW PROJECT</span>
                                     <span class="effect-1">VIEW PROJECT</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -167,7 +167,7 @@
                     <div class="portfolio-wrap mt-140 mt-lg-0">
                         <div class="portfolio-thumb wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.2s">
                             <a href="project-details.html">
-                                <img :src="asset('/assets/img/portfolio/portfolio1_2.jpg')" alt="portfolio">
+                                <img :src="asset('/img/portfolio/portfolio1_2.jpg')" alt="portfolio">
                             </a>
                         </div>
                         <div class="portfolio-details">
@@ -182,7 +182,7 @@
                                     <span class="effect-1">VIEW PROJECT</span>
                                     <span class="effect-1">VIEW PROJECT</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -191,7 +191,7 @@
                     <div class="portfolio-wrap mt-140">
                         <div class="portfolio-thumb wow img-custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.2s">
                             <a href="project-details.html">
-                                <img :src="asset('/assets/img/portfolio/portfolio1_3.jpg')" alt="portfolio">
+                                <img :src="asset('/img/portfolio/portfolio1_3.jpg')" alt="portfolio">
                             </a>
                         </div>
                         <div class="portfolio-details">
@@ -206,7 +206,7 @@
                                     <span class="effect-1">VIEW PROJECT</span>
                                     <span class="effect-1">VIEW PROJECT</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -215,7 +215,7 @@
                     <div class="portfolio-wrap mt-140">
                         <div class="portfolio-thumb wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.2s">
                             <a href="project-details.html">
-                                <img :src="asset('/assets/img/portfolio/portfolio1_4.jpg')" alt="portfolio">
+                                <img :src="asset('/img/portfolio/portfolio1_4.jpg')" alt="portfolio">
                             </a>
                         </div>
                         <div class="portfolio-details">
@@ -230,7 +230,7 @@
                                     <span class="effect-1">VIEW PROJECT</span>
                                     <span class="effect-1">VIEW PROJECT</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -267,7 +267,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img :src="asset('/assets/img/team/team-1-1.png')" alt="Team Image">
+                            <img :src="asset('/img/team/team-1-1.png')" alt="Team Image">
                         </div>
                         <div class="team-card_content">
                             <h3 class="team-card_title"><a href="team-details.html">Daniyel Karlos</a></h3>
@@ -278,7 +278,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img :src="asset('/assets/img/team/team-1-2.png')" alt="Team Image">
+                            <img :src="asset('/img/team/team-1-2.png')" alt="Team Image">
                         </div>
                         <div class="team-card_content">
                             <h3 class="team-card_title"><a href="team-details.html">Daniyel Karlos</a></h3>
@@ -289,7 +289,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img :src="asset('/assets/img/team/team-1-3.png')" alt="Team Image">
+                            <img :src="asset('/img/team/team-1-3.png')" alt="Team Image">
                         </div>
                         <div class="team-card_content">
                             <h3 class="team-card_title"><a href="team-details.html">Daniyel Karlos</a></h3>
@@ -300,7 +300,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img :src="asset('/assets/img/team/team-1-4.png')" alt="Team Image">
+                            <img :src="asset('/img/team/team-1-4.png')" alt="Team Image">
                         </div>
                         <div class="team-card_content">
                             <h3 class="team-card_title"><a href="team-details.html">Daniyel Karlos</a></h3>
@@ -317,7 +317,7 @@
     ==============================-->
     <div class="testimonial-area-1 space bg-theme">
         <div class="testimonial-img-1-1 shape-mockup wow img-custom-anim-right" data-wow-duration="1.5s" data-wow-delay="0.2s" data-right="0" data-top="-100px" data-bottom="140px">
-            <img :src="asset('/assets/img/testimonial/testi_thumb1_1.jpg')" alt="img">
+            <img :src="asset('/img/testimonial/testi_thumb1_1.jpg')" alt="img">
         </div>
         <div class="container">
             <div class="row">
@@ -326,7 +326,7 @@
                         <h2 class="sec-title">Testimonials</h2>
                     </div>
                     <div class="quote-icon ">
-                        <img :src="asset('/assets/img/icon/quote.svg')" alt="icon">
+                        <img :src="asset('/img/icon/quote.svg')" alt="icon">
                     </div>
                     <div class="row global-carousel testi-slider1" data-slide-show="1" data-dots="true" data-xl-dots="true" data-ml-dots="true">
                         <div class="col-lg-4">
@@ -380,7 +380,7 @@
                     <div class="blog-card">
                         <div class="blog-img">
                             <a href="blog-details.html">
-                                <img :src="asset('/assets/img/blog/blog_1_1.png')" alt="blog image">
+                                <img :src="asset('/img/blog/blog_1_1.png')" alt="blog image">
                             </a>
                         </div>
                         <div class="blog-content">
@@ -394,7 +394,7 @@
                                     <span class="effect-1">READ MORE</span>
                                     <span class="effect-1">READ MORE</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -403,7 +403,7 @@
                     <div class="blog-card">
                         <div class="blog-img">
                             <a href="blog-details.html">
-                                <img :src="asset('/assets/img/blog/blog_1_2.png')" alt="blog image">
+                                <img :src="asset('/img/blog/blog_1_2.png')" alt="blog image">
                             </a>
                         </div>
                         <div class="blog-content">
@@ -417,7 +417,7 @@
                                     <span class="effect-1">READ MORE</span>
                                     <span class="effect-1">READ MORE</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -426,7 +426,7 @@
                     <div class="blog-card">
                         <div class="blog-img">
                             <a href="blog-details.html">
-                                <img :src="asset('/assets/img/blog/blog_1_3.png')" alt="blog image">
+                                <img :src="asset('/img/blog/blog_1_3.png')" alt="blog image">
                             </a>
                         </div>
                         <div class="blog-content">
@@ -440,7 +440,7 @@
                                     <span class="effect-1">READ MORE</span>
                                     <span class="effect-1">READ MORE</span>
                                 </span>
-                                <img :src="asset('/assets/img/icon/arrow-left-top.svg')" alt="icon">
+                                <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                             </a>
                         </div>
                     </div>
@@ -458,8 +458,9 @@
 <script setup>
 import { onMounted } from 'vue'
 import { usePageMetadata } from '@/composables/usePageMetadata'
+import { assetUrl } from '@/utils/assets'
 
-const asset = (path) => path
+const asset = assetUrl
 
 usePageMetadata("Index")
 

@@ -4,7 +4,7 @@
 <!--==============================
     Breadcumb
     ============================== -->
-    <div class="breadcumb-wrapper " :data-bg-src="asset('/assets/img/bg/breadcumb-bg1-3.jpg')">
+    <div class="breadcumb-wrapper " :data-bg-src="asset('/img/bg/breadcumb-bg1-3.jpg')">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Team</h1>
@@ -21,7 +21,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img :src="asset('/assets/img/team/team-1-1.png')" alt="Team Image">
+                            <img :src="asset('/img/team/team-1-1.png')" alt="Team Image">
                         </div>
                         <div class="team-card_content">
                             <h3 class="team-card_title"><a href="team-details.html">Daniyel Karlos</a></h3>
@@ -32,7 +32,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img :src="asset('/assets/img/team/team-1-2.png')" alt="Team Image">
+                            <img :src="asset('/img/team/team-1-2.png')" alt="Team Image">
                         </div>
                         <div class="team-card_content">
                             <h3 class="team-card_title"><a href="team-details.html">Daniyel Karlos</a></h3>
@@ -43,7 +43,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img :src="asset('/assets/img/team/team-1-3.png')" alt="Team Image">
+                            <img :src="asset('/img/team/team-1-3.png')" alt="Team Image">
                         </div>
                         <div class="team-card_content">
                             <h3 class="team-card_title"><a href="team-details.html">Daniyel Karlos</a></h3>
@@ -54,7 +54,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img :src="asset('/assets/img/team/team-1-4.png')" alt="Team Image">
+                            <img :src="asset('/img/team/team-1-4.png')" alt="Team Image">
                         </div>
                         <div class="team-card_content">
                             <h3 class="team-card_title"><a href="team-details.html">Daniyel Karlos</a></h3>
@@ -65,7 +65,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img :src="asset('/assets/img/team/team-1-1.png')" alt="Team Image">
+                            <img :src="asset('/img/team/team-1-1.png')" alt="Team Image">
                         </div>
                         <div class="team-card_content">
                             <h3 class="team-card_title"><a href="team-details.html">Daniyel Karlos</a></h3>
@@ -76,7 +76,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img :src="asset('/assets/img/team/team-1-2.png')" alt="Team Image">
+                            <img :src="asset('/img/team/team-1-2.png')" alt="Team Image">
                         </div>
                         <div class="team-card_content">
                             <h3 class="team-card_title"><a href="team-details.html">Daniyel Karlos</a></h3>
@@ -87,7 +87,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img :src="asset('/assets/img/team/team-1-3.png')" alt="Team Image">
+                            <img :src="asset('/img/team/team-1-3.png')" alt="Team Image">
                         </div>
                         <div class="team-card_content">
                             <h3 class="team-card_title"><a href="team-details.html">Daniyel Karlos</a></h3>
@@ -98,7 +98,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="team-card">
                         <div class="team-card_img">
-                            <img :src="asset('/assets/img/team/team-1-4.png')" alt="Team Image">
+                            <img :src="asset('/img/team/team-1-4.png')" alt="Team Image">
                         </div>
                         <div class="team-card_content">
                             <h3 class="team-card_title"><a href="team-details.html">Daniyel Karlos</a></h3>
@@ -115,7 +115,7 @@
     ==============================-->
     <div class="testimonial-area-1 space bg-theme">
         <div class="testimonial-img-1-1 shape-mockup wow img-custom-anim-right" data-wow-duration="1.5s" data-wow-delay="0.2s" data-right="0" data-top="-100px" data-bottom="140px">
-            <img :src="asset('/assets/img/testimonial/testi_thumb1_1.jpg')" alt="img">
+            <img :src="asset('/img/testimonial/testi_thumb1_1.jpg')" alt="img">
         </div>
         <div class="container">
             <div class="row">
@@ -124,7 +124,7 @@
                         <h2 class="sec-title">Testimonials</h2>
                     </div>
                     <div class="quote-icon">
-                        <img :src="asset('/assets/img/icon/quote.svg')" alt="icon">
+                        <img :src="asset('/img/icon/quote.svg')" alt="icon">
                     </div>
                     <div class="row global-carousel testi-slider1" data-slide-show="1" data-dots="true" data-xl-dots="true" data-ml-dots="true">
                         <div class="col-lg-4">
@@ -184,8 +184,9 @@
 <script setup>
 import { onMounted } from 'vue'
 import { usePageMetadata } from '@/composables/usePageMetadata'
+import { assetUrl } from '@/utils/assets'
 
-const asset = (path) => path
+const asset = assetUrl
 
 usePageMetadata("Team")
 
