@@ -16,7 +16,7 @@
 </template>
 
 <script setup>
-import { onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import { nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from '@/router'
 
 import MainFooter from '@/components/layout/MainFooter.vue'
@@ -26,6 +26,7 @@ import Preloader from '@/components/layout/Preloader.vue'
 import ScrollTopButton from '@/components/layout/ScrollTopButton.vue'
 import SearchPopup from '@/components/layout/SearchPopup.vue'
 import SideMenu from '@/components/layout/SideMenu.vue'
+import { destroyMarquees, initMarquees } from '@/utils/marquee'
 
 const router = useRouter()
 const route = useRoute()
@@ -65,10 +66,23 @@ const toggleMobile = (state) => {
   }
 }
 
-onMounted(() => {
+const hydrateMarquees = async () => {
+  destroyMarquees()
+  await nextTick()
+  await new Promise((resolve) => {
+    requestAnimationFrame(() => {
+      initMarquees()
+      resolve()
+    })
+  })
+}
+
+onMounted(async () => {
   setTimeout(() => {
     isPreloading.value = false
   }, 600)
+
+  await hydrateMarquees()
 })
 
 const htmlLinkRegex = /\.html$/
@@ -131,13 +145,15 @@ onMounted(() => {
 onBeforeUnmount(() => {
   document.removeEventListener('click', handleAnchorNavigation)
   document.removeEventListener('keyup', handleEscape)
+  destroyMarquees()
 })
 
 watch(
   () => route.fullPath,
-  () => {
+  async () => {
     closeAll()
     window.scrollTo({ top: 0, behavior: 'auto' })
+    await hydrateMarquees()
   }
 )
 
