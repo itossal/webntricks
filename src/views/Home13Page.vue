@@ -8,17 +8,36 @@
         <div class="container">
             <div class="hero-style13">
                 <div class="hero-thumb13-1 wow img-custom-anim-right fade_right" data-wow-duration="1.5s" data-wow-delay="0.1s">
-                    <img :data-mask-src="asset('/img/hero/hero-mask13-1.avif')" :src="asset('/img/hero/hero-13-1.avif')" style="max-width:380px;max-heigh:380px" alt="img">
+                    <img   :src="asset('/img/hero/hero-13-1.avif')" 
+                      :style="{
+                            width: '380px',
+                        height: '380px',
+                        maxWidth: '380px',
+                        maxHeight: '380px',
+                        maskImage: 'url(' + asset('/img/hero/hero-mask13-1.png') + ')',
+                        WebkitMaskImage: 'url(' + asset('/img/hero/hero-mask13-1.png') + ')'
+                      }" alt="img">
                 </div>
                 <div class="hero-thumb13-2 wow img-custom-anim-left fade_left" data-wow-duration="1.5s" data-wow-delay="0.1s">
-                    <img class="spin-slow" :data-mask-src="asset('/img/hero/hero-mask13-2.avif')" :src="asset('/img/hero/hero-13-2.avif')" style="max-width:180px;max-heigh:180px" alt="img">
-                </div>
+<img
+                      class="spin-slow"
+                      :src="asset('/img/hero/hero-13-2.avif')"
+                      :style="{
+                        width: '180px',
+                        heigh: '180px',
+                        maxWidth: '180px',
+                        maxHeight: '180px',
+                        maskImage: 'url(' + asset('/img/hero/hero-mask13-2.png') + ')',
+                        WebkitMaskImage: 'url(' + asset('/img/hero/hero-mask13-2.png') + ')'
+                      }"
+                      alt="img"
+                    >                </div>
                 <div class="row justify-content-center">
                     <div class="col-xl-9 col-lg-10">
                         <h1 class="hero-title text-sm-center  wow img-custom-anim-right" data-wow-duration="1.5s" data-wow-delay="0.1s"><img :src="asset('/img/normal/client_group_thumb_1-1.jpg')" alt="img">Fçonner</h1>
                         <h1 class="hero-title wow img-custom-anim-left" data-wow-duration="1.7s" data-wow-delay="0.1s">l'envie, nourrir</h1>
                         <h1 class="hero-title wow img-custom-anim-left" data-wow-duration="1.9s" data-wow-delay="0.1s">La croissance</h1>
-                        <h1 class="hero-title text-sm-center wow img-custom-anim-left title_blue" data-wow-duration="1.9s" data-wow-delay="0.1s">Acton le declic</h1>
+                        <h1 class="hero-title text-sm-center wow img-custom-anim-left title_blue" data-wow-duration="1.9s" data-wow-delay="0.1s">Actons le declic</h1>
                     </div>
                     <div class="col-lg-6">
                         <p class="hero-text text-sm-center wow img-custom-anim-right" data-wow-duration="1.5s" data-wow-delay="0.1s">Des solutions web innovantes et personnalisées pour propulser votre entreprise en ligne et générer des resultat concrétes.</p>
@@ -524,13 +543,22 @@ Faites le choix d’une équipe engagée, à l’écoute de vos ambitions : cont
                         <h2 class="sec-title">Feel Free to Ask Anything</h2>
                     </div>
                     <div class="contact-card">
-                        <h4 class="box-title">Office:</h4>
-                        <p class="box-text">27 Division St, New York, NY 10002, USA</p>
+                        <h4 class="box-title">Cergy, France</h4>
+                        <p class="box-text">12 Rue des Chauffours - Immeuble Ordinal - 508 F 95000 Cergy</p>
                     </div>
                     <div class="contact-card">
                         <h4 class="box-title">Contact:</h4>
-                        <p class="box-text">+1 800 123 654 987</p>
-                        <p class="box-text">frisk.agency@mail.com</p>
+                        <p class="box-text">0605930021</p>
+                        <p class="box-text">contact@artifex-web.fr</p>
+                    </div>
+                           <div class="contact-card">
+                        <h4 class="box-title">Paris, France</h4>
+                        <p class="box-text">25 Rue de Ponthieu, 75008 Paris, France</p>
+                    </div>
+                    <div class="contact-card">
+                        <h4 class="box-title">Contact:</h4>
+                        <p class="box-text">0605930021</p>
+                        <p class="box-text">contact@artifex-web.fr</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
