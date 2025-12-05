@@ -62,10 +62,10 @@
     <div class="container-fluid p-0 overflow-hidden">
         <div class="slider__marquee clearfix marquee-wrap">
             <div class="marquee_mode marquee__group">
-                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> We Give Unparalleled Flexibility</a></h6>
-                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> We Give Unparalleled Flexibility</a></h6>
-                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> We Give Unparalleled Flexibility</a></h6>
-                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> We Give Unparalleled Flexibility</a></h6>
+                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> Nous offrons une flexibilité inégalée</a></h6>
+                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> Nous offrons une flexibilité inégalée</a></h6>
+                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> Nous offrons une flexibilité inégalée</a></h6>
+                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> Nous offrons une flexibilité inégalée</a></h6>
             </div>
         </div>
     </div>
@@ -287,6 +287,51 @@ Faites le choix d’une équipe engagée, à l’écoute de vos ambitions : cont
             </div>
         </div>
     </div>
+
+
+<div class="about-area-17 overflow-hidden bg-smoke">
+    
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6">
+                    <div class="about-thumb17">
+                        <img   :src="asset('/img/normal/about_17-1.png')"   alt="image">
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="about-wrap17 space">
+                        <div class="title-area mb-0">
+                            <h2 class="sec-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exploitez la puissance de l’intelligence artificielle pour des solutions innovantes
+
+</font></font></h2>
+                            <p class="sec-text mt-25"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Le monde digital évolue vite. Chez Webntricks, nous mettons à votre disposition des solutions d’intelligence artificielle qui révolutionnent votre manière de créer, optimiser et engager.
+
+Notre technologie analyse en profondeur les données, apprend constamment et ajuste automatiquement ses recommandations pour vous offrir des actions précises et efficaces.
+Que ce soit pour la création de contenus SEO ou la mise en valeur immersive de vos produits, nos modules s’adaptent parfaitement à vos besoins spécifiques.
+</font></font></p>
+                            <p class="sec-text mt-25"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nous vous accompagnons pour transformer ces innovations en résultats concrets : améliorer votre visibilité, augmenter vos ventes, fidéliser vos clients.
+
+Découvrez comment nos modules IA peuvent transformer votre business.</font></font></p>
+                            <a href="about.html" class="btn">
+                                <span class="link-effect">
+                                    <span class="effect-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EN SAVOIR PLUS</font></font></span>
+                                    <span class="effect-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EN SAVOIR PLUS</font></font></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
 
     <!--==============================
     Feature Area

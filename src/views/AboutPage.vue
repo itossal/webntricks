@@ -7,7 +7,7 @@
     <div class="breadcumb-wrapper" :data-bg-src="asset('/img/bg/breadcumb-bg1-1.jpg')">
         <div class="container">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">About</h1>
+                <h1 class="breadcumb-title">A propos</h1>
             </div>
         </div>
     </div>

@@ -13,7 +13,7 @@
               <nav class="main-menu d-none d-lg-inline-block">
                 <ul>
                   <li class="active menu-item-has-children mega-menu-wrap">
-                    <a href="#">
+                    <a href="/">
                       <span class="link-effect">
                         <span class="effect-1">Accueil</span>
                         <span class="effect-1">Accueil</span>
@@ -22,7 +22,7 @@
               
                   </li>
                   <li class="menu-item-has-children">
-                    <a href="#">
+                    <a href="/about">
                       <span class="link-effect">
                         <span class="effect-1">À propos</span>
                         <span class="effect-1">À propos</span>
