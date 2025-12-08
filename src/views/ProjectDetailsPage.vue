@@ -53,18 +53,27 @@
                 </div>
                 <div class="col-lg-12">
                     <div class="inner__page-nav space-top mt-n1 mb-n1">
-                        <RouterLink v-if="previousProject" :to="`/projects/${previousProject.slug}`" class="nav-btn">
-                            <i class="fa fa-arrow-left"></i> <span><span class="link-effect">
-                                <span class="effect-1">Previous Project</span>
-                                <span class="effect-1">Previous Project</span>
-                            </span></span>
-                        </RouterLink>
-                        <RouterLink v-if="nextProject" :to="`/projects/${nextProject.slug}`" class="nav-btn"><span><span class="link-effect">
-                            <span class="effect-1">Next Project</span>
-                            <span class="effect-1">Next Project</span>
+                       <a                           v-if="previousProject"
+                          :href="`/projects/${previousProject.slug}`"
+                          class="nav-btn"
+                          @click.prevent="goToProject(previousProject.slug)">
+                            <i class="fa fa-arrow-left"></i> 
+                            <span>
+                            <span class="link-effect">
+                                <span class="effect-1">Projet précédent</span>
+                                <span class="effect-1">Projet précédent</span>
+                            </span>
+                            </span>
+                        </a>
+                        <a     v-if="nextProject"
+                          :href="`/projects/${nextProject.slug}`"
+                          class="nav-btn"
+                         ><span><span class="link-effect">
+                            <span class="effect-1">Projet suivant</span>
+                            <span class="effect-1">Projet suivant</span>
                         </span></span>
                             <i class="fa fa-arrow-right"></i>
-                        </RouterLink>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -92,19 +101,19 @@
 </template>
 
 <script setup>
-import { computed, onMounted, watch } from 'vue'
+import { computed, watch } from 'vue'
 import { usePageMetadata } from '@/composables/usePageMetadata'
 import { assetUrl } from '@/utils/assets'
-import { useRoute } from '@/router'
+import { useRoute , useRouter  } from '@/router'
 import { projects } from '@/utils/projects'
 
 const asset = assetUrl
 const route = useRoute()
 
-const project = computed(() => projects.find((item) => item.slug === route.params.slug) || projects[0])
+const projectIndex = computed(() => projects.findIndex((item) => item.slug === route.params.slug))
+const project = computed(() => (projectIndex.value >= 0 ? projects[projectIndex.value] : projects[0]))
 const galleryImages = computed(() => project.value?.gallery ?? [])
 const projectMeta = computed(() => project.value?.meta ?? {})
-const projectIndex = computed(() => projects.findIndex((item) => item.slug === project.value?.slug))
 const previousProject = computed(() => (projectIndex.value > 0 ? projects[projectIndex.value - 1] : null))
 const nextProject = computed(() =>
   projectIndex.value >= 0 && projectIndex.value < projects.length - 1 ? projects[projectIndex.value + 1] : null
@@ -114,15 +123,16 @@ usePageMetadata('Project Details')
 
 watch(
   project,
-  (value) => {
-    if (value) {
-      route.meta.title = value.title
+  () => {
+    if (project.value) {
+      route.meta.title = project.value.title
     }
+    window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' })
   },
   { immediate: true }
 )
 
-onMounted(() => {
-  window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' })
-})
+const goToProject = (slug) => {
+  router.push(`/projects/${slug}`)
+}
 </script>

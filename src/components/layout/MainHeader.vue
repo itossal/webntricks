@@ -14,7 +14,7 @@
                 <ul>
 
                   <li class="menu-item-has-children">
-                    <a href="#">
+                    <a href="/about">
                       <span class="link-effect">
                         <span class="effect-1">À propos</span>
                         <span class="effect-1">À propos</span>
@@ -23,46 +23,21 @@
               
                   </li>
                   <li class="menu-item-has-children">
-                    <a href="#">
+                    <a href="/service">
                       <span class="link-effect">
                         <span class="effect-1">Services</span>
                         <span class="effect-1">Services</span>
                       </span>
                     </a>
                     <ul class="sub-menu">
-                      <li><a href="project.html">
-                        Site web & Application
-                      </a>
-                         <ul class="sub-menu">
-                            <li><a href="project-2.html">Site Vitrine</a></li>
-                            <li><a href="project-3.html">Site e-commerce</a></li>
-                            <li><a href="project-4.html">Refonte & Maintenance</a></li>
-                      
-                         </ul>
+                      <li v-for="service in services" :key="service.slug">
+                        <RouterLink :to="`/services/${service.slug}`">{{ service.title }}</RouterLink>
                       </li>
-              
-                      <li><a href="project-5.html">SEO & contenues</a>
-                       <ul class="sub-menu">
-                            <li><a href="project-2.html">SEO (référencement naturel)</a></li>
-                            <li><a href="project-3.html">Audit SEO complet</a></li>
-                            <li><a href="project-4.html">Optimisation technique</a></li>
-                            <li><a href="project-4.html">Rédaction de contenu</a></li>
-
-                         </ul>
-                      </li>
-                      <li><a href="project-6.html">Marketing & acquisition</a>
-                       <ul class="sub-menu">
-                            <li><a href="project-2.html">Marketing digital 360°</a></li>
-                            <li><a href="project-3.html">Community management</a></li>
-                            <li><a href="project-4.html">Stratégie de contenu</a></li>
-                            <li><a href="project-4.html">Email marketing & automation</a></li>
-                      
-                         </ul>
-                      </li>
+                     
                     </ul>
                   </li>
                   <li class="menu-item-has-children">
-                    <a href="#">
+                    <a href="/project">
                       <span class="link-effect">
                         <span class="effect-1">Réalisations</span>
                         <span class="effect-1">Réalisations</span>
@@ -104,7 +79,7 @@
                 </button>
               </div>
             </div>
-            <div class="col-auto d-none d-lg-block">
+            <!--div class="col-auto d-none d-lg-block">
               <div class="header-button ms-0">
                 <button type="button" class="search-btn searchBoxToggler" @click="$emit('toggle-search')">
                   <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -122,7 +97,7 @@
                   <span class="line"></span>
                 </button>
               </div>
-            </div>
+            </div-->
           </div>
         </div>
       </div>
@@ -132,8 +107,9 @@
 
 <script setup>
 import { assetUrl } from '@/utils/assets'
-
+import { services as serviceList } from '@/utils/services'
 defineEmits(['toggle-search', 'open-mobile', 'open-side'])
 
 const asset = assetUrl
+const services = serviceList
 </script>

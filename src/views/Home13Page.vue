@@ -231,16 +231,21 @@ Faites le choix d’une équipe engagée, à l’écoute de vos ambitions : cont
         Marquee Area
         ==============================-->
         <div class="container-fluid p-0 overflow-hidden bg-white">
-            <div class="slider__marquee clearfix marquee-wrap style3">
-                <div class="marquee_mode marquee__group"><div style="width: 100000px; transform: translateX(0px); animation: 101.24s linear 0s infinite normal none running marqueeAnimation-2346053;" class="js-marquee-wrapper"><div class="js-marquee" style="margin-right: 0px; float: left;">
-                    <h6 class="item m-item"><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">L'intelligence artificielle pour façonner l'avenir de la technologie</font></font></a></h6>
-                    <h6 class="item m-item"><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">L'intelligence artificielle pour façonner l'avenir de la technologie</font></font></a></h6>
-                </div><div class="js-marquee" style="margin-right: 0px; float: left;">
-                    <h6 class="item m-item"><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">L'intelligence artificielle pour façonner l'avenir de la technologie</font></font></a></h6>
-                    <h6 class="item m-item"><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">L'intelligence artificielle pour façonner l'avenir de la technologie</font></font></a></h6>
-                </div></div></div>
+
+          <div class="slider__marquee clearfix marquee-wrap style3"
+           :style="{
+            marginTop: '30px'
+           }">
+            <div class="marquee_mode marquee__group">
+                <h6 class="item m-item"><a href="#">  L'intelligence artificielle pour façonner l'avenir de la technologie</a></h6>
+                <h6 class="item m-item"><a href="#">  L'intelligence artificielle pour façonner l'avenir de la technologie</a></h6>
+                <h6 class="item m-item"><a href="#">  L'intelligence artificielle pour façonner l'avenir de la technologie</a></h6>
+                <h6 class="item m-item"><a href="#">  L'intelligence artificielle pour façonner l'avenir de la technologie</a></h6>
             </div>
         </div>
+
+        </div>
+   
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-6">
@@ -262,12 +267,12 @@ Que ce soit pour la création de contenus SEO ou la mise en valeur immersive de 
                             <p class="sec-text mt-25"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nous vous accompagnons pour transformer ces innovations en résultats concrets : améliorer votre visibilité, augmenter vos ventes, fidéliser vos clients.
 
 Découvrez comment nos modules IA peuvent transformer votre business.</font></font></p>
-                            <a href="about.html" class="btn">
+                            <RouterLink to="/modules-ia-ra" class="btn">
                                 <span class="link-effect">
                                     <span class="effect-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EN SAVOIR PLUS</font></font></span>
                                     <span class="effect-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EN SAVOIR PLUS</font></font></span>
                                 </span>
-                            </a>
+                            </RouterLink>
                         </div>
                     </div>
                 </div>
@@ -426,7 +431,7 @@ Proposition d’une stratégie sur mesure : branding (identité visuelle, desi
             <div class="row justify-content-center">
                 <div class="col-xxl-7 col-xl-6 col-lg-8">
                     <div class="title-area text-center">
-                        <h2 class="sec-title">Read Our Articles and News</h2>
+                        <h2 class="sec-title">Lisez nos articles et actualités</h2>
                     </div>
                 </div>
             </div>
@@ -490,7 +495,7 @@ Proposition d’une stratégie sur mesure : branding (identité visuelle, desi
             <div class="row gy-40 justify-content-between">
                 <div class="col-lg-5">
                     <div class="title-area">
-                        <h2 class="sec-title">Feel Free to Ask Anything</h2>
+                        <h2 class="sec-title">N'hésitez pas à poser toutes vos questions.</h2>
                     </div>
                     <div class="contact-card">
                         <h4 class="box-title">Cergy, France</h4>
@@ -518,30 +523,30 @@ Proposition d’une stratégie sur mesure : branding (identité visuelle, desi
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control style-border" name="name" id="name" placeholder="Full name*">
+                                        <input type="text" class="form-control style-border" name="name" id="name" placeholder="Nom*">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control style-border" name="email" id="email" placeholder="Email address*">
+                                        <input type="text" class="form-control style-border" name="email" id="email" placeholder="Email*">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <input type="text" class="form-control style-border" name="website" id="website" placeholder="Website link">
+                                        <input type="text" class="form-control style-border" name="website" id="website" placeholder="Site Web">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <textarea name="message" placeholder="How Can We Help You*" id="contactForm" class="form-control style-border"></textarea>
+                                        <textarea name="message" placeholder="Comment pouvons-nous vous aider*" id="contactForm" class="form-control style-border"></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-btn col-12">
                                 <button type="submit" class="btn mt-20">
                                     <span class="link-effect">
-                                        <span class="effect-1">SEND MESSAGE</span>
-                                        <span class="effect-1">SEND MESSAGE</span>
+                                        <span class="effect-1">ENVOYER</span>
+                                        <span class="effect-1">ENVOYER</span>
                                     </span>
                                 </button>
                             </div>
@@ -561,15 +566,15 @@ Proposition d’une stratégie sur mesure : branding (identité visuelle, desi
             <div class="row justify-content-xl-between justify-content-center align-items-center">
                 <div class="col-xl-8 col-lg-10">
                     <div class="title-area mb-xl-0 mb-60">
-                        <h2 class="sec-title text-white">Let's Create Something Great</h2>
-                        <p class="sec-text mt-30 mb-n2 text-white">We shift you from today’s reality to tomorrow’s potential, ensuring</p>
+                        <h2 class="sec-title text-white">Créons quelque chose de formidable</h2>
+                        <p class="sec-text mt-30 mb-n2 text-white">Nous vous faisons passer de la réalité d'aujourd'hui au potentiel de demain, en assurant</p>
                     </div>
                 </div>
                 <div class="col-xl-auto">
                     <a class="circle-btn btn bg-theme text-title gsap-magnetic" href="contact.html">
                         <span class="link-effect">
-                            <span class="effect-1">LET'S TALK</span>
-                            <span class="effect-1">LET'S TALK</span>
+                            <span class="effect-1">PARLONS-EN</span>
+                            <span class="effect-1">PARLONS-EN</span>
                         </span>
                     </a>
                 </div>

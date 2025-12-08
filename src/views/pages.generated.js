@@ -156,6 +156,12 @@ export const pages = [
     "title": "Home 9"
   },
   {
+    "file": "ia-ra-modules.html",
+    "component": "IaRaModulesPage",
+    "path": "/modules-ia-ra",
+    "title": "Modules IA & RA"
+  },
+  {
     "file": "index.html",
     "component": "IndexPage",
     "path": "/index",

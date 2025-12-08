@@ -39,7 +39,7 @@
           </div>
           <div class="col-md-3 col-xl-2 col-lg-3">
             <div class="widget widget_nav_menu footer-widget">
-              <h3 class="widget_title">Links</h3>
+              <h3 class="widget_title">Liens</h3>
               <div class="menu-all-pages-container list-column2">
                 <ul class="menu">
                   <li><a href="about.html">A propos</a></li>
@@ -53,7 +53,7 @@
           </div>
           <div class="col-md-6 col-xl-3 col-lg-4">
             <div class="widget widget_nav_menu footer-widget">
-              <h3 class="widget_title">Others</h3>
+              <h3 class="widget_title">Autres</h3>
               <div class="menu-all-pages-container list-column2">
                 <ul class="menu">
                   <li><a href="about.html"> Featured Project</a></li>
