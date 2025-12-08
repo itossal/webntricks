@@ -19,29 +19,75 @@ const home13Entry = pages.find((page) => page.file === 'home-13.html')
 const records = []
 
 if (home13Entry) {
-  records.push({
-    path: '/',
-    name: 'Home',
-    meta: { title: home13Entry.title || 'Branding Agency' },
-    component: componentMap[home13Entry.component],
-  })
+  records.push(
+    createRecord({
+      path: '/',
+      name: 'Home',
+      meta: { title: home13Entry.title || 'Branding Agency' },
+      component: componentMap[home13Entry.component],
+    })
+  )
 }
 
 for (const page of pages) {
   const component = componentMap[page.component]
   if (!component) continue
-  records.push({
+  records.push(createRecord({
     path: page.path,
     name: page.component.replace(/Page$/, ''),
     meta: { title: page.title },
     component,
-  })
+  }))
 }
+
+records.push(
+  createRecord({
+    path: '/projects/:slug',
+    name: 'ProjectDetails',
+    meta: { title: 'Project Details' },
+    component: componentMap.ProjectDetailsPage,
+  })
+)
 
 const errorRecord = records.find((record) => record.path === '/error') || records[0]
 
+function escapeRegex(segment) {
+  return segment.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+}
+
+function createRecord(record) {
+  const paramNames = []
+  const pattern = record.path
+    .split('/')
+    .map((segment) => {
+      if (segment.startsWith(':')) {
+        paramNames.push(segment.slice(1))
+        return '([^/]+)'
+      }
+      return escapeRegex(segment)
+    })
+    .join('/')
+
+  const matcher = new RegExp(`^${pattern}$`)
+
+  return {
+    ...record,
+    _paramNames: paramNames,
+    _matcher: matcher,
+  }
+}
+
 function resolve(path) {
-  return records.find((record) => record.path === path)
+  for (const record of records) {
+    const match = record._matcher.exec(path)
+    if (match) {
+      const params = Object.fromEntries(
+        (record._paramNames || []).map((name, index) => [name, match[index + 1]])
+      )
+      return { record, params }
+    }
+  }
+  return null
 }
 
 export function createAppRouter() {
@@ -51,25 +97,31 @@ export function createAppRouter() {
     path: currentRecord.value?.path ?? '/',
     name: currentRecord.value?.name ?? 'Home',
     meta: currentRecord.value?.meta ?? {},
+    params: {},
   })
 
   const currentComponent = computed(() => currentRecord.value?.component ?? null)
 
   const navigate = (path, { replace = false } = {}) => {
-    let target = resolve(path)
-    if (!target) {
-      target = errorRecord
+    const match = resolve(path)
+    let targetRecord = match?.record
+    let params = match?.params ?? {}
+
+    if (!targetRecord) {
+      targetRecord = errorRecord
+      params = {}
     }
 
-    if (!target) return
+    if (!targetRecord) return
 
-    currentRecord.value = target
-    routeState.path = target.path
-    routeState.name = target.name
-    routeState.meta = target.meta || {}
+    currentRecord.value = targetRecord
+    routeState.path = path
+    routeState.name = targetRecord.name
+    routeState.meta = targetRecord.meta || {}
+    routeState.params = params
 
     if (typeof window !== 'undefined') {
-      const url = target.path
+      const url = path
       if (replace) {
         window.history.replaceState({}, '', url)
       } else {
