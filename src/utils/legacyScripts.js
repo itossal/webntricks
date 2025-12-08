@@ -1,6 +1,40 @@
 const isBrowser = typeof window !== 'undefined'
 
-const assetUrl = (relativePath) => new URL(relativePath, import.meta.env.BASE_URL || '/').href
+const resolveBaseUrl = () => {
+  if (!isBrowser) return '/'
+
+  const envBase = import.meta?.env?.BASE_URL
+  if (typeof envBase === 'string' && envBase.trim() !== '') {
+    try {
+      return new URL(envBase, window.location?.origin || '/').toString()
+    } catch (error) {
+      console.warn('Invalid BASE_URL detected; falling back to document.baseURI or window origin.', error)
+    }
+  }
+
+  if (typeof document !== 'undefined' && typeof document.baseURI === 'string') {
+    try {
+      return new URL('/', document.baseURI).toString()
+    } catch (error) {
+      console.warn('Invalid document.baseURI detected; falling back to window origin.', error)
+    }
+  }
+
+  if (typeof window !== 'undefined' && window.location?.origin) {
+    return `${window.location.origin}/`
+  }
+
+  return '/'
+}
+
+const assetUrl = (relativePath) => {
+  try {
+    return new URL(relativePath, resolveBaseUrl()).href
+  } catch (error) {
+    console.warn(`Failed to resolve asset URL for path: ${relativePath}`, error)
+    return relativePath
+  }
+}
 
 const hasJQueryPlugin = (plugin) => () => {
   if (!isBrowser || !window.jQuery || !window.jQuery.fn) {
