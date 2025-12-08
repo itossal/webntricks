@@ -8,7 +8,7 @@
         <div class="container-fluid">
                 <div class="breadcumb-content">
                     <ul class="breadcumb-menu">
-                    <li><RouterLink to="/">Home</RouterLink></li>
+                    <li><RouterLink to="/">Acceuil</RouterLink></li>
                     <li><RouterLink to="/service">Services</RouterLink></li>
                     <li>{{ service.title }}</li>
                     </ul>

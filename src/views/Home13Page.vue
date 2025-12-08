@@ -225,6 +225,55 @@ Faites le choix d’une équipe engagée, à l’écoute de vos ambitions : cont
         </div>
     </div>
 
+
+<div class="about-area-17 overflow-hidden bg-smoke">
+        <!--==============================
+        Marquee Area
+        ==============================-->
+        <div class="container-fluid p-0 overflow-hidden bg-white">
+            <div class="slider__marquee clearfix marquee-wrap style3">
+                <div class="marquee_mode marquee__group"><div style="width: 100000px; transform: translateX(0px); animation: 101.24s linear 0s infinite normal none running marqueeAnimation-2346053;" class="js-marquee-wrapper"><div class="js-marquee" style="margin-right: 0px; float: left;">
+                    <h6 class="item m-item"><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">L'intelligence artificielle pour façonner l'avenir de la technologie</font></font></a></h6>
+                    <h6 class="item m-item"><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">L'intelligence artificielle pour façonner l'avenir de la technologie</font></font></a></h6>
+                </div><div class="js-marquee" style="margin-right: 0px; float: left;">
+                    <h6 class="item m-item"><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">L'intelligence artificielle pour façonner l'avenir de la technologie</font></font></a></h6>
+                    <h6 class="item m-item"><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">L'intelligence artificielle pour façonner l'avenir de la technologie</font></font></a></h6>
+                </div></div></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6">
+                    <div class="about-thumb17">
+                        <img :src="asset('/img/normal/about_17-1.png')"   alt="image">
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="about-wrap17 space">
+                        <div class="title-area mb-0">
+                            <h2 class="sec-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exploitez la puissance de l’intelligence artificielle pour des solutions innovantes
+
+</font></font></h2>
+                            <p class="sec-text mt-25"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Le monde digital évolue vite. Chez Webntricks, nous mettons à votre disposition des solutions d’intelligence artificielle qui révolutionnent votre manière de créer, optimiser et engager.
+
+Notre technologie analyse en profondeur les données, apprend constamment et ajuste automatiquement ses recommandations pour vous offrir des actions précises et efficaces.
+Que ce soit pour la création de contenus SEO ou la mise en valeur immersive de vos produits, nos modules s’adaptent parfaitement à vos besoins spécifiques.
+</font></font></p>
+                            <p class="sec-text mt-25"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nous vous accompagnons pour transformer ces innovations en résultats concrets : améliorer votre visibilité, augmenter vos ventes, fidéliser vos clients.
+
+Découvrez comment nos modules IA peuvent transformer votre business.</font></font></p>
+                            <a href="about.html" class="btn">
+                                <span class="link-effect">
+                                    <span class="effect-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EN SAVOIR PLUS</font></font></span>
+                                    <span class="effect-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EN SAVOIR PLUS</font></font></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--==============================
     Feature Area
     ==============================-->
@@ -336,11 +385,11 @@ Proposition d’une stratégie sur mesure : branding (identité visuelle, desi
 
                         <div class="accordion-card style2 active">
                             <div class="accordion-header" id="collapse-item-1">
-                                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">Will you be updating the program?</button>
+                                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">Comment Webntricks peut-il transformer votre présence digitale en un levier de croissance puissant ?</button>
                             </div>
                             <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="collapse-item-1" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">We design high quality websites that make users come back for more. A good website tells a story that will make users fully immerse themselves operating</p>
+                                    <p class="faq-text">Webntricks combine une expertise pointue en design, SEO, marketing digital et développement pour créer des solutions sur-mesure qui augmentent votre visibilité, fidélisent vos clients et génèrent un chiffre d’affaires durable.</p>
                                 </div>
                             </div>
                         </div>
@@ -348,37 +397,18 @@ Proposition d’une stratégie sur mesure : branding (identité visuelle, desi
 
                         <div class="accordion-card style2">
                             <div class="accordion-header" id="collapse-item-2">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">What happens to my data if I cancel?</button>
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">Quelle solution digitale sur mesure vous convient le mieux pour booster votre visibilité et vos ventes ?</button>
                             </div>
                             <div id="collapse-2" class="accordion-collapse collapse " aria-labelledby="collapse-item-2" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">We design high quality websites that make users come back for more. A good website tells a story that will make users fully immerse themselves operating</p>
+                                    <p class="faq-text">Nous adaptons nos offres à vos besoins spécifiques, que vous recherchiez un site vitrine élégant, une boutique e-commerce performante ou une stratégie d’acquisition multicanal efficace.</p>
                                 </div>
                             </div>
                         </div>
 
 
-                        <div class="accordion-card style2">
-                            <div class="accordion-header" id="collapse-item-3">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">How I can optimize voice search?</button>
-                            </div>
-                            <div id="collapse-3" class="accordion-collapse collapse " aria-labelledby="collapse-item-3" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    <p class="faq-text">We design high quality websites that make users come back for more. A good website tells a story that will make users fully immerse themselves operating</p>
-                                </div>
-                            </div>
-                        </div>
+                 
 
-                        <div class="accordion-card style2">
-                            <div class="accordion-header" id="collapse-item-4">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">If I have questions, where can I find answers?</button>
-                            </div>
-                            <div id="collapse-4" class="accordion-collapse collapse " aria-labelledby="collapse-item-4" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    <p class="faq-text">We design high quality websites that make users come back for more. A good website tells a story that will make users fully immerse themselves operating</p>
-                                </div>
-                            </div>
-                        </div>
 
                     </div>
                 </div>
