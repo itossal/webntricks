@@ -8,8 +8,8 @@
         <div class="container-fluid">
             <div class="breadcumb-content">
                 <ul class="breadcumb-menu">
-                    <li><RouterLink to="/">Home</RouterLink></li>
-                    <li><RouterLink to="/project">Porfolio</RouterLink></li>
+                    <li><RouterLink to="/">Acceuil</RouterLink></li>
+                    <li><RouterLink to="/project">Projets</RouterLink></li>
                     <li>{{ project?.title }}</li>
                 </ul>
             </div>
@@ -77,10 +77,10 @@
     <div class="container-fluid p-0 overflow-hidden">
         <div class="slider__marquee clearfix marquee-wrap">
             <div class="marquee_mode marquee__group">
-                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> We Give Unparalleled Flexibility</a></h6>
-                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> We Give Unparalleled Flexibility</a></h6>
-                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> We Give Unparalleled Flexibility</a></h6>
-                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> We Give Unparalleled Flexibility</a></h6>
+                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> Nous offrons une flexibilité inégalée</a></h6>
+                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> Nous offrons une flexibilité inégalée</a></h6>
+                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> Nous offrons une flexibilité inégalée</a></h6>
+                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> Nous offrons une flexibilité inégalée</a></h6>
             </div>
         </div>
     </div>

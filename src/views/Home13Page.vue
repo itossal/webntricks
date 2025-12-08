@@ -62,10 +62,10 @@
     <div class="container-fluid p-0 overflow-hidden">
         <div class="slider__marquee clearfix marquee-wrap">
             <div class="marquee_mode marquee__group">
-                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> We Give Unparalleled Flexibility</a></h6>
-                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> We Give Unparalleled Flexibility</a></h6>
-                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> We Give Unparalleled Flexibility</a></h6>
-                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> We Give Unparalleled Flexibility</a></h6>
+                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> Nous offrons une flexibilité inégalée</a></h6>
+                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> Nous offrons une flexibilité inégalée</a></h6>
+                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> Nous offrons une flexibilité inégalée</a></h6>
+                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> Nous offrons une flexibilité inégalée</a></h6>
             </div>
         </div>
     </div>
@@ -174,111 +174,48 @@ Faites le choix d’une équipe engagée, à l’écoute de vos ambitions : cont
         <div class="container-fluid p-0">
             <div class="project-static-wrap13">
                 <div class="sticky-wrap" id="sticky_item">
-                    <div id="tab-1" class="project-img" :data-bg-src="asset('/img/portfolio/portfolio16_4.jpg')">
+                    <div
+                      v-if="projects.length"
+                      class="project-img"
+                      :data-bg-src="asset(projects[0].cover)"
+                    >
                     </div>
-               
+
                 </div>
                 <div class="project-content-wrap bg-title">
-                    <div class="project-content active" data-tab="tab-1">
+                    <div
+                      v-for="(project, index) in projects"
+                      :key="project.slug"
+                      class="project-content"
+                      :class="{ active: index === 0 }"
+                      :data-tab="`tab-${index + 1}`"
+                    >
                         <div class="hidden-img">
-                            <img :src="asset('/img/portfolio/portfolio16_4.jpg')" alt="img">
+                            <img :src="asset(project.cover)" alt="img">
                         </div>
                         <div class="portfolio-wrap style13">
                             <div class="portfolio-details">
                                 <div class="media-left">
                                     <ul class="portfolio-meta">
-                                        <li><a href="blog.html">Branding</a></li>
-                                        <li><a href="blog.html">Development</a></li>
-                                        <li><a href="blog.html">Marketing</a></li>
+                                        <li
+                                          v-for="category in project.categories"
+                                          :key="category"
+                                        >
+                                            <RouterLink to="/blog">{{ category }}</RouterLink>
+                                        </li>
                                     </ul>
-                                    <h3 class="portfolio-title"><a href="project-details.html">Money Laundering Compliance Scanner</a></h3>
+                                    <h3 class="portfolio-title">
+                                      <RouterLink :to="`/projects/${project.slug}`">{{ project.title }}</RouterLink>
+                                    </h3>
                                 </div>
                                 <div class="portfolio-details-btn">
-                                    <a href="project-details.html" class="link-btn">
+                                    <RouterLink :to="`/projects/${project.slug}`" class="link-btn">
                                         <span class="link-effect">
-                                            <span class="effect-1">VIEW PROJECT</span>
-                                            <span class="effect-1">VIEW PROJECT</span>
+                                            <span class="effect-1">VOIR LE PROJET</span>
+                                            <span class="effect-1">VOIR LE PROJET</span>
                                         </span>
                                         <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content" data-tab="tab-2">
-                        <div class="hidden-img">
-                            <img :src="asset('/img/portfolio/portfolio8_4.jpg')" alt="img">
-                        </div>
-                        <div class="portfolio-wrap style13">
-                            <div class="portfolio-details">
-                                <div class="media-left">
-                                    <ul class="portfolio-meta">
-                                        <li><a href="blog.html">Branding</a></li>
-                                        <li><a href="blog.html">Development</a></li>
-                                        <li><a href="blog.html">Marketing</a></li>
-                                    </ul>
-                                    <h3 class="portfolio-title"><a href="project-details.html">Anti Money Laundering Compliance Scanner</a></h3>
-                                </div>
-                                <div class="portfolio-details-btn">
-                                    <a href="project-details.html" class="link-btn">
-                                        <span class="link-effect">
-                                            <span class="effect-1">VIEW PROJECT</span>
-                                            <span class="effect-1">VIEW PROJECT</span>
-                                        </span>
-                                        <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content" data-tab="tab-3">
-                        <div class="hidden-img">
-                            <img :src="asset('/img/portfolio/portfolio8_5.jpg')" alt="img">
-                        </div>
-                        <div class="portfolio-wrap style13">
-                            <div class="portfolio-details">
-                                <div class="media-left">
-                                    <ul class="portfolio-meta">
-                                        <li><a href="blog.html">Branding</a></li>
-                                        <li><a href="blog.html">Development</a></li>
-                                        <li><a href="blog.html">Marketing</a></li>
-                                    </ul>
-                                    <h3 class="portfolio-title"><a href="project-details.html">Decentralized Lending Platform for Students</a></h3>
-                                </div>
-                                <div class="portfolio-details-btn">
-                                    <a href="project-details.html" class="link-btn">
-                                        <span class="link-effect">
-                                            <span class="effect-1">VIEW PROJECT</span>
-                                            <span class="effect-1">VIEW PROJECT</span>
-                                        </span>
-                                        <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content" data-tab="tab-4">
-                        <div class="hidden-img">
-                            <img :src="asset('/img/portfolio/portfolio8_6.jpg')" alt="img">
-                        </div>
-                        <div class="portfolio-wrap style13">
-                            <div class="portfolio-details">
-                                <div class="media-left">
-                                    <ul class="portfolio-meta">
-                                        <li><a href="blog.html">Branding</a></li>
-                                        <li><a href="blog.html">Development</a></li>
-                                        <li><a href="blog.html">Marketing</a></li>
-                                    </ul>
-                                    <h3 class="portfolio-title"><a href="project-details.html">Shopify Redesign for a Nova Scotia Winery</a></h3>
-                                </div>
-                                <div class="portfolio-details-btn">
-                                    <a href="project-details.html" class="link-btn">
-                                        <span class="link-effect">
-                                            <span class="effect-1">VIEW PROJECT</span>
-                                            <span class="effect-1">VIEW PROJECT</span>
-                                        </span>
-                                        <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
-                                    </a>
+                                    </RouterLink>
                                 </div>
                             </div>
                         </div>
@@ -294,40 +231,55 @@ Faites le choix d’une équipe engagée, à l’écoute de vos ambitions : cont
     <div class="feature-area-1 space">
         <div class="container">
             <div class="title-area text-center">
-                <h2 class="sec-title text-smoke">Three Step Process</h2>
+                <h2 class="sec-title text-smoke">Processus de collaboration Webntricks</h2>
             </div>
             <div class="row gx-0 gy-40">
                 <div class="col-lg-4">
                     <div class="process-card">
                         <div class="process-card-number">
-                            Step 1
+                            Etape 1
                         </div>
                         <h4 class="process-card-title">
-                            Strategic Approach
+                            Diagnostic & Stratégie Personnalisée : analyse, benchmark, stratégie
                         </h4>
-                        <p class="process-card-text">We are a creative agency brands building insightful strategy, creating unique designs helping</p>
+                        <p class="process-card-text">
+                        
+                        Analyse des besoins et de la présence digitale actuelle : audit technique et marketing, benchmark concurrentiel sur le secteur du client.
+Proposition d’une stratégie sur mesure : branding (identité visuelle, design produit), création de site (vitrine/e-commerce), motion graphics et solutions digitales adaptées au parcours de conversion.
+                        
+                        
+                        
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="process-card">
                         <div class="process-card-number">
-                            Step 2
+                            Etape 2
                         </div>
                         <h4 class="process-card-title">
-                            Collaboration is Key
+                            Conception & Mise en œuvre collaborative : design, développement, animation, SEO, suivi client 
+
                         </h4>
-                        <p class="process-card-text">We are a creative agency brands building insightful strategy, creating unique designs helping</p>
+                        <p class="process-card-text">Conception UX/UI, développement et production des contenus : design interactif, création graphique, animation, rédaction SEO et intégration technique.
+                        Suivi client transparent via points réguliers, feedback visuel et ajustements.
+                        Intégration des solutions : site vitrine performant, SEO avancé, campagnes digitales 360° (Google Ads, Facebook, réseaux sociaux) et motion graphics engageants.
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="process-card">
                         <div class="process-card-number">
-                            Step 3
+                            Etape 3
                         </div>
                         <h4 class="process-card-title">
-                            End to End Delivery
+                            Lancement & Accompagnement évolutif : mise en ligne, monitoring, optimisation, content IA, accompagnement dédié 
+
                         </h4>
-                        <p class="process-card-text">We are a creative agency brands building insightful strategy, creating unique designs helping</p>
+                        <p class="process-card-text">Mise en ligne, test et formation à la gestion autonome du site.
+                        Suivi technique et marketing post-lancement (monitoring SEO, animation des réseaux, création d’articles tendances grâce à l’IA, analyse des performances).
+                        Evolution continue avec nouveaux contenus, optimisation et support dédié
+                        </p>
                     </div>
                 </div>
             </div>
@@ -342,7 +294,7 @@ Faites le choix d’une équipe engagée, à l’écoute de vos ambitions : cont
             <div class="row justify-content-center">
                 <div class="col-xl-6 col-lg-8">
                     <div class="title-area text-center">
-                        <h2 class="sec-title">What We Can Do for Our Clients</h2>
+                        <h2 class="sec-title">Services Webntricks</h2>
                     </div>
                 </div>
             </div>
@@ -355,11 +307,11 @@ Faites le choix d’une équipe engagée, à l’écoute de vos ambitions : cont
                         <h4 class="feature-card-title">
                             <a href="service.html">Branding Design</a>
                         </h4>
-                        <p class="feature-card-text">We care success relationships fuel success we love building</p>
+                        <p class="feature-card-text">Création d’identités visuelles et stratégies de marque.</p>
                         <a href="service-details.html" class="link-btn">
                             <span class="link-effect">
-                                <span class="effect-1">VIEW DETAILS</span>
-                                <span class="effect-1">VIEW DETAILS</span>
+                                <span class="effect-1">VOIR DETAILS</span>
+                                <span class="effect-1">VOIR DETAILS</span>
                             </span>
                             <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
                         </a>
@@ -637,6 +589,7 @@ Faites le choix d’une équipe engagée, à l’écoute de vos ambitions : cont
 import { onMounted } from 'vue'
 import { usePageMetadata } from '@/composables/usePageMetadata'
 import { assetUrl } from '@/utils/assets'
+import { projects } from '@/utils/projects'
 
 const asset = assetUrl
 
