@@ -49,6 +49,15 @@ records.push(
   })
 )
 
+records.push(
+  createRecord({
+    path: '/services/:slug',
+    name: 'ServiceDetails',
+    meta: { title: 'Service Details' },
+    component: componentMap.ServiceDetailsPage,
+  })
+)
+
 const errorRecord = records.find((record) => record.path === '/error') || records[0]
 
 function escapeRegex(segment) {

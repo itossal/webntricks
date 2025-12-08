@@ -299,58 +299,26 @@ Proposition d’une stratégie sur mesure : branding (identité visuelle, desi
                 </div>
             </div>
             <div class="row gy-4 align-items-center justify-content-center">
-                <div class="col-xl-4 col-md-6">
+                <div
+                  v-for="service in serviceList"
+                  :key="service.slug"
+                  class="col-xl-4 col-md-6"
+                >
                     <div class="feature-card">
                         <div class="feature-card-icon">
-                            <img :src="asset('/img/icon/feature-icon1-1.svg')" alt="icon">
+                            <img :src="asset(service.icon)" alt="icon">
                         </div>
                         <h4 class="feature-card-title">
-                            <a href="service.html">Branding Design</a>
+                            <RouterLink :to="`/services/${service.slug}`">{{ service.title }}</RouterLink>
                         </h4>
-                        <p class="feature-card-text">Création d’identités visuelles et stratégies de marque.</p>
-                        <a href="service-details.html" class="link-btn">
+                        <p class="feature-card-text">{{ service.description }}</p>
+                        <RouterLink :to="`/services/${service.slug}`" class="link-btn">
                             <span class="link-effect">
                                 <span class="effect-1">VOIR DETAILS</span>
                                 <span class="effect-1">VOIR DETAILS</span>
                             </span>
                             <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="feature-card">
-                        <div class="feature-card-icon">
-                            <img :src="asset('/img/icon/feature-icon1-2.svg')" alt="icon">
-                        </div>
-                        <h4 class="feature-card-title">
-                            <a href="service.html">Web Development</a>
-                        </h4>
-                        <p class="feature-card-text">We care success relationships fuel success we love building</p>
-                        <a href="service-details.html" class="link-btn">
-                            <span class="link-effect">
-                                <span class="effect-1">VIEW DETAILS</span>
-                                <span class="effect-1">VIEW DETAILS</span>
-                            </span>
-                            <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="feature-card">
-                        <div class="feature-card-icon">
-                            <img :src="asset('/img/icon/feature-icon1-3.svg')" alt="icon">
-                        </div>
-                        <h4 class="feature-card-title">
-                            <a href="service.html">Digital Marketing</a>
-                        </h4>
-                        <p class="feature-card-text">We care success relationships fuel success we love building</p>
-                        <a href="service-details.html" class="link-btn">
-                            <span class="link-effect">
-                                <span class="effect-1">VIEW DETAILS</span>
-                                <span class="effect-1">VIEW DETAILS</span>
-                            </span>
-                            <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
-                        </a>
+                        </RouterLink>
                     </div>
                 </div>
             </div>
@@ -590,6 +558,7 @@ import { onMounted } from 'vue'
 import { usePageMetadata } from '@/composables/usePageMetadata'
 import { assetUrl } from '@/utils/assets'
 import { projects } from '@/utils/projects'
+import { services as serviceList } from '@/utils/services'
 
 const asset = assetUrl
 
