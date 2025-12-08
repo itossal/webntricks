@@ -6,21 +6,12 @@
           <div class="row align-items-center justify-content-between">
             <div class="col-auto">
               <div class="header-logo">
-                <RouterLink to="/"><img :src="asset('/img/logo.svg')" alt="logo" /></RouterLink>
+                <RouterLink to="/"><img :src="asset('/img/logo-webntricks.svg')" alt="logo" /></RouterLink>
               </div>
             </div>
             <div class="col-auto m-lg-auto">
               <nav class="main-menu d-none d-lg-inline-block">
                 <ul>
-                  <li class="active menu-item-has-children mega-menu-wrap">
-                    <a href="/">
-                      <span class="link-effect">
-                        <span class="effect-1">Accueil</span>
-                        <span class="effect-1">Accueil</span>
-                      </span>
-                    </a>
-              
-                  </li>
                   <li class="menu-item-has-children">
                     <a href="/about">
                       <span class="link-effect">
