@@ -174,111 +174,48 @@ Faites le choix d’une équipe engagée, à l’écoute de vos ambitions : cont
         <div class="container-fluid p-0">
             <div class="project-static-wrap13">
                 <div class="sticky-wrap" id="sticky_item">
-                    <div id="tab-1" class="project-img" :data-bg-src="asset('/img/portfolio/portfolio16_4.jpg')">
+                    <div
+                      v-if="projects.length"
+                      class="project-img"
+                      :data-bg-src="asset(projects[0].cover)"
+                    >
                     </div>
-               
+
                 </div>
                 <div class="project-content-wrap bg-title">
-                    <div class="project-content active" data-tab="tab-1">
+                    <div
+                      v-for="(project, index) in projects"
+                      :key="project.slug"
+                      class="project-content"
+                      :class="{ active: index === 0 }"
+                      :data-tab="`tab-${index + 1}`"
+                    >
                         <div class="hidden-img">
-                            <img :src="asset('/img/portfolio/portfolio16_4.jpg')" alt="img">
+                            <img :src="asset(project.cover)" alt="img">
                         </div>
                         <div class="portfolio-wrap style13">
                             <div class="portfolio-details">
                                 <div class="media-left">
                                     <ul class="portfolio-meta">
-                                        <li><a href="blog.html">Branding</a></li>
-                                        <li><a href="blog.html">Development</a></li>
-                                        <li><a href="blog.html">Marketing</a></li>
+                                        <li
+                                          v-for="category in project.categories"
+                                          :key="category"
+                                        >
+                                            <RouterLink to="/blog">{{ category }}</RouterLink>
+                                        </li>
                                     </ul>
-                                    <h3 class="portfolio-title"><a href="project-details.html">Money Laundering Compliance Scanner</a></h3>
+                                    <h3 class="portfolio-title">
+                                      <RouterLink :to="`/projects/${project.slug}`">{{ project.title }}</RouterLink>
+                                    </h3>
                                 </div>
                                 <div class="portfolio-details-btn">
-                                    <a href="project-details.html" class="link-btn">
+                                    <RouterLink :to="`/projects/${project.slug}`" class="link-btn">
                                         <span class="link-effect">
-                                            <span class="effect-1">VIEW PROJECT</span>
-                                            <span class="effect-1">VIEW PROJECT</span>
+                                            <span class="effect-1">VOIR LE PROJET</span>
+                                            <span class="effect-1">VOIR LE PROJET</span>
                                         </span>
                                         <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content" data-tab="tab-2">
-                        <div class="hidden-img">
-                            <img :src="asset('/img/portfolio/portfolio8_4.jpg')" alt="img">
-                        </div>
-                        <div class="portfolio-wrap style13">
-                            <div class="portfolio-details">
-                                <div class="media-left">
-                                    <ul class="portfolio-meta">
-                                        <li><a href="blog.html">Branding</a></li>
-                                        <li><a href="blog.html">Development</a></li>
-                                        <li><a href="blog.html">Marketing</a></li>
-                                    </ul>
-                                    <h3 class="portfolio-title"><a href="project-details.html">Anti Money Laundering Compliance Scanner</a></h3>
-                                </div>
-                                <div class="portfolio-details-btn">
-                                    <a href="project-details.html" class="link-btn">
-                                        <span class="link-effect">
-                                            <span class="effect-1">VIEW PROJECT</span>
-                                            <span class="effect-1">VIEW PROJECT</span>
-                                        </span>
-                                        <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content" data-tab="tab-3">
-                        <div class="hidden-img">
-                            <img :src="asset('/img/portfolio/portfolio8_5.jpg')" alt="img">
-                        </div>
-                        <div class="portfolio-wrap style13">
-                            <div class="portfolio-details">
-                                <div class="media-left">
-                                    <ul class="portfolio-meta">
-                                        <li><a href="blog.html">Branding</a></li>
-                                        <li><a href="blog.html">Development</a></li>
-                                        <li><a href="blog.html">Marketing</a></li>
-                                    </ul>
-                                    <h3 class="portfolio-title"><a href="project-details.html">Decentralized Lending Platform for Students</a></h3>
-                                </div>
-                                <div class="portfolio-details-btn">
-                                    <a href="project-details.html" class="link-btn">
-                                        <span class="link-effect">
-                                            <span class="effect-1">VIEW PROJECT</span>
-                                            <span class="effect-1">VIEW PROJECT</span>
-                                        </span>
-                                        <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content" data-tab="tab-4">
-                        <div class="hidden-img">
-                            <img :src="asset('/img/portfolio/portfolio8_6.jpg')" alt="img">
-                        </div>
-                        <div class="portfolio-wrap style13">
-                            <div class="portfolio-details">
-                                <div class="media-left">
-                                    <ul class="portfolio-meta">
-                                        <li><a href="blog.html">Branding</a></li>
-                                        <li><a href="blog.html">Development</a></li>
-                                        <li><a href="blog.html">Marketing</a></li>
-                                    </ul>
-                                    <h3 class="portfolio-title"><a href="project-details.html">Shopify Redesign for a Nova Scotia Winery</a></h3>
-                                </div>
-                                <div class="portfolio-details-btn">
-                                    <a href="project-details.html" class="link-btn">
-                                        <span class="link-effect">
-                                            <span class="effect-1">VIEW PROJECT</span>
-                                            <span class="effect-1">VIEW PROJECT</span>
-                                        </span>
-                                        <img :src="asset('/img/icon/arrow-left-top.svg')" alt="icon">
-                                    </a>
+                                    </RouterLink>
                                 </div>
                             </div>
                         </div>
@@ -637,6 +574,7 @@ Faites le choix d’une équipe engagée, à l’écoute de vos ambitions : cont
 import { onMounted } from 'vue'
 import { usePageMetadata } from '@/composables/usePageMetadata'
 import { assetUrl } from '@/utils/assets'
+import { projects } from '@/utils/projects'
 
 const asset = assetUrl
 

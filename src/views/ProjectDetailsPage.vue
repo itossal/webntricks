@@ -8,9 +8,9 @@
         <div class="container-fluid">
             <div class="breadcumb-content">
                 <ul class="breadcumb-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="project.html">Porfolio</a></li>
-                    <li>Decentralized Platform</li>
+                    <li><RouterLink to="/">Accueil</RouterLink></li>
+                    <li><RouterLink to="/project">Portfolio</RouterLink></li>
+                    <li>{{ project?.title }}</li>
                 </ul>
             </div>
         </div>
@@ -22,14 +22,9 @@
     <div class="project-details-page-area space">
         <div class="container">
             <div class="row global-carousel default" data-arrows="true" data-xl-arrows="true" data-ml-arrows="true" data-lg-arrows="true" data-md-arrows="true">
-                <div class="col-xl-12">
+                <div class="col-xl-12" v-for="(image, index) in galleryImages" :key="image">
                     <div class="project-inner-thumb mb-80 wow img-custom-anim-top">
-                        <img class="w-100" :src="asset('/img/portfolio/portfolio_inner_1.png')" alt="img">
-                    </div>
-                </div>
-                <div class="col-xl-12">
-                    <div class="project-inner-thumb mb-80 wow img-custom-anim-top">
-                        <img class="w-100" :src="asset('/img/portfolio/portfolio_inner_2.png')" alt="img">
+                        <img class="w-100" :src="asset(image)" alt="portfolio image" :loading="index ? 'lazy' : 'eager'">
                     </div>
                 </div>
             </div>
@@ -37,39 +32,39 @@
                 <div class="col-xl-3 col-lg-4">
                     <div class="project-details-info mb-lg-0 mb-40">
                         <ul class="list-wrap">
-                            <li><span>Category:</span>Development</li>
-                            <li><span>Software:</span>WordPress, Figma</li>
-                            <li><span>Service:</span>Development</li>
-                            <li><span>Client:</span>Eunice Mills</li>
-                            <li><span>Date:</span>October 6, 2023</li>
+                            <li><span>Catégorie :</span>{{ projectMeta.category }}</li>
+                            <li><span>Outils :</span>{{ projectMeta.software }}</li>
+                            <li><span>Service :</span>{{ projectMeta.service }}</li>
+                            <li><span>Client :</span>{{ projectMeta.client }}</li>
+                            <li><span>Date :</span>{{ projectMeta.date }}</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-8">
                     <div class="title-area mb-35">
-                        <h2 class="sec-title">Decentralized Platform</h2>
-                        <p class="sec-text mt-30">BaseCreate is pleased to announce that it has been commissioned by Leighton Asia reposition its brand. We will help Leighton Asia evolve its brand strategy, and will be responsible updating Leighton Asia’s brand identity, website, and other collaterals.</p>
-                        <p class="sec-text mt-30">For almost 50 years Leighton Asia, one of the region’s largest and most respected construction companies, has been progressively building for a better future by leveraging international expertise with local intelligence. In that time Leighton has delivered some of Asia’s prestigious buildings and transformational infrastructure projects.</p>
+                        <h2 class="sec-title">{{ project?.title }}</h2>
+                        <p class="sec-text mt-30">{{ project?.description }}</p>
+                        <p class="sec-text mt-30">{{ project?.challenge }}</p>
                     </div>
-                    <h3>Challenge & Solution</h3>
-                    <p class="sec-text mb-n1">Future, as it seeks to lead the industry in technological innovation and sustainable building practices to deliver long-lasting value for its clients.</p>
-                    <h3 class="mt-35">Final Result</h3>
-                    <p class="sec-text mb-n1">For almost 50 years Leighton Asia, one of the region’s largest and most respected construction companies, has been progressively building for a better future by leveraging international expertise with local intelligence. In that time Leighton has delivered some of Asia’s prestigious buildings and transformational infrastructure projects.</p>
+                    <h3>Défi & solution</h3>
+                    <p class="sec-text mb-n1">{{ project?.solution }}</p>
+                    <h3 class="mt-35">Résultat final</h3>
+                    <p class="sec-text mb-n1">{{ project?.impact || project?.description }}</p>
                 </div>
                 <div class="col-lg-12">
                     <div class="inner__page-nav space-top mt-n1 mb-n1">
-                        <a href="#" class="nav-btn">
+                        <RouterLink v-if="previousProject" :to="`/projects/${previousProject.slug}`" class="nav-btn">
                             <i class="fa fa-arrow-left"></i> <span><span class="link-effect">
-                                <span class="effect-1">Previous Post</span>
-                                <span class="effect-1">Previous Post</span>
+                                <span class="effect-1">Projet précédent</span>
+                                <span class="effect-1">Projet précédent</span>
                             </span></span>
-                        </a>
-                        <a href="#" class="nav-btn"><span><span class="link-effect">
-                            <span class="effect-1">Next Post</span>
-                            <span class="effect-1">Next Post</span>
+                        </RouterLink>
+                        <RouterLink v-if="nextProject" :to="`/projects/${nextProject.slug}`" class="nav-btn"><span><span class="link-effect">
+                            <span class="effect-1">Projet suivant</span>
+                            <span class="effect-1">Projet suivant</span>
                         </span></span>
                             <i class="fa fa-arrow-right"></i>
-                        </a>
+                        </RouterLink>
                     </div>
                 </div>
             </div>
@@ -82,10 +77,10 @@
     <div class="container-fluid p-0 overflow-hidden">
         <div class="slider__marquee clearfix marquee-wrap">
             <div class="marquee_mode marquee__group">
-                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> We Give Unparalleled Flexibility</a></h6>
-                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> We Give Unparalleled Flexibility</a></h6>
-                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> We Give Unparalleled Flexibility</a></h6>
-                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> We Give Unparalleled Flexibility</a></h6>
+                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> Nous offrons une flexibilité inégalée</a></h6>
+                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> Nous offrons une flexibilité inégalée</a></h6>
+                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> Nous offrons une flexibilité inégalée</a></h6>
+                <h6 class="item m-item"><a href="#"><i class="fas fa-star-of-life"></i> Nous offrons une flexibilité inégalée</a></h6>
             </div>
         </div>
     </div>
@@ -97,13 +92,35 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
+import { computed, onMounted, watch } from 'vue'
 import { usePageMetadata } from '@/composables/usePageMetadata'
 import { assetUrl } from '@/utils/assets'
+import { useRoute } from '@/router'
+import { projects } from '@/utils/projects'
 
 const asset = assetUrl
+const route = useRoute()
 
-usePageMetadata("Project Details")
+const project = computed(() => projects.find((item) => item.slug === route.params.slug) || projects[0])
+const galleryImages = computed(() => project.value?.gallery ?? [])
+const projectMeta = computed(() => project.value?.meta ?? {})
+const projectIndex = computed(() => projects.findIndex((item) => item.slug === project.value?.slug))
+const previousProject = computed(() => (projectIndex.value > 0 ? projects[projectIndex.value - 1] : null))
+const nextProject = computed(() =>
+  projectIndex.value >= 0 && projectIndex.value < projects.length - 1 ? projects[projectIndex.value + 1] : null
+)
+
+usePageMetadata('Détails du projet')
+
+watch(
+  project,
+  (value) => {
+    if (value) {
+      route.meta.title = value.title
+    }
+  },
+  { immediate: true }
+)
 
 onMounted(() => {
   window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' })
