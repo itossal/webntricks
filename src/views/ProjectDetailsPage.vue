@@ -92,7 +92,7 @@
 </template>
 
 <script setup>
-import { computed, onMounted, watch } from 'vue'
+import { computed, watch } from 'vue'
 import { usePageMetadata } from '@/composables/usePageMetadata'
 import { assetUrl } from '@/utils/assets'
 import { useRoute } from '@/router'
@@ -101,10 +101,10 @@ import { projects } from '@/utils/projects'
 const asset = assetUrl
 const route = useRoute()
 
-const project = computed(() => projects.find((item) => item.slug === route.params.slug) || projects[0])
+const projectIndex = computed(() => projects.findIndex((item) => item.slug === route.params.slug))
+const project = computed(() => (projectIndex.value >= 0 ? projects[projectIndex.value] : projects[0]))
 const galleryImages = computed(() => project.value?.gallery ?? [])
 const projectMeta = computed(() => project.value?.meta ?? {})
-const projectIndex = computed(() => projects.findIndex((item) => item.slug === project.value?.slug))
 const previousProject = computed(() => (projectIndex.value > 0 ? projects[projectIndex.value - 1] : null))
 const nextProject = computed(() =>
   projectIndex.value >= 0 && projectIndex.value < projects.length - 1 ? projects[projectIndex.value + 1] : null
@@ -114,15 +114,12 @@ usePageMetadata('Project Details')
 
 watch(
   project,
-  (value) => {
-    if (value) {
-      route.meta.title = value.title
+  () => {
+    if (project.value) {
+      route.meta.title = project.value.title
     }
+    window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' })
   },
   { immediate: true }
 )
-
-onMounted(() => {
-  window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' })
-})
 </script>
